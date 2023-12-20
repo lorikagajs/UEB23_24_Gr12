@@ -2,3 +2,38 @@
 body{
    margin: 0px;
 }
+/* Quote screen */
+.bg-pic{
+    width: 100%;
+    height: 850px;
+
+}
+.sub-title{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    z-index: 5;
+    position: absolute;
+    bottom: 520px;;
+    left: 510px;
+    z-index: 5;
+}
+.title{
+     font-family: 'Playfair Display', sans-serif;
+     color: white;
+     font-size: 70px;
+     text-align: center;
+     position: absolute;
+     bottom: 180px;
+     left: 450px;
+}
+
+.scroll{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    position: relative; bottom: 110px; 
+    text-align: center;
+}
