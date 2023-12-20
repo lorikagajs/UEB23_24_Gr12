@@ -1,7 +1,16 @@
+
 body{
     margin:auto;
 }
 .kartolina{
+
     width:15rem;
     margin-top: 5rem;
+}
+.Titulli{
+    margin-top: 10rem;
+    font-family: "Playfair Display", sans-serif;
+    text-align: center;
+    font-size: 68px;
+    color: #002B5B;
 }
