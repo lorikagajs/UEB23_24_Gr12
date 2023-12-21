@@ -1,0 +1,110 @@
+.footer{
+    background-color: #002B5B;
+    margin-top: -150px;
+    height: 420px;
+}
+
+.footer_container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+}
+.thing{
+    flex: 1;
+ }
+.title-text{
+    font-size: 25px;
+    font-family: 'Playfair Display', sans-serif;
+    color: #E4DCCF;
+}
+.page-links{
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+}
+.page-links:hover{
+    color: #EA5455;
+}
+.page-links:active{
+    color: #EA5455;
+    text-decoration: underline;
+}
+.number{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    position: relative; 
+    bottom: 15px;
+    text-decoration: none;
+}
+.number:hover{
+    color: #EA5455;
+    cursor: pointer;
+}
+.mail_link{
+    text-decoration: none;
+}
+.one{
+    position: absolute;
+    left: 180px;
+    margin-top: 80px;
+}  
+.two{
+    position: absolute;
+    left: 480px;
+    margin-top: 80px;
+}  
+
+.social{
+    display: flex;
+    position: absolute;
+    left: 1025px;
+    margin-top: 180px;
+    
+} 
+ .icon-pic{
+    margin-right: 15px;
+    position: relative;
+    left: 12px;
+}
+.copyright{
+    position: absolute; 
+    margin-top: 390px;
+    left: 620px;
+}
+.rights{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: 390px;
+    left: 650px;
+}
+.review{
+    background-color: #E4DCCF;
+    color: #002B5B;
+    border: 1px #002B5B solid;
+    font-size: 18px;
+    position: absolute;
+    left: 1020px;
+    margin-top: 100px;
+    transition: opacity .5s ease;
+    border-radius: 40px;
+    width: 150px;
+    height: 45px;
+    transition: background-color .5s ease;
+    font-family: 'Montserrat', sans-serif;    
+}
+.review:hover{
+   background-color: #EA5455;
+   color: white;
+   cursor: pointer;
+}
+.footer_button_link{
+    text-decoration: none;
+}
