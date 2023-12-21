@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Navbar.css">
+    <title>Booking</title>
+   
     <link rel="stylesheet" href="Bts-css/bootstrap.css">
-    <link rel="stylesheet" href="Book.css">
+
+    <link rel="stylesheet" href="BookandRentify.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body style="background-color: #f9f5eb">
     <!-- Main Screen-->
+
 <div class="first-box">
     <!-- Navbar -->
       <nav id="navigation-bar">
-        <a href="Home.html" class="logo">
-        Rentify.
+        <a href="Home.html" class="logo" style="align-items: center;">
+        Rentify.  | Booking 
         </a>
              
          <div class="dropdown">
@@ -28,13 +35,6 @@
         </div>
 
         <a href="Favorites.html" class="navbar-button b2"> FAVORITES</a>
-
-        <a href="Book.html" class="navbar-link">
-        <div class="blue b3">
-         <p>BOOK NOW</p>
-        </div>
-       </a>
-
        <a href="Login.html" class="navbar-link">
         <div class="blue">
          <p>LOGIN</p>
@@ -42,11 +42,14 @@
        </a>
 
       </nav>
-    
+      
 </div>
+<hr>
+<h1><b><em></em></b> <em>Book your dream house</em></h1>
 
-<br>
-<br>
+
+
+
 <br>
 
 
@@ -115,13 +118,13 @@
               <input type="radio"> <label class="form-check-label" for="flexRadioDefault1">
                 Cash &nbsp &nbsp
               </label>
-              <input type="radio"> <label class="form-check-label" for="flexRadioDefault1">
+              <input type="radio" id="radioBank"> <label class="form-check-label" for="flexRadioDefault1">
                 Bank
               </label>
                     </div>
                     <div class="col-md-6">
                         <br>
-                <input type="text" class="form-control" placeholder="Bank Number" disabled>
+                <input type="text" id="bank" class="form-control" placeholder="Bank Number" disabled>
                     </div>
               
                  
@@ -129,15 +132,19 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Coment</label>
                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Any comment..." rows="2"></textarea>
                <br>
-             <button type="submit" style=" float: right;background-color: Transparent;
-             background-repeat:no-repeat;
-             border: none;"><img src="Foto/Booking.png" style="width: 70px;border: none;"></button>
+            
+              <button type="submit" style=" float: right;background-color: Transparent;
+              background-repeat:no-repeat;
+              border: none;"><div class="blue b3">
+                <p>BOOK NOW</p>
+               </div></button>
+               
             </div>
            </div>
          </div>
         <div class="col-md-4">
-    
-            <div class="card" class="kartolina" style="margin-top: 0%; width: 350px; border: none; background-color: #f9f5eb;">
+             <br>
+            <div class="card" class="kartolina" style="margin-top: 0%; width: 400px; border: none; background-color: #f9f5eb;">
                 <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;"/>
                 <div class="card-body">
                     <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
@@ -160,7 +167,14 @@
        </div>
     </div>
 
+
+<script>
     
-     
+    if () {
+        
+    }
+
+</script>
+
 </body>
 </html>
