@@ -7,8 +7,6 @@ body{
     width:15rem;
     margin-top: 5rem;
     text-decoration: none;
-    transition: height 0.5s !important;
-        transition-timing-function: ease-in-out !important;
 }
 .Kufizuesfoto{
     border-radius: 40px;
@@ -37,6 +35,3 @@ body{
     
         
     
-    .kartolina:hover img{
-        transform: scale(1.3);
-    }
