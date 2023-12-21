@@ -6,11 +6,25 @@ body{
 
     width:15rem;
     margin-top: 5rem;
+    text-decoration: none;
 }
-.Titulli{
-    margin-top: 10rem;
+.Kufizuesfoto{
+    border-radius: 40px;
+}
+
+
+#Titulli{
+    margin-top: 1rem;
     font-family: "Playfair Display", sans-serif;
+
     text-align: center;
     font-size: 68px;
     color: #002B5B;
+}
+#Titulli b{
+    transition: color .5s;
+    transition-timing-function: ease-in-out;
+}
+#Titulli:hover b{
+    color: #EA5455;
 }

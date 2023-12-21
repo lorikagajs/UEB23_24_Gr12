@@ -1,13 +1,45 @@
+h1{
+    font-family: "Playfair Display", sans-serif;
+
+    text-align: center;
+    font-size: 68px;
+    color: #002B5B;
+}
+label{
+    font-family: "Playfair Display", sans-serif;
+    color: #002B5B;
+    font-size: 16px;
+
+}
+
+#Tabela{
+    background-color: none;
+    /* background-image: url("Foto/map.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+#Tabela table{
+    
+    background-image: url("Foto/map.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+
+}
+
+
+
 #navigation-bar{
-    position: relative;
-    top: 15px;
+    position: sticky;
+    top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 30px 0;
-    height: 50px;
+    padding: 20px 0;
+    height: 70px;
     z-index: 2000;
 }
 .logo{
@@ -16,7 +48,7 @@
     bottom: 10px;
     text-decoration: none;
     color: #002B5B;
-    font-size: 42px;
+    font-size: 40px;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
 }
@@ -43,16 +75,17 @@
     color: #EA5455;
     text-decoration: underline;
 }
+
 .b2{
     position: relative;
-    left: 270px;
+    left: 220px;
 }
-.dropdowni{
+.dropdown{
     position: relative;
     z-index: 100;
     display: inline-block;
 }
-.dropdown-menuja{
+.dropdown-menu{
     display: none;
     position: absolute;
     top: 20px;
@@ -64,7 +97,7 @@
     border: 0.5px #002B5B solid;
     z-index: 100;
 }
-.dropdown-optioni{
+.dropdown-option{
     display: block;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -74,10 +107,10 @@
     padding: 10px;
     border-bottom: 0.5px #002B5B solid;
 }
-.dropdowni:hover .dropdown-menuja{
+.dropdown:hover .dropdown-menu{
     display: block;
 }
-.dropdown-menuja a:hover{
+.dropdown-menu a:hover{
     background-color: #EA5455;
     color: #F9F5EB;
     transition: background-color .5s ease;
@@ -103,25 +136,14 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     text-align: center;
-    position: relative; 
-    top: 12px;
+    position: relative;
+    top: 12.5px;
+    /* left: -37px; */
 }
 .b3{
     position: relative;
-    left: 120px;
+    left: 15px;
 }
 .navbar-link{
     text-decoration: none;
 }
-
-/*Scrollbar CSS*/
-body::-webkit-scrollbar{
-    width: 0.4em; 
-}
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-   
-  body::-webkit-scrollbar-thumb {
-    background-color: #002B5B;
-  }
