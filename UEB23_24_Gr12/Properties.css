@@ -21,3 +21,10 @@ body{
     font-size: 68px;
     color: #002B5B;
 }
+#Titulli b{
+    transition: color .5s;
+    transition-timing-function: ease-in-out;
+}
+#Titulli:hover b{
+    color: #EA5455;
+}
