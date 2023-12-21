@@ -11,13 +11,10 @@
     bottom: 10px;
     left: 100px;
 }
-.thing{
-    flex: 1;
- }
 .title-text{
     font-size: 25px;
     font-family: 'Playfair Display', sans-serif;
-    color: #E4DCCF;
+    color: #EA5455;
 }
 .page-links{
     text-decoration: none;
@@ -46,15 +43,15 @@
     color: #EA5455;
     cursor: pointer;
 }
-.mail_link{
+#mail_link{
     text-decoration: none;
 }
-.one{
+.first-footer-box{
     position: absolute;
     left: 180px;
     margin-top: 80px;
 }  
-.two{
+.second-footer-box{
     position: absolute;
     left: 480px;
     margin-top: 80px;
@@ -67,7 +64,7 @@
     margin-top: 180px;
     
 } 
- .icon-pic{
+.icon-pic{
     margin-right: 15px;
     position: relative;
     left: 12px;
@@ -107,4 +104,12 @@
 }
 .footer_button_link{
     text-decoration: none;
+}
+.adresa{
+    color: #E4DCCF;
+    font-size: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 1005px;
+    text-align: center;
+    margin-top: 230px;
 }
