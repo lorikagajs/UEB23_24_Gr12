@@ -21,16 +21,24 @@ body::before {
     background-color: rgba(255, 255, 255, 0.3); 
     z-index: -1; 
 }
+#signup-form {
+    display: none;
+}
 .cont{
     width: 700px;
     background: linear-gradient(to bottom, #ffffff, #E4DCCF);
     border-radius: 10px;
-    box-shadow: #66635e;
+    box-shadow: 5px, 5px, 10px,#66635e;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     padding: 50px;
+
+}
+.cont1{
+    background: radial-gradient(circle, #ffffff, #E4DCCF);
+    padding: 20px;
 
 }
 form{
@@ -54,10 +62,10 @@ input:focus {
 a{
     text-decoration: none;
 }
-#signup{
+#signupLink, #loginLink{
     color: #EA5455;
 }
-.sihnup:hover
+
 input::placeholder {
     color: #999; 
 }
@@ -84,4 +92,11 @@ p{
 h3{
     font-size: small;
     font-weight: lighter;
+}
+[type="radio"], [type="checkbox"]{
+    width:auto;
+    margin-left: 5px;
+}
+.interests{
+    font-style: italic;
 }

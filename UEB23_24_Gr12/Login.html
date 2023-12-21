@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="cont">
+<div id="loginForm" class="cont">
 
-    <form action="">
+    <form action="#" method="post">
         <a href="Home.html" class="logo">
             Rentify.
         </a> <br> <br>
@@ -23,13 +23,60 @@
         <label for="password">Password</label> <br>
         <input type="password" placeholder="Password"> <br>
         <p >Forgot password?</p>
-        <button type="button" class="submit">Log In</button>
-        <h3>Don't have an account? Please <i><a id="signup" href="Signup.html">Sign up!</a></i></h3>
+        <button type="submit" class="submit">Log In</button>
+        <h3>Don't have an account? Please <i><a id="signupLink" href="#">Sign up!</a></i></h3>
     </form>
 
 
 </div>
 
+<div id="signup-form" class="cont cont1">
+    <form id="signup" action="#" method="post">
+        <a href="Home.html" class="logo">
+            Rentify.
+        </a> <br> <br>
+        <h2>Sign Up</h2>
+        <label for="firstname">First Name:</label> <br>
+        <input type="text" id="firstname" required placeholder="First name"> <br>
+        <label for="lastname">Last Name:</label> <br>
+        <input type="text" id="lastname" required placeholder="Last name"> <br>
+        <label for="newUsername">New Username:</label> <br>
+        <input type="text" id="newUsername" name="newUsername" required placeholder="Username"> <br>
+        <label for="newPassword">New Password:</label> <br>
+        <input type="password" id="newPassword" name="newPassword" required placeholder="Password"> <br>
+        <label for="gender">Gender:</label> <br>
+        <input type="radio" name="gender" id="gender1">
+        <label class="gender" id="gender1">Female</label>
+        <input type="radio" name="gender" id="gender2">
+        <label class="gender" for="gender2">Male</label>
+        <input type="radio" name="gender" id="gender3">
+        <label  for="gender3">Other</label> <br> <br>
+        <label for="interests">Interests:</label> <br>
+        <input type="checkbox" name="interests" id="interests1">
+        <label class="interests" for="interests1">City</label>
+        <input type="checkbox" name="interests" id="interests2">
+        <label class="interests" for="interests2">Lake</label>
+        <input type="checkbox" name="interests" id="interests3">
+        <label class="interests" for="interests3">Beachfront</label>
+        <input type="checkbox" name="interests" id="interests4">
+        <label class="interests" for="interests4">Farm</label> <br>
+
+        <button type="submit" class="submit">Sign Up</button>
+        <p>Already have an account? <i><a href="#" id="loginLink">Login!</a></i> </p>
+    </form>
+   
+</div>
+<script>
+    document.getElementById('signupLink').addEventListener('click', function() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('signup-form').style.display = 'block';
+    });
+
+    document.getElementById('loginLink').addEventListener('click', function() {
+        document.getElementById('signup-form').style.display = 'none';
+        document.getElementById('loginForm').style.display = 'block';
+    });
+</script>
 
 </body>
 </html>
