@@ -13,17 +13,17 @@
 <body>
 <div id="loginForm" class="cont">
 
-    <form action="#" method="post">
+    <form action="#">
         <a href="Home.html" class="logo">
             Rentify.
         </a> <br> <br>
         <h2>Welcome</h2>
         <label for="email">Email</label> <br>
-        <input type="email" name="email" id="email" placeholder="Email"> <br> <br>
+        <input type="email" name="email" id="email" placeholder="Email" required> <br> <br>
         <label for="password">Password</label> <br>
-        <input type="password" placeholder="Password"> <br>
+        <input id="password" type="password" placeholder="Password" required> <br>
         <p >Forgot password?</p>
-        <button type="submit" class="submit">Log In</button>
+        <button type="submit" class="submit" id="loginFormButton">Log In</button>
         <h3>Don't have an account? Please <i><a id="signupLink" href="#">Sign up!</a></i></h3>
     </form>
 
@@ -31,7 +31,7 @@
 </div>
 
 <div id="signup-form" class="cont cont1">
-    <form id="signup" action="#" method="post">
+    <form id="signup" action="#">
         <a href="Home.html" class="logo">
             Rentify.
         </a> <br> <br>
@@ -61,22 +61,13 @@
         <input type="checkbox" name="interests" id="interests4">
         <label class="interests" for="interests4">Farm</label> <br>
 
-        <button type="submit" class="submit">Sign Up</button>
+        <button type="submit" class="submit" id="signupButton">Sign Up</button>
         <p>Already have an account? <i><a href="#" id="loginLink">Login!</a></i> </p>
     </form>
    
 </div>
-<script>
-    document.getElementById('signupLink').addEventListener('click', function() {
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('signup-form').style.display = 'block';
-    });
 
-    document.getElementById('loginLink').addEventListener('click', function() {
-        document.getElementById('signup-form').style.display = 'none';
-        document.getElementById('loginForm').style.display = 'block';
-    });
-</script>
+<script src="Login.js"></script>
 
 </body>
 </html>

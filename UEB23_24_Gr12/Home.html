@@ -131,9 +131,9 @@
   <p class="receive">Receive inspiration in <br>
      your inbox</p>
 
- <form action="">
-     <input class="input" type="text" placeholder="E-mail">
-     <button class="subscribe">SUBSCRIBE</button>
+ <form action="#">
+     <input id="email" class="input" type="text" placeholder="E-mail" required>
+     <button id="subscribeButton" class="subscribe">SUBSCRIBE</button>
  </form>
 </section>
 
@@ -167,10 +167,28 @@
 </div>
 
 <img class="copyright" src="Foto/copyright.png" height="22px" width="22px" alt="">
-<p class="rights">RENTIFY | ALL RIGHTS RESERVED</p>
+<p class="rights">RENTIFY | </p>
 
 </footer>
 <!-- end of footer -->
+
+<script>
+  function validateSubscribeForm() {
+    var email = document.getElementById('email').value;
+
+    if (email.trim() === '') {
+      alert('Please enter your email to subscribe.');
+      return false;
+    }
+
+    return true;
+  }
+  document.getElementById('subscribeButton').addEventListener('click', function (event) {
+    if (!validateSubscribeForm()) {
+      event.preventDefault(); // se lejon me submit
+    }
+  });
+</script>
 
 </body>
 </html>
