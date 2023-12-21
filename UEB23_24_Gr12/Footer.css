@@ -1,7 +1,7 @@
 .footer{
     background-color: #002B5B;
     margin-top: -150px;
-    height: 450px;
+    height: 420px;
 }
 
 .footer_container{
@@ -15,7 +15,7 @@
     flex: 1;
  }
 .title-text{
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Playfair Display', sans-serif;
     color: #E4DCCF;
 }
@@ -30,7 +30,7 @@
 .page-links:hover{
     color: #EA5455;
 }
- .page-links:active{
+.page-links:active{
     color: #EA5455;
     text-decoration: underline;
 }
@@ -51,18 +51,20 @@
 }
 .one{
     position: absolute;
-    left: 100px;
+    left: 180px;
+    margin-top: 80px;
 }  
 .two{
     position: absolute;
-    left: 300px;
+    left: 480px;
+    margin-top: 80px;
 }  
 
 .social{
     display: flex;
     position: absolute;
-    left: 600px;
-    margin-top: 70px;
+    left: 1025px;
+    margin-top: 180px;
     
 } 
  .icon-pic{
@@ -71,13 +73,17 @@
     left: 12px;
 }
 .copyright{
-    position: relative; 
+    position: absolute; 
+    margin-top: 390px;
+    left: 620px;
 }
 .rights{
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    position: relative;
+    position: absolute;
+    margin-top: 390px;
+    left: 650px;
 }
 .review{
     background-color: #E4DCCF;
@@ -85,7 +91,8 @@
     border: 1px #002B5B solid;
     font-size: 18px;
     position: absolute;
-    left: 595px;
+    left: 1020px;
+    margin-top: 100px;
     transition: opacity .5s ease;
     border-radius: 40px;
     width: 150px;
