@@ -8,24 +8,16 @@ body{
     margin-top: 5rem;
     text-decoration: none;
 }
-
+.Kufizuesfoto{
+    border-radius: 40px;
+}
 
 
 #Titulli{
-    margin-top: 10rem;
+    margin-top: 1rem;
     font-family: "Playfair Display", sans-serif;
 
     text-align: center;
     font-size: 68px;
     color: #002B5B;
 }
-body::-webkit-scrollbar{
-    width: 0.4em; 
-}
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-   
-  body::-webkit-scrollbar-thumb {
-    background-color: #002B5B;
-  }

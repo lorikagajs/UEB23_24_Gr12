@@ -5,47 +5,443 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rentify|Lake Houses for our lake loving renters</title>
-    <link rel="stylesheet" href="Properties.css" />
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet" />
+        <!--Bootstrap and other css files-->
+    <link rel="stylesheet" href="Properties.css" />
     <link rel="stylesheet" href="Bts-css/bootstrap.css" />
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="Footer.css">
+    <!--Internal css-->
+    <style>
+        .carousel-inner {
+          border-radius: 15px;
+          overflow: hidden;
+        }
+    
+        .carousel-item img {
+          width: 100%;
+          border-radius: 15px;
+          transition: transform 0.3s ease-in-out;
+        }
+    
+        .carousel-inner .active {
+          transform: translateX(0);
+        }
+    
+        .carousel-inner .next {
+          transform: translateX(100%);
+        }
+    
+        .carousel-inner .prev {
+          transform: translateX(-100%);
+        }
+        #navigation-bar{
+            background-color: #f9f5eb;
+        }
+      </style>
 </head>
 
 <body style="background-color: #f9f5eb">
-<!-- Titulli i kategoris -->
+
+     <!-- Navbar -->
+     <nav id="navigation-bar">
+        <a href="Home.html" class="logo">
+        Rentify.
+        </a>
+             
+         <div class="dropdown">
+             <p class="navbar-button">PROPERTIES</p>
+             <div class="dropdown-menu">
+                 <a class="dropdown-option" href="City.html">City</a>
+                 <a class="dropdown-option" href="Beachfront.html">Beachfront</a>
+                 <a class="dropdown-option" href="Lake.html">Lake</a>
+                 <a class="dropdown-option" href="Farms.html">Farms</a>
+             </div>
+        </div>
+
+        <a href="Favorites.html" class="navbar-button b2"> FAVORITES</a>
+
+        <a href="Book.html" class="navbar-link">
+        <div class="blue b3">
+         <p>BOOK NOW</p>
+        </div>
+       </a>
+
+       <a href="Login.html" class="navbar-link">
+        <div class="blue">
+         <p>LOGIN</p>
+        </div>
+       </a>
+
+      </nav>
+    <!-- Titulli i kategoris -->
     <h1 id="Titulli"><b><em>Lake</em></b> <em>houses for our lake loving renters</em></h1>
 
     <!-- Cards -->
     <div class="container-fluid" style="width: 90%">
         <div class="row">
             <div class="col">
-               <a href="Book.html" target="_blank" class="kartolina"> <div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;"/>
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
+                <a href="Book.html" target="_blank" class="kartolina">
+                    <div class="card" class="kartolina"
+                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                        <!--Carousel1-->
+                        <div id="carousel1" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Pas</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Perpara</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                                Bacina, Croatia
+                            </h5>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                On Sladinac
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Feb 3- 8
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                <b>$81</b> per night
+                            </p>
+                        </div>
                     </div>
-                </div></a>
+                </a>
             </div>
+
+            <div class="col">
+                <a href="Book.html" target="_blank" class="kartolina">
+                    <div class="card" class="kartolina"
+                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                        <!--Carousel-->
+                        <div id="carousel2" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Pas</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Perpara</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                                Bacina, Croatia
+                            </h5>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                On Sladinac
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Feb 3- 8
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                <b>$81</b> per night
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="Book.html" target="_blank" class="kartolina">
+                    <div class="card" class="kartolina"
+                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                        <!--Carousel-->
+                        <div id="carousel3" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Pas</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Perpara</span>
+                            </button>
+                        </div>                        
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                                Bacina, Croatia
+                            </h5>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                On Sladinac
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Feb 3- 8
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                <b>$81</b> per night
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="Book.html" target="_blank" class="kartolina">
+                    <div class="card" class="kartolina"
+                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                        <!--Carousel-->
+                        <div id="carousel4" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Pas</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Perpara</span>
+                            </button>
+                        </div>                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                                Bacina, Croatia
+                            </h5>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                On Sladinac
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Feb 3- 8
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                <b>$81</b> per night
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="Book.html" target="_blank" class="kartolina">
+                    <div class="card" class="kartolina"
+                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                        <!--Carousel-->
+                        <div id="carousel5" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Pas</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Perpara</span>
+                            </button>
+                        </div>                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                                Bacina, Croatia
+                            </h5>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                On Sladinac
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Feb 3- 8
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                <b>$81</b> per night
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="Book.html" target="_blank" class="kartolina">
+                    <div class="card" class="kartolina"
+                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                        <!--Carousel-->
+                        <div id="carousel6" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel6"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Pas</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel6"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Perpara</span>
+                            </button>
+                        </div>                        
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                                Bacina, Croatia
+                            </h5>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                On Sladinac
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Feb 3- 8
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                <b>$81</b> per night
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="Book.html" target="_blank" class="kartolina">
+                    <div class="card" class="kartolina"
+                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                        <!--Carousel-->
+                        <div id="carousel7" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel7"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Pas</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel7"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Perpara</span>
+                            </button>
+                        </div>                        
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                                Bacina, Croatia
+                            </h5>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                On Sladinac
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Feb 3- 8
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                <b>$81</b> per night
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="Book.html" target="_blank" class="kartolina">
+                    <div class="card" class="kartolina"
+                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                        <!--Carousel-->
+                        <div id="carousel8" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel8"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel8"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>
                 
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
                     <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
                             Bacina, Croatia
                         </h5>
                         <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
@@ -58,286 +454,384 @@
                             <b>$81</b> per night
                         </p>
                     </div>
-                </div></a>
-            </div>
-
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 40px">
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
-            <div class="col">
-                <a href="Book.html" target="_blank" class="kartolina"><div class="card" class="kartolina" style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                    <img src="Foto/foto-lakeCrop.jpg" class="card-img-top" alt="Shtepi modeste afer liqenit" style="border-radius: 15px;" />
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                            Bacina, Croatia
-                        </h5>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            On Sladinac
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            Feb 3- 8
-                        </p>
-                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$81</b> per night
-                        </p>
-                    </div>
-                </div></a>
-            </div>
+            </div></a>
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <a href="Book.html" target="_blank" class="kartolina">
+                <div class="card" class="kartolina"
+                    style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                    <!--Carousel-->
+                    <div id="carousel9" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel9"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel9"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                            Bacina, Croatia
+                        </h5>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            On Sladinac
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            Feb 3- 8
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            <b>$81</b> per night
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="Book.html" target="_blank" class="kartolina">
+                <div class="card" class="kartolina"
+                    style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                    <!--Carousel-->
+                    <div id="carousel10" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel10"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel10"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>                   
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                            Bacina, Croatia
+                        </h5>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            On Sladinac
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            Feb 3- 8
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            <b>$81</b> per night
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="Book.html" target="_blank" class="kartolina">
+                <div class="card" class="kartolina"
+                    style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                    <!--Carousel-->
+                    <div id="carousel11" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel11"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel11"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>                    
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                            Bacina, Croatia
+                        </h5>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            On Sladinac
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            Feb 3- 8
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            <b>$81</b> per night
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="Book.html" target="_blank" class="kartolina">
+                <div class="card" class="kartolina"
+                    style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                    <!--Carousel-->
+                    <div id="carousel12" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel12"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel12"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>                    
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                            Bacina, Croatia
+                        </h5>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            On Sladinac
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            Feb 3- 8
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            <b>$81</b> per night
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 40px">
+        <div class="col">
+            <a href="Book.html" target="_blank" class="kartolina">
+                <div class="card" class="kartolina"
+                    style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                    <!--Carousel-->
+                    <div id="carousel13" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel13"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel13"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>                    
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                            Bacina, Croatia
+                        </h5>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            On Sladinac
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            Feb 3- 8
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            <b>$81</b> per night
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="Book.html" target="_blank" class="kartolina">
+                <div class="card" class="kartolina"
+                    style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                    <!--Carousel-->
+                    <div id="carousel14" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel14"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel14"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>                    
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                            Bacina, Croatia
+                        </h5>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            On Sladinac
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            Feb 3- 8
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            <b>$81</b> per night
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="Book.html" target="_blank" class="kartolina">
+                <div class="card" class="kartolina"
+                    style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                    <!--Carousel-->
+                    <div id="carousel15" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel15"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel15"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>                    
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                            Bacina, Croatia
+                        </h5>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            On Sladinac
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            Feb 3- 8
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            <b>$81</b> per night
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="Book.html" target="_blank" class="kartolina">
+                <div class="card" class="kartolina"
+                    style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
+                     <!--Carousel-->
+                    <div id="carousel16" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Foto/foto-lakeCrop.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Foto/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel16"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Pas</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel16"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Perpara</span>
+                        </button>
+                    </div>                    
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                            Bacina, Croatia
+                        </h5>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            On Sladinac
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            Feb 3- 8
+                        </p>
+                        <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                            <b>$81</b> per night
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>    
 
     <script src="Bts-js/bootstrap.js"></script>
 </body>
