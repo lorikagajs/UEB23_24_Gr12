@@ -7,6 +7,8 @@ body{
     width:15rem;
     margin-top: 5rem;
     text-decoration: none;
+    transition: height 0.5s !important;
+        transition-timing-function: ease-in-out !important;
 }
 .Kufizuesfoto{
     border-radius: 40px;
@@ -14,10 +16,27 @@ body{
 
 
 #Titulli{
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-family: "Playfair Display", sans-serif;
 
     text-align: center;
     font-size: 68px;
     color: #002B5B;
 }
+#Titulli b{
+    transition: color .7s;
+    transition-timing-function: ease-in-out;
+}
+#Titulli:hover b{
+    color: #EA5455;
+}
+
+.card-body p,.card-body h5{
+    color: #002B5B !important;
+    }
+    
+        
+    
+    .kartolina:hover img{
+        transform: scale(1.3);
+    }
