@@ -114,6 +114,7 @@
     text-decoration: none;
 }
 
+/*Scrollbar CSS*/
 body::-webkit-scrollbar{
     width: 0.4em; 
 }
