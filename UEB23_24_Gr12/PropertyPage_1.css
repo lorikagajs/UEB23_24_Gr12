@@ -2,7 +2,7 @@
   
     margin-left: 25px;
   margin-right: 100px;
-    
+  padding-bottom: 75px;    
 }
 .button{
     background-color: #002B5B;
@@ -26,4 +26,10 @@
     text-decoration: none;  
     color: aliceblue;
    
+}
+
+.location{
+    width: 8%;
+    margin: auto;
+    padding: 20px 0;
 }
