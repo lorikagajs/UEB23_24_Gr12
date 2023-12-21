@@ -1,0 +1,86 @@
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+    padding: 0;
+    background-image: url('backgroundlogin.jpg'); 
+    background-repeat: repeat; 
+    background-size: cover; 
+    background-position: center; 
+    
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3); 
+    z-index: -1; 
+}
+.cont{
+    width: 700px;
+    background: linear-gradient(to bottom, #ffffff, #E4DCCF);
+    border-radius: 10px;
+    box-shadow: #66635e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+
+}
+form{
+    text-align: center;
+
+}
+input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #002B5B;
+    border-radius: 4px;
+    width: 500px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; 
+}
+
+input:focus {
+    border-color: #EA5455; 
+    outline: none; 
+}
+a{
+    text-decoration: none;
+}
+.signup{
+    color: #EA5455;
+}
+
+input::placeholder {
+    color: #999; 
+}
+p{
+    color:#002B5B;
+    font-size: smaller;
+    margin-top: 5px;
+}
+.submit{
+    border: none;
+    width: 200px;
+    background-color: #002B5B;
+    color: #E4DCCF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.submit:hover{
+    background-color: #EA5455;
+}
+h3{
+    font-size: small;
+    font-weight: lighter;
+}
