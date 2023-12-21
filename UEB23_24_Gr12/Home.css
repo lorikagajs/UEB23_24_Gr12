@@ -88,3 +88,40 @@ body{
     margin-right: 10px;
     text-shadow: black 5px 5px 6px;
 } 
+
+
+/* Info */
+.third-box{
+    background-color: #E4DCCF;
+    width: 100%;
+    margin: 0px;
+    height: 450px;
+    position: relative;
+    bottom: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .small-box{
+     width: 33%;
+     display: inline-block;
+     text-align: center;
+ }
+ .icon{
+   width: 80px;
+   height: 80px;
+ }
+ .big-text{
+    font-family: 'Playfair Display', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+ }
+ .small-text{
+   font-family: 'Montserrat', sans-serif;
+   color: black;
+   font-size: 18px;
+   width: 350px;
+   position: relative;
+    left: 70px;
+ }
