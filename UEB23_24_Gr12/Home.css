@@ -73,16 +73,18 @@ body{
     font-family: 'Playfair Display', sans-serif;
     font-size: 30px;
     position: relative;
-    bottom: 300px;
+    bottom: 350px;
     color: white;
+    text-shadow: black 5px 5px 6px;
 }
 .smalltext{
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     color: white;
     position: relative;
-    bottom: 310px;
+    bottom: 360px;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    text-shadow: black 5px 5px 6px;
 } 
