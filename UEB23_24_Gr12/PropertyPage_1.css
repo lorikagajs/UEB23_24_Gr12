@@ -1,0 +1,35 @@
+.info-card{
+  
+    margin-left: 25px;
+  margin-right: 100px;
+  padding-bottom: 75px;    
+}
+.button{
+    background-color: #002B5B;
+    border-radius: 40px;
+    width: 150px;
+    height: 35px;
+    position: relative; 
+    bottom: 10px; 
+    left: 40px;
+    transition: background-color .5s ease;
+    text-align: center;
+}
+.button:hover{
+    background-color: #EA5455;
+}
+.button:active{
+    background-color: #002B5B;
+}
+.card-button{
+    
+    text-decoration: none;  
+    color: aliceblue;
+   
+}
+
+.location{
+    width: 8%;
+    margin: auto;
+    padding: 20px 0;
+}
