@@ -24,7 +24,7 @@ body{
     color: #002B5B;
 }
 #Titulli b{
-    transition: color .5s;
+    transition: color .7s;
     transition-timing-function: ease-in-out;
 }
 #Titulli:hover b{
@@ -38,5 +38,5 @@ body{
         
     
     .kartolina:hover img{
-        transform: scale(1.5);
+        transform: scale(1.3);
     }
