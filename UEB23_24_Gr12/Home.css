@@ -130,10 +130,11 @@ body{
  /* Newsletter */
 .fourth-box{
     width: 100%;
-    height: 850px;
+    height: 900px;
     position: relative; 
     bottom: 150px;
     text-align: center;
+    margin: 0px;
 }
 .background-image{
   width: 100%;
