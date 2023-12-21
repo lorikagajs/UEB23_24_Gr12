@@ -6,7 +6,7 @@
     <title>Rentify+</title>
     <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="Bts-css/bootstrap.css">
-
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="BookandRentify.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="background-color: #f9f5eb">
     <!-- Main Screen-->
-<div id="backphoto">
+<div id="backphoto" style="padding-bottom: 200px;">
+
+
 <div class="first-box">
     <!-- Navbar -->
       <nav id="navigation-bar">
@@ -52,32 +54,36 @@
       
 </div>
 <br>
+<!--Div qe mban katrorin-->
+<div style="align-self: center;" class="square">
 <div id="Hyrje">
     <br>
     <br>
    <h1><b><em></em></b> <em>Rentify your house</em></h1>
 
-  <p class="paragraph">Set up your own apartment for other people to enjoy</p>
+  <p class="paragraph">Set up your own apartment for other people to enjoy.
+  </p><p class="paragraph">Fast, Secure and Profitable</p>
 
 <br>
 <br>
-<br>
-<br>
+
 
   <a href="#gotoRentify" style="text-decoration: none;"><div class="StartL">
     <p style="text-align: center; font-size: 32px;color:white;";>Start Listing</p>
    </div></a>
 
 </div>
+</div>
 
-</div>    
 
+</div>  
 
+<hr id="gotoRentify">
 <div class="container-fluid"  id="Tabela" >
 <table style="border: none;  width: 100%;" >
    
     <tr> <th style="text-align: center; font-size: 45px; " colspan="7">Expand your wealth</th>
-    </tr>
+    </tr><tr></tr>
     <tr>
         <td></td>
         <td style="font-weight: bold; font-size:56px"> 2/3 </td>
@@ -98,14 +104,18 @@
 <tr style="font-size: 40px;"></tr>
 </table>
 </div>
+<hr>
 
 
+ 
+<br>
 
-<h1>Please login first</h1>
+<h2>Please read the terms and conditions first</h2>
+<mark style="background-color: rgba(201, 141, 12, 0.337); margin-left: 30px;">You must be <a href="Login.html">logged</a> in in order to list your house. </mark>
+<br>
+<br>
 
-
-
-<div id="gotoRentify" class="container-fluid">
+<div class="container-fluid">
     <form><fieldset>
     <div class="row">
     <div class="col-md-1"></div>
@@ -144,8 +154,8 @@
 
 
     </div>
-    <div class="col-md-3" style="border-radius: 1px;" id="dropfile">
-       <div class="choseFile">
+    <div class="col-md-3" >
+       <div class="choseFile" style="border-radius: 1px;" id="dropfile">
         <input type="file" id="actual-btn" hidden/>
         <label for="actual-btn">Choose Photos</label>
        </div>
@@ -163,7 +173,9 @@
 
 
 
-<div id="gototerms">
+<hr>
+
+<div>
 
     <h2>Rental Agreement Terms and Conditions</h2>
 
@@ -205,7 +217,42 @@
 
 </div>
 
+<hr>
+<br>
 
+<footer class="footer">
+
+    <div class="footer-container">
+      <div class="first-footer-box">
+         <p class="title-text">Properties</p>
+         <a class="page-links" href="City.html">CITY</a>
+         <a class="page-links" href="Beachfront.html">BEACHFRONT</a>
+         <a class="page-links" href="Lake.html">LAKE</a>
+         <a class="page-links" href="Farms.html">FARMS</a>
+      </div>
+      <div class="second-footer-box">
+         <p class="title-text">Call us</p>
+         <p class="number">+383 334 0501</p>
+         <p class="title-text">E-mail us</p>
+         <a id="mail_link" href="mailto:someone@example.com"><p class="number mail_link">explore@rentify.com</p></a>
+      </div>
+      <div class="third-footer-box">
+         <a class="footer_button_link" href="Premium.html"><button class="review">RENTIFY+</button></a>
+         <div class="social">
+             <a href="https://www.facebook.com/rentify/" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/facebook.png" height="30px" width="30px"></a>
+             <a href="https://www.youtube.com/@airbnb" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/youtube.png" height="30px" width="30px" alt=""></a>
+            <a href="https://www.instagram.com/rentifyltd/?hl=en" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/instagram.png" height="30px" width="30px" alt=""></a>
+         </div>
+         <address class="adresa">2579 Elm St.
+          Orlando, USA</address>
+      </div>
+    </div>
+    
+    <img class="copyright" src="Foto/copyright.png" height="22px" width="22px" alt="">
+    <p class="rights">RENTIFY | ALL RIGHTS RESERVED</p>
+    
+    </footer>
+    <!-- end of footer -->
 
 </body>
 </html>

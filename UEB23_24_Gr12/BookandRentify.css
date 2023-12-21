@@ -1,8 +1,8 @@
 h1{
     font-family: "Playfair Display", sans-serif;
-
-    text-align: center;
-    font-size: 80px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 65px;
     color:#002B5B;
 }
 label{
@@ -28,11 +28,9 @@ label{
 
 #Tabela{
     margin: 0;
-    
-    background-image: url("Foto/map.jpg");
     background-size: cover;
     background-repeat: no-repeat; 
-    background-color: white;
+   
     color: #002B5B;
     text-shadow: rgb(255, 255, 255) 5px 5px 6px;
     text-align: center;
@@ -47,7 +45,7 @@ label{
 
 
     margin: 0;
-    height:450px
+    height:350px
 
 }
 #backphoto{
@@ -59,8 +57,8 @@ label{
 }
 
 .paragraph{
-    text-align: center;
-    font-size: 30px;
+    margin-left: 30px;
+    font-size: 25px;
     font-family: "Playfair Display", sans-serif;
 
 }
@@ -74,7 +72,7 @@ label{
     bottom: 12px; 
  padding-top: 8px;
     transition: background-color .5s ease;
-    margin-left: 650px;
+    margin-left: 700px;
 }
 
 .StartL:hover{
@@ -96,4 +94,25 @@ label{
     padding-top: 8px;
     transition: background-color .5s ease;
 
+}
+
+.square{
+   
+     border: none;
+    background-color:#E4DCCF;
+    color:  #002B5B;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 100px;
+    font-family: 'Playfair Display', sans-serif;
+    margin-left:200px;
+    margin-right:200px;
+
+}
+h2{
+    font-family: "Playfair Display", sans-serif;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 30px;
+    color:#002B5B;
 }
