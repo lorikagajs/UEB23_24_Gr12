@@ -8,6 +8,7 @@ body{
    bottom: 120px;
    margin: 0;
    background-image: url(Foto/b5530da5-f592-48cc-b555-39865e9696fb.jpg);
+   background-attachment: fixed;
    background-size: cover;
    height: 950px;
 }
