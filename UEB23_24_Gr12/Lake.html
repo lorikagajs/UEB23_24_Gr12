@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rentify | Lake Houses for our lake loving renters</title>
@@ -9,923 +8,1860 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Bootstrap and other css files-->
     <link rel="stylesheet" href="Properties.css" />
     <link rel="stylesheet" href="Bts-css/bootstrap.css" />
-    <link rel="stylesheet" href="Navbar.css">
-    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="Navbar.css" />
+    <link rel="stylesheet" href="Footer.css" />
     <!--Internal css-->
     <style>
-        .carousel-inner {
-            border-radius: 15px;
-            overflow: hidden;
-        }
+      .carousel-inner {
+        border-radius: 15px;
+        overflow: hidden;
+      }
 
-        .carousel-item img {
-            width: 100%;
-            border-radius: 15px;
-            transition: transform 0.3s;
-            transition-timing-function: ease;
-        }
+      .carousel-item img {
+        width: 100%;
+        border-radius: 15px;
+        transition: transform 0.3s;
+        transition-timing-function: ease;
+      }
 
-        .carousel-inner .active {
-            transform: translateX(0);
-        }
+      .carousel-inner .active {
+        transform: translateX(0);
+      }
 
-        .carousel-inner .next {
-            transform: translateX(100%);
-        }
+      .carousel-inner .next {
+        transform: translateX(100%);
+      }
 
-        .carousel-inner .prev {
-            transform: translateX(-100%);
-        }
+      .carousel-inner .prev {
+        transform: translateX(-100%);
+      }
 
-        .carousel-inner>.carousel-item>img {
-            width: 640px;
-            height: 260px;
-        }
+      .carousel-inner > .carousel-item > img {
+        width: 640px;
+        height: 260px;
+      }
+      .carousel-control-next{
+        margin-top: 21%;
+        height: 50%;
+      }
 
+      #navigation-bar {
+        background-color: #f9f5eb;
+      }
+      .overlay {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
 
-        #navigation-bar {
-            background-color: #f9f5eb;
-        }
+    .overlay-content {
+      position: absolute;
+      top: 70%;
+      left: 65%;
+      transform: translate(25%, -25%);
+    }
     </style>
-</head>
+  </head>
 
-<body style="background-color: #f9f5eb">
-
+  <body style="background-color: #f9f5eb">
     <!-- Navbar -->
     <nav id="navigation-bar">
-        <a href="Home.html" class="logo">
-            Rentify.
-        </a>
+      <a href="Home.html" class="logo"> Rentify. </a>
 
-        <div class="dropdowni">
-            <p class="navbar-button">PROPERTIES</p>
-            <div class="dropdown-menuja">
-                <a class="dropdown-optioni" href="City.html">City</a>
-                <a class="dropdown-optioni" href="Beachfront.html">Beachfront</a>
-                <a class="dropdown-optioni" href="Lake.html">Lake</a>
-                <a class="dropdown-optioni" href="Farms.html">Farms</a>
-            </div>
+      <div class="dropdowni">
+        <p class="navbar-button">PROPERTIES</p>
+        <div class="dropdown-menuja">
+          <a class="dropdown-optioni" href="City.html">City</a>
+          <a class="dropdown-optioni" href="Beachfront.html">Beachfront</a>
+          <a class="dropdown-optioni" href="Lake.html">Lake</a>
+          <a class="dropdown-optioni" href="Farms.html">Farms</a>
         </div>
+      </div>
 
-        <a href="Favorites.html" class="navbar-button b2"> FAVORITES</a>
+      <a href="Favorites.html" class="navbar-button b2"> FAVORITES</a>
 
-        <a href="Premium.html" class="navbar-link">
-            <div class="blue b3">
-                <p>RENTIFY +</p>
-            </div>
-        </a>
+      <a href="Premium.html" class="navbar-link">
+        <div class="blue b3">
+          <p>RENTIFY +</p>
+        </div>
+      </a>
 
-        <a href="Login.html" class="navbar-link">
-            <div class="blue">
-                <p>LOGIN</p>
-            </div>
-        </a>
-
+      <a href="Login.html" class="navbar-link">
+        <div class="blue">
+          <p>LOGIN</p>
+        </div>
+      </a>
     </nav>
     <!-- Titulli i kategoris -->
-    <h1 id="Titulli"><b><em>Lake</em></b> <em>houses for our lake loving renters</em></h1>
+    <h1 id="Titulli">
+      <b><em>Lake</em></b> <em>houses for our lake loving renters</em>
+    </h1>
 
     <!-- Cards -->
     <div class="container-fluid" style="width: 90%">
-        <div class="row">
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel1-->
-                        <div id="carousel1" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel2" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/Lakehouse2Crop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/SallonLake.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/OboriLake.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Kotor, Montenegro
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                154 kilometers away
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Jan 1-9
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$51</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel3" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel4" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
+      <div class="row">
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel1-->
+              
+              <div id="carousel1" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                        <input type="checkbox" class="checkbox" id="checkbox" />
+                        <label for="checkbox">
+                          <svg
+                            id="heart-svg"
+                            viewBox="467 392 58 57"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              id="Group"
+                              fill="none"
+                              fill-rule="evenodd"
+                              transform="translate(467 392)"
+                            >
+                              <path
+                                id="heart"
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                fill="#AAB8C2"
+                              />
+                              <circle
+                                id="main-circ"
+                                fill="#E2264D"
+                                opacity="0"
+                                cx="29.5"
+                                cy="29.5"
+                                r="1.5"
+                              />
+                        
+                              <g id="grp7" opacity="0" transform="translate(7 6)">
+                                <circle
+                                  id="oval1"
+                                  fill="#9CD8C3"
+                                  cx="2"
+                                  cy="6"
+                                  r="2"
+                                />
+                                <circle
+                                  id="oval2"
+                                  fill="#8CE8C3"
+                                  cx="5"
+                                  cy="2"
+                                  r="2"
+                                />
+                              </g>
+                        
+                              <g id="grp6" opacity="0" transform="translate(0 28)">
+                                <circle
+                                  id="oval1"
+                                  fill="#CC8EF5"
+                                  cx="2"
+                                  cy="7"
+                                  r="2"
+                                />
+                                <circle
+                                  id="oval2"
+                                  fill="#91D2FA"
+                                  cx="3"
+                                  cy="2"
+                                  r="2"
+                                />
+                              </g>
+                        
+                              <g id="grp3" opacity="0" transform="translate(52 28)">
+                                <circle
+                                  id="oval2"
+                                  fill="#9CD8C3"
+                                  cx="2"
+                                  cy="7"
+                                  r="2"
+                                />
+                                <circle
+                                  id="oval1"
+                                  fill="#8CE8C3"
+                                  cx="4"
+                                  cy="2"
+                                  r="2"
+                                />
+                              </g>
+                        
+                              <g id="grp2" opacity="0" transform="translate(44 6)">
+                                <circle
+                                  id="oval2"
+                                  fill="#CC8EF5"
+                                  cx="5"
+                                  cy="6"
+                                  r="2"
+                                />
+                                <circle
+                                  id="oval1"
+                                  fill="#CC8EF5"
+                                  cx="2"
+                                  cy="2"
+                                  r="2"
+                                />
+                              </g>
+                        
+                              <g id="grp5" opacity="0" transform="translate(14 50)">
+                                <circle
+                                  id="oval1"
+                                  fill="#91D2FA"
+                                  cx="6"
+                                  cy="5"
+                                  r="2"
+                                />
+                                <circle
+                                  id="oval2"
+                                  fill="#91D2FA"
+                                  cx="2"
+                                  cy="2"
+                                  r="2"
+                                />
+                              </g>
+                        
+                              <g id="grp4" opacity="0" transform="translate(35 50)">
+                                <circle
+                                  id="oval1"
+                                  fill="#F48EA7"
+                                  cx="6"
+                                  cy="5"
+                                  r="2"
+                                />
+                                <circle
+                                  id="oval2"
+                                  fill="#F48EA7"
+                                  cx="2"
+                                  cy="2"
+                                  r="2"
+                                />
+                              </g>
+                        
+                              <g id="grp1" opacity="0" transform="translate(24)">
+                                <circle
+                                  id="oval1"
+                                  fill="#9FC7FA"
+                                  cx="2.5"
+                                  cy="3"
+                                  r="2"
+                                />
+                                <circle
+                                  id="oval2"
+                                  fill="#9FC7FA"
+                                  cx="7.5"
+                                  cy="2"
+                                  r="2"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                        </label>
                         </div>
                     </div>
-                </a>
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel1"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel1"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
             </div>
+          </a>
         </div>
-        <div class="row">
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel5" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel6" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel6"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel6"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel7" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel7"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel7"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel2" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/Lakehouse2Crop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/SallonLake.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/OboriLake.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Kotor, Montenegro
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  154 kilometers away
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Jan 1-9
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$51</b> per night
+                </p>
+              </div>
             </div>
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel8" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel8"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel8"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
-        <div class="row">
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel9" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel9"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel9"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel10" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel10"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel10"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel11" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel11"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel11"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel3" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel3"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel3"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
             </div>
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel12" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel12"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel12"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
-        <div class="row" style="margin-bottom: 40px">
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel13" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel13"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel13"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel4" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel4"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel4"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
             </div>
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel14" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel14"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel14"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel5" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel5"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel5"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
             </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel6" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel6"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel6"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
 
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel15" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel15"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel15"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel7" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel7"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel7"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
             </div>
-            <div class="col">
-                <a href="PropertyPage_1.html" target="_blank" class="kartolina">
-                    <div class="card" class="kartolina"
-                        style="margin-top: 5rem; width: 300px; border: none; background-color: #f9f5eb;">
-                        <!--Carousel-->
-                        <div id="carousel16" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Foto/Lake/foto-lakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Shtepi modeste afer liqenit" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/Kitchen-lakeCrop .jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga kuzhina">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Foto/Lake/BedroomLakeCrop.jpg" class="d-block w-100 rounded-4"
-                                        alt="Pamja nga Dhoma e gjumit">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel16"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Pas</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel16"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Perpara</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"
-                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                Bacina, Croatia
-                            </h5>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                On Sladinac
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                Feb 3- 8
-                            </p>
-                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$81</b> per night
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel8" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel8"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel8"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel9" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel9"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel9"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel10" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel10"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel10"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel11" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel11"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel11"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel12" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel12"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel12"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 40px">
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel13" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel13"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel13"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel14" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel14"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel14"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel15" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel15"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel15"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+            <div
+              class="card"
+              class="kartolina"
+              style="
+                margin-top: 5rem;
+                width: 300px;
+                border: none;
+                background-color: #f9f5eb;
+              "
+            >
+              <!--Carousel-->
+              <div id="carousel16" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Foto/Lake/foto-lakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Shtepi modeste afer liqenit"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/Kitchen-lakeCrop .jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga kuzhina"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Foto/Lake/BedroomLakeCrop.jpg"
+                      class="d-block w-100 rounded-4"
+                      alt="Pamja nga Dhoma e gjumit"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel16"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Pas</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel16"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Perpara</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Bacina, Croatia
+                </h5>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  On Sladinac
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  Feb 3- 8
+                </p>
+                <p
+                  class="card-text"
+                  style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                >
+                  <b>$81</b> per night
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
     <footer class="footer">
-
-        <div class="footer-container">
-          <div class="first-footer-box">
-             <p class="title-text">Properties</p>
-             <a class="page-links" href="City.html">CITY</a>
-             <a class="page-links" href="Beachfront.html">BEACHFRONT</a>
-             <a class="page-links" href="Lake.html">LAKE</a>
-             <a class="page-links" href="Farms.html">FARMS</a>
-          </div>
-          <div class="second-footer-box">
-             <p class="title-text">Call us</p>
-             <p class="number">+383 334 0501</p>
-             <p class="title-text">E-mail us</p>
-             <a id="mail_link" href="mailto:someone@example.com"><p class="number mail_link">explore@rentify.com</p></a>
-          </div>
-          <div class="third-footer-box">
-             <a class="footer_button_link" href="Premium.html"><button class="review">RENTIFY+</button></a>
-             <div class="social">
-                 <a href="https://www.facebook.com/rentify/" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/facebook.png" height="30px" width="30px"></a>
-                 <a href="https://www.youtube.com/@airbnb" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/youtube.png" height="30px" width="30px" alt=""></a>
-                <a href="https://www.instagram.com/rentifyltd/?hl=en" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/instagram.png" height="30px" width="30px" alt=""></a>
-             </div>
-             <address class="adresa">2579 Elm St.
-              Orlando, USA</address>
-          </div>
+      <div class="footer-container">
+        <div class="first-footer-box">
+          <p class="title-text">Properties</p>
+          <a class="page-links" href="City.html">CITY</a>
+          <a class="page-links" href="Beachfront.html">BEACHFRONT</a>
+          <a class="page-links" href="Lake.html">LAKE</a>
+          <a class="page-links" href="Farms.html">FARMS</a>
         </div>
-        
-        <img class="copyright" src="Foto/copyright.png" height="22px" width="22px" alt="">
-        <p class="rights">RENTIFY | ALL RIGHTS RESERVED</p>
-        
-        </footer>
+        <div class="second-footer-box">
+          <p class="title-text">Call us</p>
+          <p class="number">+383 334 0501</p>
+          <p class="title-text">E-mail us</p>
+          <a id="mail_link" href="mailto:someone@example.com"
+            ><p class="number mail_link">explore@rentify.com</p></a
+          >
+        </div>
+        <div class="third-footer-box">
+          <a class="footer_button_link" href="Premium.html"
+            ><button class="review">RENTIFY+</button></a
+          >
+          <div class="social">
+            <a
+              href="https://www.facebook.com/rentify/"
+              class="social-media-link"
+              target="”_blank”"
+              ><img
+                class="icon-pic"
+                src="Foto/facebook.png"
+                height="30px"
+                width="30px"
+            /></a>
+            <a
+              href="https://www.youtube.com/@airbnb"
+              class="social-media-link"
+              target="”_blank”"
+              ><img
+                class="icon-pic"
+                src="Foto/youtube.png"
+                height="30px"
+                width="30px"
+                alt=""
+            /></a>
+            <a
+              href="https://www.instagram.com/rentifyltd/?hl=en"
+              class="social-media-link"
+              target="”_blank”"
+              ><img
+                class="icon-pic"
+                src="Foto/instagram.png"
+                height="30px"
+                width="30px"
+                alt=""
+            /></a>
+          </div>
+          <address class="adresa">2579 Elm St. Orlando, USA</address>
+        </div>
+      </div>
 
+      <img
+        class="copyright"
+        src="Foto/copyright.png"
+        height="22px"
+        width="22px"
+        alt=""
+      />
+      <p class="rights">RENTIFY | ALL RIGHTS RESERVED</p>
+    </footer>
 
     <script src="Bts-js/bootstrap.js"></script>
-</body>
-
+  </body>
 </html>
