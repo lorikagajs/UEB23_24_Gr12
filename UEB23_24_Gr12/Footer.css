@@ -113,3 +113,7 @@
     text-align: center;
     margin-top: 230px;
 }
+.rights::after{
+    content: "ALL RIGHTS RESERVED";
+    color: white;
+}

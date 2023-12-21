@@ -197,7 +197,3 @@ form{
    color: #002B5B;
    border: #002B5B 1px solid;
 }
-.rights::after{
-    content: "ALL RIGHTS RESERVED";
-    color: white;
-}
