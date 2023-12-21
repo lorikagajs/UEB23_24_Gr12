@@ -54,10 +54,10 @@ input:focus {
 a{
     text-decoration: none;
 }
-.signup{
+#signup{
     color: #EA5455;
 }
-
+.sihnup:hover
 input::placeholder {
     color: #999; 
 }
@@ -79,6 +79,7 @@ p{
 }
 .submit:hover{
     background-color: #EA5455;
+    transition: 1s;
 }
 h3{
     font-size: small;
