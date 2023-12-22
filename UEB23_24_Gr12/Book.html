@@ -7,7 +7,7 @@
    
     <link rel="stylesheet" href="Bts-css/bootstrap.css">
     <link rel="stylesheet" href="Book.css">
-    <link rel="stylesheet" href="Navbar.css">
+   
     <link rel="stylesheet" href="footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 <body>
     <!-- Main Screen-->
 
-<div class="first-box" style="background-color:#f9f5eb ;height: 91px;">
+<div class="first-box" style="background-color:#002B5B ;height: 91px;">
     <!-- Navbar -->
     <nav id="navigation-bar">
         <a href="Home.html" class="logo">
@@ -54,10 +54,10 @@
 <br>
 <h1 ><b><em>Book your dream house</em><b></b></h1>
 <p>We always aim to cinfirm your order within 3 hours.</p>
-<br>
 
 
-<div class="container-fluid" style="height: 700px;">
+
+<div class="container-fluid">
        <div class="row">
          <div class="col-md-1"></div>
           <div class="col-md-6">
@@ -110,24 +110,20 @@
            </div>
            <div class="row">
             <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6">
+                
+                    
               <br>
               <label for="radio" style="font-weight: bold;">Payment: &nbsp &nbsp &nbsp &nbsp</label>
-              <input type="radio"> <label class="form-check-label" for="flexRadioDefault1">
-                Cash &nbsp &nbsp
+              <input type="radio" id="cash" name="payment" checked> <label class="form-check-label" for="cash">
+                Cash  &nbsp &nbsp
               </label>
-              <input type="radio" id="radioBank"> <label class="form-check-label" for="flexRadioDefault1">
+              <input type="radio" class="radio" id="banke" name="payment" > <label class="form-check-label" for="bank">
                 Bank
               </label>
-                    </div>
-                    <div class="col-md-6">
-                        <br>
-                <input type="text" id="bank" class="classinput" placeholder="Bank Number" disabled>
-                    </div>
+              <input style="width:50%;float: right;" type="text" id="bank" class="classinput" placeholder="Bank Number">
               
-                 
-                </div>
+                    <br>
+                
                 <label for="exampleFormControlTextarea1" class="form-label"></label>
                <textarea class="classinput" id="exampleFormControlTextarea1" placeholder="Any comment..." rows="2"></textarea>
                <br>
@@ -159,21 +155,16 @@
        <div class="col-md-1"></div>
        </div>
     </div>
-
-
   
-    <div class="submit-buttoni">
-    <button type="submit" ><div class="book-button">
-      <p>SUBMIT BOOKING</p>
-    
-  </button></div>
+ <div class="submit-buttoni">
+    <button class="submitButton" id="buttoni">Make it yours
+    </button>
+  </div>
 
      
 
     <script>
-
-        
-
+    
     </script>
     
 </body>
