@@ -55,6 +55,9 @@
 </head>
 
 <body style="background-color: #f9f5eb">
+    <audio id="Like">
+        <source src="Sounds/Facebook Like Sound Effect (1080p60).mp3" type="audio/mpeg">
+    </audio>
 
     <!-- Navbar -->
     <nav id="navigation-bar">
@@ -125,7 +128,7 @@
                              <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox1" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox1" />
                     <label for="checkbox1">
                       <svg
                         id="heart-svg"
@@ -326,7 +329,7 @@
                              <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox2" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox2" />
                     <label for="checkbox2">
                       <svg
                         id="heart-svg"
@@ -527,7 +530,7 @@
                              <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox3" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox3" />
                     <label for="checkbox3">
                       <svg
                         id="heart-svg"
@@ -726,7 +729,7 @@
                              <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox4" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox4" />
                     <label for="checkbox4">
                       <svg
                         id="heart-svg"
@@ -927,7 +930,7 @@
                              <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox5" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox5" />
                     <label for="checkbox5">
                       <svg
                         id="heart-svg"
@@ -1127,7 +1130,7 @@
                              <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox6" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox6" />
                     <label for="checkbox6">
                       <svg
                         id="heart-svg"
@@ -1328,7 +1331,7 @@
                              <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox7" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox7" />
                     <label for="checkbox7">
                       <svg
                         id="heart-svg"
@@ -1529,7 +1532,7 @@
                          <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox8" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox8" />
                     <label for="checkbox8">
                       <svg
                         id="heart-svg"
@@ -1730,7 +1733,7 @@
                          <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox9" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox9" />
                     <label for="checkbox9">
                       <svg
                         id="heart-svg"
@@ -1930,7 +1933,7 @@
                          <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox10" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox10" />
                     <label for="checkbox10">
                       <svg
                         id="heart-svg"
@@ -2131,7 +2134,7 @@
                          <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox11" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox11" />
                     <label for="checkbox11">
                       <svg
                         id="heart-svg"
@@ -2331,7 +2334,7 @@
                          <!--SVG-->
                 <div class="overlay">
                     <div class="overlay-content">
-                    <input type="checkbox" class="checkbox" id="checkbox12" />
+                    <input type="checkbox" class="checkbox" onclick="playAudio()" id="checkbox12" />
                     <label for="checkbox12">
                       <svg
                         id="heart-svg"
@@ -2537,9 +2540,13 @@
 
     <script src="Bts-js/bootstrap.js"></script>
     <script>
-        function playsound(){
-            
+        
+        var x =document.getElementById("Like");
+
+        function playAudio(){
+            x.play();
         }
+
     </script>
 </body>
 
