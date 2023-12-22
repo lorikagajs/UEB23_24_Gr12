@@ -121,14 +121,38 @@ label{
     opacity: 1;
   }
 
+  #telephone{
+    height: 300px;
+    width: 300px;
+
+    border-radius: 50%;
+    border:#F9F5EB solid 1px;
+    position: relative;
+    padding:70px;
+    margin-left: 150px;
+   
+}
 
 
-
+h2{
+    font-family: "Playfair Display", sans-serif;
+    text-decoration:none;
+    margin-top: 25px;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 25px;
+    color:#f9f5eb;
+    font-weight: 100;
+}
+div a{
+     text-decoration:none;
+}
 
 
 
 
 /*navbar            #002B5B  #F9F5EB */
+
 
 #navigation-bar{
     position: relative;
