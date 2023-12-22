@@ -59,14 +59,24 @@ nav#navigation-bar{
     border: 1px solid #002B5B;
  
 }
+
 h3.winner{
     color: #002B5B;
     font-family: 'Montserrat', sans-serif;
   position: relative;
  bottom: 20%;
- }
+}
  .sec2 img{
     position: relative;
     top: 10%;
     align-self: center;
  }
+ .kartolina{
+
+    width:15rem;
+    margin-top: 5rem;
+    text-decoration: none;
+}
+.card-body p,.card-body h5{
+    color: #002B5B !important;
+    }
