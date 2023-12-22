@@ -10,7 +10,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="Bts-css/bootstrap.css" />
-
+<style>
+     .carousel-inner {
+       border-radius: 15px;
+          overflow: hidden;
+        }
+        
+        .carousel-item img {
+          width: 100%;
+          border-radius: 15px;
+          transition: transform 0.3s;
+          transition-timing-function: ease ;
+        }
+    
+        .carousel-inner .active {
+          transform: translateX(0);
+        }
+    
+        .carousel-inner .next {
+          transform: translateX(100%);
+        }
+    
+        .carousel-inner .prev {
+          transform: translateX(-100%);
+        }
+        .carousel-inner > .carousel-item > img {
+   width:640px;
+   height:260px;
+   object-fit:cover;
+ }
+ 
+</style>
 </head>
 <body>
     <nav id="navigation-bar">
@@ -59,52 +89,290 @@
         <div class="container-fluid" style="width: 90%">
             <div class="row" style="margin-top: 4rem;">
                 <div class="col">
-                    <a href="CityProperty_1.html"  class="kartolina">
+                    <a href="LakeProperty_12.html" class="kartolina">
+                      <div
+                        class="card"
+                        class="kartolina"
+                        style="
+                          width: 300px;
+                          border: none;
+                          background-color: #f9f5eb;
+                        "
+                      >
+                        <!--Carousel-->
+                        <div id="carousel12" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img
+                                src="Foto/Lake/Lake 12/1.jpeg"
+                                class="d-block w-100 rounded-4"
+                                alt="Shtepi modeste afer liqenit"
+                              />
+                            </div>
+                            <div class="carousel-item">
+                              <img
+                                src="Foto/Lake/Lake 12/2.jpeg"
+                                class="d-block w-100 rounded-4"
+                                alt="Pamja nga kuzhina"
+                              />
+                            </div>
+                            <div class="carousel-item">
+                              <img
+                                src="Foto/Lake/Lake 12/3.jpeg"
+                                class="d-block w-100 rounded-4"
+                                alt="Pamja nga Dhoma e gjumit"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carousel12"
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Pas</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carousel12"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Perpara</span>
+                          </button>
+                        </div>
+                        <div class="card-body">
+                          <h5
+                            class="card-title"
+                            style="
+                              font-family: 'Montserrat', sans-serif;
+                              font-weight: bold;
+                              margin-bottom: 2px;
+                            "
+                          >
+                            Vera, Spain
+                          </h5>
+                          <p
+                            class="card-text"
+                            style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                          >
+                            Salar de Los Carros
+                          </p>
+                          <p
+                            class="card-text"
+                            style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                          >
+                            Jan 1 - 6
+                          </p>
+                          <p
+                            class="card-text"
+                            style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                          >
+                            <b>$186</b> per night
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                <div class="col">
+                    <a href="PropertyPage_1.html" target="_blank" class="kartolina">
                         <div class="card" class="kartolina"
                             style=" width: 300px; border: none; background-color: #f9f5eb;">
-                            <!--Carousel1-->
-                            <div id="carousel1" class="carousel slide">
+                            <!--Carousel-->
+                            <div id="carouseltop2" class="carousel slide">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="Foto/City/City 1/CityHouse1.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                        <img src="Foto/Beach/Beach 6/Exterior.jpg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="Foto/City/City 1/SallonCity.jpg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                        <img src="Foto/Beach/Beach 6/Bedroom.jpeg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="Foto/City/City 1/BedroomCity1.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                        <img src="Foto/Beach/Beach 6/Banjo.jpg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouseltop2"
                                     data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Pas</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouseltop2"
                                     data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Perpara</span>
                                 </button>
-                            </div>
+                            </div>                        
                             <div class="card-body">
                                 <h5 class="card-title"
                                     style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
-                                    Graz, Austria
+                                    Nuestra Sra de Jesus, Spain
                                 </h5>
                                 <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                    348 kilometers away
+                                    19 min walk to Ibiza Playfest
                                 </p>
                                 <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                    Mar 4- Apr 4
+                                    Jun 13- 28
                                 </p>
                                 <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                    <b>$124</b> per night
+                                    <b>$681</b> per night
                                 </p>
                             </div>
                         </div>
                     </a>
                 </div>
     
+                <div class="col">
+                    <a href="PropertyPage_1.html" target="_blank" class="kartolina">
+                        <div class="card" class="kartolina"
+                            style=" width: 300px; border: none; background-color: #f9f5eb;">
+                            <!--Carousel-->
+                            <div id="carouseltop3" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Foto/Farm/Farm 8/exterior6.jpeg" class="d-block w-100 rounded-4" alt="Shtepi modeste afer liqenit"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Farm/Farm 8/interior.jpeg" class="d-block w-100 rounded-4" alt="Pamja nga kuzhina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Foto/Farm/Farm 8/interior13.jpeg" class="d-block w-100 rounded-4" alt="Pamja nga Dhoma e gjumit">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouseltop3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Pas</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouseltop3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Perpara</span>
+                            </button>
+                        </div>
+                    
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-family: 'Montserrat', sans-serif;font-weight: bold;margin-bottom: 2px;">
+                                Okinawa, Japan
+                            </h5>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Near Kadena Shinto Shrine
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                Sept 2- 23
+                            </p>
+                            <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
+                                <b>$67</b> per night
+                            </p>
+                        </div>
+                </div></a>
+            </div>
+
+            <div class="col">
+                <a href="LakeProperty_11.html" class="kartolina">
+                  <div
+                    class="card"
+                    class="kartolina"
+                    style="
+                      width: 300px;
+                      border: none;
+                      background-color: #f9f5eb;
+                    "
+                  >
+                    <!--Carousel-->
+                    <div id="carouseltop4" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="Foto/Lake/Lake 11/1.jpeg"
+                            class="d-block w-100 rounded-4"
+                            alt="Shtepi modeste afer liqenit"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="Foto/Lake/Lake 11/2.jpeg"
+                            class="d-block w-100 rounded-4"
+                            alt="Pamja nga kuzhina"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="Foto/Lake/Lake 11/3.jpeg"
+                            class="d-block w-100 rounded-4"
+                            alt="Pamja nga Dhoma e gjumit"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouseltop4"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Pas</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouseltop4"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Perpara</span>
+                      </button>
+                    </div>
+                    <div class="card-body">
+                      <h5
+                        class="card-title"
+                        style="
+                          font-family: 'Montserrat', sans-serif;
+                          font-weight: bold;
+                          margin-bottom: 2px;
+                        "
+                      >
+                        Porto, Portugal
+                      </h5>
+                      <p
+                        class="card-text"
+                        style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                      >
+                        Lake Sao Joao Baptista
+                      </p>
+                      <p
+                        class="card-text"
+                        style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                      >
+                        Feb 23- 28
+                      </p>
+                      <p
+                        class="card-text"
+                        style="font-family: 'Montserrat', sans-serif; margin: 2px"
+                      >
+                        <b>$100</b> per night
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+    
+    </div>
     </div>
     </body>
     

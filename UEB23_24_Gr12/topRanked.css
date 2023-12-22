@@ -58,13 +58,22 @@ nav#navigation-bar{
  
 }
  h2{
-    color: #002B5B;
-    font-family: 'Montserrat', sans-serif;
-  position: relative;
-bottom: 20%;
+    color: #002B5B !important;
+    font-family: 'Montserrat', sans-serif !important;
+  position: relative !important;
+bottom: 20% !important;
  }
  .sec2 img{
     position: relative;
     top: 10%;
     align-self: center;
  }
+ .kartolina{
+
+    width:15rem;
+    margin-top: 5rem;
+    text-decoration: none;
+}
+.card-body p,.card-body h5{
+    color: #002B5B !important;
+    }
