@@ -16,6 +16,11 @@
     <link href="https://db.onlinewebfonts.com/c/a163d087c4bfdff182eb1b4fcc595798?family=Sansation+Light" rel="stylesheet">
   </head>
 <body>
+
+  <!-- Audio File -->
+  <audio id="Subscribe">
+    <source src="Sounds/Subscribe.mp3" type="audio/mpeg">
+  </audio>
 <!-- Main Screen-->
 <main class="first-box">
     <!-- Navbar -->
@@ -136,7 +141,7 @@
 
  <form action="#">
      <input id="email" class="input" type="text" placeholder="E-mail" required>
-     <button id="subscribeButton" class="subscribe">SUBSCRIBE</button>
+     <button id="subscribeButton" class="subscribe" onclick="playAudio">SUBSCRIBE</button>
  </form>
 </section>
 
@@ -176,6 +181,7 @@
 <!-- end of footer -->
 
 <script>
+    var x =document.getElementById("Subscribe");
   function validateSubscribeForm() {
     var email = document.getElementById('email').value;
 
@@ -190,7 +196,9 @@
     if (!validateSubscribeForm()) {
       event.preventDefault(); // se lejon me submit
     }
-  });
+    x.play();
+}
+);
 </script>
 
 </body>
