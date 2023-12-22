@@ -83,19 +83,70 @@ label{
 }
 
 
-.choseTheFile{
-   background-color: aqua;
-  
-   width: 100%;
-    border-width: 10px;
+.choseThePhoto{
+
+    height: 40%;
+    width: 100%;
+    border-width: 1px;
     border-color:black;
     position: relative; 
+    border-style:solid;
+    text-align: center;
+    align-items: center;
+
+    color: var(--bs-body-color);
    
     padding-top: 8px;
+
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
   
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
 }
 
-
+.choseTheVideo{
+    margin-top: 55px;
+     height: 40%;
+     width: 100%;
+     border-width: 1px;
+     border-color:black;
+     position: relative; 
+     border-style:solid;
+     text-align: center;
+     align-items: center;
+ 
+     color: var(--bs-body-color);
+    
+     padding-top: 8px;
+ 
+     display: block;
+     width: 100%;
+     padding: 0.375rem 0.75rem;
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1.5;
+     color: var(--bs-body-color);
+   
+     appearance: none;
+     background-color: var(--bs-body-bg);
+     background-clip: padding-box;
+     border: var(--bs-border-width) solid var(--bs-border-color);
+     border-radius: var(--bs-border-radius);
+     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ 
+ }
+ 
 
 .square{
    
