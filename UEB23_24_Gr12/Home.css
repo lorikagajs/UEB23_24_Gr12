@@ -7,9 +7,10 @@ body{
    position: relative;
    bottom: 120px;
    margin: 0;
-   background-image: url(Foto/b5530da5-f592-48cc-b555-39865e9696fb.jpg);
+   background-image: url(Foto/Home-pic.jpg);
    background-attachment: fixed;
    background-size: cover;
+   background-origin: content-box;
    height: 950px;
 }
 .sub-title{
@@ -196,4 +197,7 @@ form{
    background-color: rgb(211, 205, 205);
    color: #002B5B;
    border: #002B5B 1px solid;
+}
+.second-box-item{
+    outline: #002B5B 1px solid;
 }

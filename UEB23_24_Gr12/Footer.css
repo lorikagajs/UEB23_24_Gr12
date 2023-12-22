@@ -85,7 +85,7 @@
 .review{
     background-color: #E4DCCF;
     color: #002B5B;
-    border: 1px #002B5B solid;
+    border: 3px #E4DCCF dotted;
     font-size: 18px;
     position: absolute;
     left: 1020px;
@@ -117,3 +117,4 @@
     content: "ALL RIGHTS RESERVED";
     color: white;
 }
+
