@@ -11,7 +11,7 @@ body{
 
 .sec1 {
     position: relative;
-    height: 85vh;
+    height: 90vh;
 }
 
 .titulli{
@@ -24,8 +24,10 @@ body{
    text-shadow: 2px 2px 4px rgb(0, 43, 91);
 }
 nav#navigation-bar{
+    padding: 45px 0px 45px 0px;
     background-color: rgb(249, 245, 235);
     top: 0px;
+  
 }
 .sec1::before {
     content: '';
@@ -40,12 +42,12 @@ nav#navigation-bar{
 .sec2 {
     background-image: 
        linear-gradient(rgba(249, 245, 235, 0.2), rgba(249, 245, 235, 0.2)),
-       url('Foto/City/City 1/BedroomCity1.jpg'),
-       url('Foto/City/City 1/SallonCity.jpg');
+       url('Foto/City/City 4/BedroomCity3.jpg'),
+       url('Foto/City/City 3/CityHouse3.jpg');
     background-size: cover, auto, auto;
     background-position: center, left top, right top;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    color: #F9F5EB;
+    color: #002B5B;
     padding: 20px;
     margin: 20px;
     height: 400px;
@@ -57,11 +59,11 @@ nav#navigation-bar{
     border: 1px solid #002B5B;
  
 }
- h2{
+h3.winner{
     color: #002B5B;
     font-family: 'Montserrat', sans-serif;
   position: relative;
-bottom: 20%;
+ bottom: 20%;
  }
  .sec2 img{
     position: relative;
