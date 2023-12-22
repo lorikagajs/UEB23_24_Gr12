@@ -5,7 +5,7 @@ body{
     background-color: #F9F5EB;
 }
 @font-face {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display test';
     src: url(Fonts/static/PlayfairDisplay-Regular.ttf);
 }
 
@@ -14,13 +14,13 @@ body{
     height: 85vh;
 }
 
-h1{
+.titulli{
     color:#F9F5EB;
     font-size: 70px;
     position: absolute;
     top: 35vh;
     left:40vh;
-   font-family: 'Playfair Display', sans-serif;
+   font-family: 'Playfair Display test', sans-serif;
    text-shadow: 2px 2px 4px rgb(0, 43, 91);
 }
 nav#navigation-bar{
