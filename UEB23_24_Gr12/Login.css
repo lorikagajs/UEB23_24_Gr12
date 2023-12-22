@@ -26,7 +26,7 @@ body::before {
 }
 .cont{
     width: 700px;
-    background: linear-gradient(to bottom, #ffffff, #E4DCCF);
+    background: linear-gradient(to bottom, #ffffff, #cabba2);
     border-radius: 10px;
     box-shadow: 5px, 5px, 10px,#66635e;
     display: flex;
@@ -37,7 +37,7 @@ body::before {
 
 }
 .cont1{
-    background: radial-gradient(circle, #ffffff, #E4DCCF);
+    background: radial-gradient(circle, #ffffff, #cabba2);
     padding: 20px;
 
 }
