@@ -1,0 +1,29 @@
+*{
+    margin:0;
+}
+
+body{
+    background-color: #F9F5EB;
+
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(Fonts/static/PlayfairDisplay-Regular.ttf);
+}
+
+.sec1 {
+    position: relative;
+    margin: 0;
+    height: 85vh;
+
+}
+
+h1{
+    color:#F9F5EB;
+    font-size: 70px;
+    position: absolute;
+    top: 35vh;
+    left:40vh;
+   font-family: 'Playfair Display', sans-serif;
+   text-shadow: 2px 2px 4px #002B5B;
+}
