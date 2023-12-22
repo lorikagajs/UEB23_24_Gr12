@@ -1,38 +1,85 @@
 body{
     background-color: #F9F5EB;
 }
+.container{
+    margin: 7% 10%;
+}
+.property-title{
+    color: #002B5B;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+.karouseli{
+   width: 1120px;
+   height: 700px;
+}
 .info-card{
-    
-    margin-left: 25px;
-  margin-right: 100px;
-  padding-bottom: 75px;    
+  margin-left: 50px;
+  background-color:#F9F5EB ;
+  height: 480px;
+  color: #002B5B;
+  border: #002B5B 1px solid;
+  box-shadow: #002B5B 1px 1px 5px;
 }
 .button{
-    background-color: #002B5B;
-    border-radius: 40px;
+    background-color: #EA5455;
+    border-radius: 10px;
     width: 150px;
-    height: 35px;
-    position: relative; 
-    bottom: 10px; 
-    left: 40px;
+    height: 40px;
+    position: relative;  
+    top: 30px;
+    left: 50px;
     transition: background-color .5s ease;
     text-align: center;
+    padding-top: 7px;
+}
+.rooms-title{
+    color: #002B5B;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+}
+span{
+    color: #EA5455;
+    font-weight: 700;
+}
+.property-description{
+    color: #002B5B;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 600px;
+    text-align: left;
+    position: relative;
+    bottom: 30px;
+    left: 10px;
 }
 .button:hover{
-    background-color: #EA5455;
+    background-color: #002B5B;
 }
 .button:active{
     background-color: #002B5B;
 }
-.card-button{
-    
+.card-button{ 
     text-decoration: none;  
-    color: aliceblue;
-   
+    color:#F9F5EB ;
 }
-
 .location{
-    width: 8%;
-    margin: auto;
-    padding: 20px 20px 300px 0px;
+    position: relative;
+    right: 90px;
+}
+.location-title{
+    color: #002B5B;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+.harta{
+ position: relative;
+ bottom: 150px;
 }
