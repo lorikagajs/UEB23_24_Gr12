@@ -1,10 +1,5 @@
 *{
-    margin:0;
-}
-
-body{
-    background-color: #F9F5EB;
-
+    margin:0px;
 }
 @font-face {
     font-family: 'Playfair Display';
@@ -13,9 +8,7 @@ body{
 
 .sec1 {
     position: relative;
-    margin: 0;
     height: 85vh;
-
 }
 
 h1{
@@ -26,4 +19,18 @@ h1{
     left:40vh;
    font-family: 'Playfair Display', sans-serif;
    text-shadow: 2px 2px 4px #002B5B;
+}
+nav#navigation-bar{
+    background-color: #F9F5EB;
+    top: 0px;
+}
+.sec1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2); 
+    z-index: 1; 
 }
