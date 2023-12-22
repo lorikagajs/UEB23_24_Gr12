@@ -21,7 +21,7 @@ h1{
    text-shadow: 2px 2px 4px #002B5B;
 }
 nav#navigation-bar{
-    background-color: #F9F5EB;
+    background-color: rgb(249, 245, 235);
     top: 0px;
 }
 .sec1::before {
@@ -31,6 +31,6 @@ nav#navigation-bar{
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgba(249, 245, 235, 0.2); 
     z-index: 1; 
 }
