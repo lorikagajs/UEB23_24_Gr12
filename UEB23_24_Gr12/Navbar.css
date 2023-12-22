@@ -30,7 +30,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     position: relative;
-    left: 400px;
+    left: 380px;
     margin-right: 70px;
     display: inline;
     cursor: pointer;
@@ -56,7 +56,7 @@
     display: none;
     position: absolute;
     top: 20px;
-    left: 335px;
+    left: 315px;
     background-color: #F9F5EB;
     min-width: 230px;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
@@ -88,7 +88,7 @@
     width: 150px;
     height: 45px;
     position: relative; 
-    bottom: 8px; 
+    bottom: 5px; 
     left: 30px;
     transition: background-color .5s ease;
 }
@@ -108,7 +108,7 @@
 }
 .b3{
     position: relative;
-    left: 120px;
+    left: 150px;
 }
 .navbar-link{
     text-decoration: none;

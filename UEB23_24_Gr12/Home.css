@@ -125,7 +125,8 @@ body{
    font-size: 18px;
    width: 350px;
    position: relative;
-    left: 70px;
+   left: 70px;
+   word-wrap: normal;
  }
 
 

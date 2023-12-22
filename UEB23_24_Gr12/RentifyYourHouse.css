@@ -1,0 +1,119 @@
+h1{
+    font-family: "Playfair Display", sans-serif;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 65px;
+    color:#002B5B;
+}
+label{
+    font-family: "Playfair Display", sans-serif;
+
+    color: #002B5B;
+
+  
+    font-size: 20px;
+
+}
+
+#aaa{
+    font-family: "Playfair Display", sans-serif;
+    text-decoration: none;
+    color: #5b005b;
+
+  
+    font-size: 20px;
+
+
+}
+
+#Tabela{
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat; 
+   
+    color: #002B5B;
+    text-shadow: rgb(255, 255, 255) 5px 5px 6px;
+    text-align: center;
+    height:220px;
+  
+    
+}
+
+
+
+#Hyrje{
+
+
+    margin: 0;
+    height:350px
+
+}
+#backphoto{
+    margin: 0;
+    position: relative;
+    
+    background-image: url(Foto/42554.jpg);
+    background-size: cover;
+}
+
+.paragraph{
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: "Playfair Display", sans-serif;
+
+}
+
+.StartL{
+    background-color:  #EA5455;;
+    border-radius: 60px;
+    width: 225px;
+    height: 67px;
+    position: relative; 
+    bottom: 12px; 
+ padding-top: 8px;
+    transition: background-color .5s ease;
+    margin-left: 700px;
+}
+
+.StartL:hover{
+    background-color: #002B5B;
+}
+.StartL:active{
+    background-color: #EA5455;
+}
+
+
+.choseTheFile{
+   background-color: aqua;
+  
+   width: 100%;
+    border-width: 10px;
+    border-color:black;
+    position: relative; 
+   
+    padding-top: 8px;
+  
+}
+
+
+
+.square{
+   
+     border: none;
+    background-color:#E4DCCF;
+    color:  #002B5B;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 100px;
+    font-family: 'Playfair Display', sans-serif;
+    margin-left:200px;
+    margin-right:200px;
+
+}
+h2{
+    font-family: "Playfair Display", sans-serif;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 30px;
+    color:#002B5B;
+}

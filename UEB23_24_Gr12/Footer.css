@@ -86,14 +86,14 @@
     background-color: #E4DCCF;
     color: #002B5B;
     border: 3px #E4DCCF dotted;
-    font-size: 18px;
+    font-size: 16px;
     position: absolute;
     left: 1020px;
     margin-top: 100px;
     transition: opacity .5s ease;
-    border-radius: 40px;
-    width: 150px;
-    height: 45px;
+    border-radius: 10px;
+    width: 155px;
+    height: 58px;
     transition: background-color .5s ease;
     font-family: 'Montserrat', sans-serif;    
 }
