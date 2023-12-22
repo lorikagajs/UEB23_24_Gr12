@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
-<body style="background-color: #f9f5eb">
+<body>
     <!-- Main Screen-->
 <div id="backphoto" style="padding-bottom: 200px;">
 
@@ -72,44 +72,45 @@
 
 </div>
 </div>
-
-
 </div>  
 
-<hr id="gotoRentify">
-<div class="container-fluid"  id="Tabela" >
-<table style="border: none;  width: 100%;" >
-   
-    <tr> <th style="text-align: center; font-size: 45px; " colspan="7">Expand your wealth</th>
-    </tr><tr></tr>
+
+
+
+<br id="gotoRentify">
+<div class="container-fluid"  id="Tabela">
+
+<!--tabela-->
+<table style="width:100%">
+    <tr> <th style="text-align: center; font-size: 45px; " colspan="3" >Expand your wealth</th>
+    </tr>
     <tr>
-        <td></td>
+        
         <td style="font-weight: bold; font-size:56px"> 2/3 </td>
-        <td></td>
+        
     <td style="font-weight: bold; font-size:56px"> 48%</td>
-    <td></td>
+   
     <td style="font-weight: bold; font-size:56px">33%</td>
-    <td></td>
+    
 </tr>
 <tr>
-    <td></td>
+    
     <td style="font-size:18px">of vacation rental guests return to book with us again</td>
-<td></td>
-    <td style="font-size:18px">of nights booked on Booking.com in 2022 were for international stays</td><td></td>
-    <td style="font-size:18px">of vacation rental customers are Genius loyalty level 2 or 3 who tend to spend more per booking</td><td></td>
+
+    <td style="font-size:18px">of nights booked on Booking.com in 2022 were for international stays</td>
+    <td style="font-size:18px">of vacation rental customers are Genius loyalty level 2 or 3 who tend to spend more per booking</td>
 </tr>
-<tr style="font-size: 40px;"></tr>
-<tr style="font-size: 40px;"></tr>
+
 </table>
 </div>
-<hr>
 
-
+<br>
+<br>
  
 <br>
 
 <h2>Please read the terms and conditions first</h2>
-<mark style="background-color: rgba(201, 141, 12, 0.337); margin-left: 30px;">You must be <a href="Login.html">logged</a> in in order to list your house. </mark>
+<mark>You must be <a href="Login.html">logged</a> in in order to list your house. </mark>
 <br>
 <br>
 
@@ -140,7 +141,7 @@
 
      </div>
      <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Describe in detail..." rows="5"></textarea>
+               <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Describe in detail..." rows="6"></textarea>
                <label class="form-check-label" for="gridCheck">
                Plase read terms and conditions:&nbsp&nbsp
                <input class="form-check-input" type="checkbox" id="gridCheck" disabled> 
@@ -154,18 +155,17 @@
     </div>
     <div class="col-md-3" >
         <br>
-       <div class="choseThePhoto">
-        <input type="file" id="actual-btn" hidden/>
-        <label style="padding-top: 60px;" for="actual-btn">Choose Photos</label>
+       <div >
+        <button class="choseThePhoto"  onclick="document.getElementById('getFile').click()">Chose Photos</button>
+        <input type='file' id="getFile" style="display:none" multiple>
 
         
 
        </div>
-       <div class="choseTheVideo">
-        <input type="file" id="actual-btn" hidden/>
-        <label style="padding-top: 60px;" for="actual-btn">Choose Videos</label>
+       <div>
+        <button class="choseTheVideo" onclick="document.getElementById('getFile').click()">Chose Videos</button>
+        <input type='file' id="getFile" style="display:none" multiple>
 
-        
 
        </div>
     
@@ -266,11 +266,7 @@
 
 
     <script>
-        let canvas = document.getElementById("myCanvas");
-        let ctx = canvas.getContext("2d");
-        ctx.fillStyle = "#FF0000";
-        ctx.fillRect(0, 0, 80, 80);
-
+        
         </script>
 
 </body>
