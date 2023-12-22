@@ -44,8 +44,9 @@ body{
     bottom: 30px;
     left: 10px;
 }
-.price-tag{
+span{
     color: #EA5455;
+    font-weight: 700;
 }
 .property-description{
     color: #002B5B;

@@ -1,3 +1,6 @@
+body{
+background-color: #f9f5eb;
+}
 h1{
     font-family: "Playfair Display", sans-serif;
     margin-left: 30px;
@@ -27,16 +30,42 @@ label{
 }
 
 #Tabela{
-    margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat; 
-   
-    color: #002B5B;
-    text-shadow: rgb(255, 255, 255) 5px 5px 6px;
     text-align: center;
-    height:220px;
-  
+    height:250px;
     
+}
+table {
+   
+    border-radius: 10px;
+  }
+
+th{
+    color: #002B5B;    
+}
+td{
+    border-spacing: 2px;
+    border-color:#002B5B;
+    border-width: 1px;
+    margin:10px;
+    border-style: solid;
+  
+    border-top: none;
+    border-bottom: none;
+    border-spacing: 60px;
+
+    border-radius: 10px;
+
+    background-color:#f9f5eb; 
+    color: #002B5B;
+    padding-top: 5px;
+   padding-bottom: 10px;
+   padding-left: 5px;
+    padding-right: 5px
+}
+mark{
+    background-color: rgba(231, 161, 10, 0.216);
+    margin-left: 30px;
+
 }
 
 
@@ -44,16 +73,16 @@ label{
 #Hyrje{
 
 
-    margin: 0;
+
     height:350px
 
 }
 #backphoto{
-    margin: 0;
+  
     position: relative;
     
     background-image: url(Foto/42554.jpg);
-    background-size: cover;
+    
 }
 
 .paragraph{
@@ -66,7 +95,8 @@ label{
 .StartL{
     background-color:  #EA5455;;
     border-radius: 60px;
-    width: 225px;
+    margin-left: 90%;
+    margin-right: 150px;
     height: 67px;
     position: relative; 
     bottom: 12px; 
@@ -85,7 +115,7 @@ label{
 
 .choseThePhoto{
 
-    height: 40%;
+    height: 178px;
     width: 100%;
     border-width: 1px;
     border-color:black;
@@ -101,7 +131,7 @@ label{
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
     color: var(--bs-body-color);
@@ -116,8 +146,8 @@ label{
 }
 
 .choseTheVideo{
-    margin-top: 55px;
-     height: 40%;
+    margin-top: 38px;
+     height: 160px;
      width: 100%;
      border-width: 1px;
      border-color:black;
@@ -133,7 +163,7 @@ label{
      display: block;
      width: 100%;
      padding: 0.375rem 0.75rem;
-     font-size: 1rem;
+     font-size: 20px;
      font-weight: 400;
      line-height: 1.5;
      color: var(--bs-body-color);
@@ -147,6 +177,20 @@ label{
  
  }
  
+ .choseThePhoto:hover{
+    border-color:#002B5B;
+    border-width: 3px;
+    font-size: 23px;
+    transition: font-size .5s ease;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+ .choseTheVideo:hover{
+    border-color:#002B5B;
+    border-width: 3px;
+    font-size: 23px;
+    transition: font-size .5s ease;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
 
 .square{
    
@@ -159,7 +203,8 @@ label{
     font-family: 'Playfair Display', sans-serif;
     margin-left:200px;
     margin-right:200px;
-
+    box-shadow: 15px 15px rgba(264, 164, 20, 0.126);
+    
 }
 h2{
     font-family: "Playfair Display", sans-serif;
