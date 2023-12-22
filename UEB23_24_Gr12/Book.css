@@ -121,7 +121,8 @@ label{
     opacity: 1;
   }
 
-  #telephone{
+
+#telephone{
     height: 300px;
     width: 300px;
 
@@ -138,7 +139,7 @@ h2{
     font-family: "Playfair Display", sans-serif;
     text-decoration:none;
     margin-top: 25px;
-    margin-left: 100px;
+    margin-left: 120px;
     text-align: center;
     font-size: 25px;
     color:#f9f5eb;
@@ -147,7 +148,10 @@ h2{
 div a{
      text-decoration:none;
 }
-
+h2:hover{
+    color:#a7179f;
+    font-size:26px;
+}
 
 
 
