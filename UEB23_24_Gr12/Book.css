@@ -2,3 +2,74 @@ body{
     background-color: #002B5B;
     color: #f9f5eb;
 }
+
+input{
+    background-color: #002B5B;
+}
+
+h1{
+    font-family: "Playfair Display", sans-serif;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 45px;
+    color:#f9f5eb
+}
+p{
+    font-family: "Playfair Display", sans-serif;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 18px;
+    color:#f9f5eb;
+    font-weight: 100;
+    
+}
+.classinput{
+    
+   
+    width: 100%;
+    background-color: #002B5B;
+    border-width: 3px;
+    border-color:#f9f5eb;
+    position: relative; 
+    border-style:solid;
+    color: #f9f5eb;
+   
+    padding-top: 8px;
+
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+
+  
+    background-clip: padding-box;
+
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+input[placeholder]{
+    color: #f9f5eb;
+    font-size: 18px;
+
+}
+.classinput:hover{
+    background-color: #01346fc0;
+    
+
+}
+
+label{
+    font-family: "Playfair Display", sans-serif;
+    
+ 
+  
+    color:#f9f5eb;
+}
+
+.submit-buttoni{
+
+}
