@@ -213,3 +213,8 @@ h2{
     font-size: 30px;
     color:#002B5B;
 }
+dd{
+    margin-left: 20px;
+    line-height: 10px;
+    font-size: 15px;
+}
