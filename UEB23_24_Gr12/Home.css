@@ -5,7 +5,7 @@ body{
 /* Quote screen */
 .picture-box{
    position: relative;
-   bottom: 120px;
+   bottom: 105px;
    margin: 0;
    background-image: url(Foto/Home-pic.jpg);
    background-attachment: fixed;
