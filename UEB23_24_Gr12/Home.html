@@ -156,8 +156,21 @@
       your inbox</p>
 
     <form action="#">
+      
+      <label style="margin-top: 50px; color: white; font-family: 'Montserrat';" for="interest">Pick your favorite home type:</label>
+      <input style="border-radius: 10px; width: 120px;" list="interests" name="interest" id="interest">
+    
+      <datalist id="interests">
+        <option value="City Apartments">
+        <option value="Lake Cabins">
+        <option value="Beachfront Houses">
+        <option value="Farm Houses">
+      </datalist>
+      <br>
+
       <input id="email" class="input" type="text" placeholder="E-mail" required>
       <button id="subscribeButton" class="subscribe" onclick="playAudio">SUBSCRIBE</button>
+
     </form>
   </section>
 
