@@ -1,28 +1,31 @@
 *{
     margin:0px;
 }
+
 @font-face {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display test';
     src: url(Fonts/static/PlayfairDisplay-Regular.ttf);
 }
 
 .sec1 {
     position: relative;
-    height: 85vh;
+    height: 90vh;
 }
 
-h1{
+.titulli{
     color:#F9F5EB;
     font-size: 70px;
     position: absolute;
     top: 35vh;
-    left:40vh;
-   font-family: 'Playfair Display', sans-serif;
-   text-shadow: 2px 2px 4px #002B5B;
+    left:45vh;
+   font-family: 'Playfair Display test', sans-serif;
+   text-shadow: 2px 2px 4px rgb(0, 43, 91);
 }
 nav#navigation-bar{
+    padding: 45px 0px 45px 0px;
     background-color: rgb(249, 245, 235);
     top: 0px;
+  
 }
 .sec1::before {
     content: '';
@@ -33,4 +36,64 @@ nav#navigation-bar{
     left: 0;
     background-color: rgba(249, 245, 235, 0.2); 
     z-index: 1; 
+}
+.sec2 {
+    background-image: 
+       linear-gradient(rgba(249, 245, 235, 0.2), rgba(249, 245, 235, 0.2)),
+       url('Foto/City/City 4/BedroomCity3.jpg'),
+       url('Foto/City/City 3/CityHouse3.jpg');
+    background-size: cover, auto, auto;
+    background-position: center, left top, right top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    color: #002B5B;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #002B5B;
+ 
+}
+
+h3.winner{
+    color: #002B5B;
+    font-family: 'Montserrat', sans-serif;
+  position: relative;
+ bottom: 20%;
+}
+ .sec2 img{
+    position: relative;
+    top: 10%;
+    align-self: center;
+ }
+ .kartolina{
+
+    width:15rem;
+    margin-top: 5rem;
+    text-decoration: none;
+}
+.card-body p,.card-body h5{
+    color: #002B5B !important;
+}
+
+.sec4{
+    padding: 0;
+        width: auto;
+        height: 300px;
+        margin: 50px 95px 50px 92px;
+        background-color: #F9F5EB;
+        border-radius: 15px;
+}
+.float{
+    float: left;
+    position: relative;
+    height: inherit;
+    border-radius: 15px 0px 0px 15px;
+
+}
+.text{
+    float: right;
 }
