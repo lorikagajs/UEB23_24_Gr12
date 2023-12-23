@@ -18,7 +18,8 @@
     <!-- Main Screen-->
 <div id="backphoto" style="padding-bottom: 200px;">
 
-
+   
+    
 <div class="first-box">
     <nav id="navigation-bar">
         <a href="Home.html" class="logo">
@@ -66,7 +67,7 @@
 
 
   <a href="#gotoRentify" style="text-decoration: none;"><div class="StartL">
-    <p style="text-align: center; font-size: 32px;color:white;";>Start Listing</p>
+    <p style="text-align: center; font-size: 29px;color:white;";>Start Listing</p>
    </div></a>
 
 </div>
@@ -108,58 +109,62 @@
  
 <br>
 
-<h2>Please read the terms and conditions first</h2>
-<mark>You must be <a style="color:rgb(82, 78, 78)" href="Login.html">logged</a>  in order to list your house. </mark>
+<h2>List your house</h2>
+<h2 style="font-size: 25px;">Please read the terms and conditions first</h2>
+<canvas id="katrori"></canvas>
 <br>
-<br>
+
 
 <div class="container-fluid">
     <form><fieldset>
     <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-7">
-        <label for="inputName">Title</label>
-        <input type="text" class="form-control" id="inputName" required>
-        <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        <label for="inputName"></label>
+        <input type="text" class="classinput" id="inputName" required placeholder="Title">
+        <label for="inputAddress"></label>
+        <input type="text" class="classinput" id="inputAddress" placeholder="1234 Main St" required>
 
 
      <div class="row">
         <div class="col-md-5">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity" required>
+            <label for="inputCity"></label>
+            <input type="text" class="classinput" id="inputCity" required placeholder="City">
         </div>
         <div class="col-md-4">
-            <label for="inputState">State</label>
-       <input type="text" class="form-control" id="inputState" required>
+            <label for="inputState"></label>
+       <input type="text" class="classinput" id="inputState" required  placeholder="State">
         </div> 
         <div class="col-md-3">
-            <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip" required>
+            <label for="inputZip"></label>
+      <input type="text" class="classinput" id="inputZip" required  placeholder="Zip">
         </div> 
 
      </div>
-     <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Describe in detail..." rows="6"></textarea>
+     <label for="exampleFormControlTextarea1" class="form-label"></label>
+               <textarea class="classinput" id="exampleFormControlTextarea1" placeholder="Describe in detail..." rows="6"></textarea>
                
-                <label >Enter price per night: </label>
+                <label ></label>
                  <div class="input-group" style="width: 100%;">
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <div class="input-group-append">
-                      <span class="input-group-text">$</span>
+                    <input class="input-group-text classinput" style="width: 110vh; " type="text" style="  background-clip: unset;" class="classinput" aria-label="Amount (to the nearest dollar)" placeholder="Enter price per night ">
+                    <span class="input-group-text">$</span>
+                        
+                       
                      
-                    </div>
                   </div>
+                  <br>
 
 
                   <label class="form-check-label" for="gridCheck">
-               Plase read terms and conditions:&nbsp&nbsp
-               <input class="form-check-input" type="checkbox" id="gridCheck" disabled> 
+               Plase read terms and conditions :&nbsp&nbsp
+
+               <input class="form-check-input" type="checkbox" id="gridCheck" > 
                <label class="form-check-label" for="gridCheck" >
                  I Agree To All &nbsp &nbsp
                  </label>
                  <a href="#gotoTerms" id="aaa">Read terms and conditions</a>
-
+                 <br><br>
+                 <mark>You must be <a style="color:rgb(82, 78, 78)" href="Login.html">logged</a>  in order to list your house. </mark>
                 
 
 
@@ -176,6 +181,11 @@
        <div>
         <button class="choseTheVideo" onclick="document.getElementById('getFile').click()">Chose Videos</button>
         <input type='file' id="getFile" style="display:none" multiple>
+
+
+        <a href="#gotoRentify" style="text-decoration: none;"><div class="Rentify">
+            <p style="text-align: center; font-size: 29px;color:white;";>Rentify</p>
+           </div></a>
 
 
        </div>
@@ -252,7 +262,7 @@
             <table border="1" class="table2">
                <tr><th>Legal reason</th>
                <th>Fulfilled</th></tr>
-                <tr><td>Lease Agreement</td> <td class="tdcenter"><input type="checkbox" name="Lease Agreement" id="Lease_Agreement"></td></tr>
+                <tr><td>Lease Agreement</td> <td class="tdcenter"><input type="checkbox" class="" name="Lease Agreement" id="Lease_Agreement"></td></tr>
                 <tr><td>RLease Agreement</td> <td class="tdcenter"> <input type="checkbox" name="RLease Agreement" id="RLease_Agreement"></td></tr>
                 <tr><td>Repairs and Maintenancet</td> <td class="tdcenter"><input type="checkbox" name="Repairs and Maintenancet" id="Repairs and Maintenancet"> </td></tr>
                 <tr><td>Insurancet</td>  <td class="tdcenter"><input type="checkbox"  name="Insurancet" id="Insurancet"></td></tr>
@@ -400,9 +410,7 @@
   </footer>
   <!-- end of footer -->
 
-    <script>
-        
-    </script>
+    <script src="RentifyYourHouse.js"></script>
 
 </body>
 </html>
