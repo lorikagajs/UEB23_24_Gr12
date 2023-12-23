@@ -1,31 +1,31 @@
 body{
     background-color: #002B5B;
     color: #f9f5eb;
+    height: 800px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
 
+.book-title{
+  margin-left: 9%;
+  margin-top: 4%;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 50px;
+  color:#f9f5eb
+}
+.book-caption{
+    margin-left: 9%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color:#f9f5eb;
+  font-weight: 100;
+}
 input{
     background-color: #002B5B;
 }
 
-h1{
-    font-family: "Playfair Display", sans-serif;
-    margin-left: 30px;
-    text-align: left;
-    font-size: 45px;
-    color:#f9f5eb
-}
-p{
-    font-family: "Playfair Display", sans-serif;
-    margin-left: 30px;
-    text-align: left;
-    font-size: 18px;
-    color:#f9f5eb;
-    font-weight: 100;
-    
-}
 .classinput{
-    
-   
     width: 100%;
     background-color: #002B5B;
     border-width: 3px;
@@ -33,80 +33,50 @@ p{
     position: relative; 
     border-style:solid;
     color: #f9f5eb;
-   
     padding-top: 8px;
-
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.5;
-
-  
     background-clip: padding-box;
-
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-}
-input[placeholder]{
-    color: #f9f5eb;
-    font-size: 18px;
-
 }
 .classinput:hover{
     background-color: #01346fc0;
-    
-
 }
 
 label{
-    font-family: "Playfair Display", sans-serif;
-    
- 
-  
+    font-family: "Montserrat", sans-serif;
     color:#f9f5eb;
-}
-
-.submit-buttoni{
-    border-width: 3px;
-    border-style: solid;
-    background-color:  #F9F5EB;
-    color: #002B5B;
-    border-color: #F9F5EB;
-    border-radius: 60px;
-    margin-left: 90%;
-    margin-right: 150px;
-    height: 50px;
-    width: 180px;
-    position: absolute; 
-
- padding-top: 8px;
-    transition: background-color .5s ease;
-    margin-left: 700px;
-    
+    font-weight: 400;
 }
 .submitButton{
-    font-size: 18px;
-    border: none;
-    margin:20px;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 3px;
-}
-.submit-buttoni:hover{
- 
-    border-color: #EA5455;
-  
-    transition: color 0.15s ease-in-out;
+    background-color: #f9f5eb;
+    border-radius: 40px;
+    width: 175px;
+    height: 45px;
+    position: relative; 
+    bottom: 5px; 
+    left: 45%;
+    transition: background-color .5s ease;
 }
 .submitButton:hover{
-   
-    font-size: 18px;
-    color: #6d0394;
- 
+    background-color: #EA5455;
+}
+.submitButton:active{
+    background-color: #EA5455;
+}
+.submitButton p{
+    color: #002B5B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    position: relative; 
+    top: 9px;
 }
 
 
@@ -125,7 +95,6 @@ label{
 #telephone{
     height: 300px;
     width: 300px;
-
     border-radius: 50%;
     border:#F9F5EB solid 1px;
     position: relative;
@@ -134,28 +103,33 @@ label{
    
 }
 
-
-h2{
+.call{
     font-family: "Playfair Display", sans-serif;
     text-decoration:none;
-    margin-top: 25px;
-    margin-left: 120px;
-    text-align: center;
     font-size: 25px;
     color:#f9f5eb;
-    font-weight: 100;
+    text-align: center;
+    transition: font-size .5s ease;
+    position: relative;
+    top: 20px;
+    left: 70px;
 }
+
 div a{
      text-decoration:none;
 }
 h2:hover{
-    color:#a7179f;
-    font-size:26px;
+    color:#EA5455;
+    font-size:27px;
 }
+input[type="range"] {
+    accent-color: #EA5455;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+  }
 
 
-
-/*navbar            #002B5B  #F9F5EB */
+/*navbar */
 
 
 #navigation-bar{
@@ -267,7 +241,7 @@ h2:hover{
     text-align: center;
     position: relative; 
     top: 12px;
-    right:12px;
+    right:2px;
 }
 .b3{
     position: relative;
