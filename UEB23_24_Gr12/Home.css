@@ -11,7 +11,7 @@ body{
    background-attachment: fixed;
    background-size: cover;
    background-origin: content-box;
-   height: 950px;
+   height: 115vh;
 }
 .sub-title{
     font-family: 'Montserrat', sans-serif;
