@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="RentifyYourHouse.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -50,6 +50,7 @@
       
 </div>
 <br>
+
 <!--Div qe mban katrorin-->
 <div style="align-self: center;" class="square">
 <div id="Hyrje">
@@ -79,24 +80,24 @@
 <div class="container-fluid"  id="Tabela">
 
 <!--tabela-->
-<table style="width:100%">
-    <tr> <th style="text-align: center; font-size: 45px; " colspan="3" >Expand your wealth</th>
+<table class="tabela" style="width:100%">
+    <tr> <th class="th1" colspan="3" >Expand your wealth</th>
     </tr>
     <tr>
         
-        <td style="font-weight: bold; font-size:56px"> 2/3 </td>
+        <td class="td1" style="font-weight: bold; font-size:56px"> 2/3 </td>
         
-    <td style="font-weight: bold; font-size:56px"> 48%</td>
+    <td class="td1"  style="font-weight: bold; font-size:56px"> 48%</td>
    
-    <td style="font-weight: bold; font-size:56px">33%</td>
+    <td class="td1"  style="font-weight: bold; font-size:56px">33%</td>
     
 </tr>
 <tr>
     
-    <td style="font-size:18px">of vacation rental guests return to book with us again</td>
+    <td  class="td1" style="font-size:18px">of vacation rental guests return to book with us again</td>
 
-    <td style="font-size:18px">of nights booked on Booking.com in 2022 were for international stays</td>
-    <td style="font-size:18px">of vacation rental customers are Genius loyalty level 2 or 3 who tend to spend more per booking</td>
+    <td class="td1"  style="font-size:18px">of nights booked on Booking.com in 2022 were for international stays</td>
+    <td class="td1"  style="font-size:18px">of vacation rental customers are Genius loyalty level 2 or 3 who tend to spend more per booking</td>
 </tr>
 
 </table>
@@ -108,7 +109,7 @@
 <br>
 
 <h2>Please read the terms and conditions first</h2>
-<mark>You must be <a href="Login.html">logged</a> in in order to list your house. </mark>
+<mark>You must be <a style="color:rgb(82, 78, 78)" href="Login.html">logged</a>  in order to list your house. </mark>
 <br>
 <br>
 
@@ -140,7 +141,18 @@
      </div>
      <label for="exampleFormControlTextarea1" class="form-label">Description</label>
                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Describe in detail..." rows="6"></textarea>
-               <label class="form-check-label" for="gridCheck">
+               
+                <label >Enter price per night: </label>
+                 <div class="input-group" style="width: 100%;">
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                      <span class="input-group-text">$</span>
+                     
+                    </div>
+                  </div>
+
+
+                  <label class="form-check-label" for="gridCheck">
                Plase read terms and conditions:&nbsp&nbsp
                <input class="form-check-input" type="checkbox" id="gridCheck" disabled> 
                <label class="form-check-label" for="gridCheck" >
@@ -148,6 +160,7 @@
                  </label>
                  <a href="#gotoTerms" id="aaa">Read terms and conditions</a>
 
+                
 
 
     </div>
@@ -173,56 +186,176 @@
     </div></fieldset></form>
 </div>
 
-
 <br>
 <br>
 <br>
 
+<hr id="gotoTerms">
 
 
-<hr>
+<div  class="container-fluid">
+    <div class="row">
+        <div class="col-md-7">
+         
+          <h2><u>Rental Agreement Terms and Conditions</u></h2>
+          <p>Please check the requests in the table in your right</p> 
+          
+          <dl>
+            <dt>Lease Agreement:</dt>
+            <dd>Clearly outline the duration of the lease (start and end dates).</dd>
+            <dd>Specify whether it's a fixed-term lease or a month-to-month agreement.</dd>
 
-<div>
+            <dt>Rent Payment:</dt>
+            <dd>State the monthly rent amount and the due date.</dd>
+            <dd>Outline acceptable payment methods (e.g., bank transfer, check, etc.).</dd>
+            <dd>Include any late fees for overdue payments</dd>
 
-    <h2>Rental Agreement Terms and Conditions</h2>
+            <dt>Repairs and Maintenance:</dt>
+            <dd>Clearly define the landlord's responsibilities for major repairs.</dd>
+            <dd>Specify the tenant's responsibilities for minor maintenance tasks.</dd>
+            <dd>Establish a process for reporting and addressing maintenance issues.</dd>
 
+            
+            <dt>Insurance:</dt>
+            <dd>Specify whether the tenant is required to have renter's insurance.</dd>
+            <dd>Clarify the landlord's insurance coverage for the property.</dd>
+            
+            <dt>Legal Responsibilities:</dt>
+            <dd>Clarify legal responsibilities of both parties</dd>
+            <dd>Include any applicable local laws and regulations.</dd>
+         
+          </dl>
+          <p>By signing below, the Owner and Tenant acknowledge that they have read,
+            understood, and agree to abide by the terms and conditions outlined in this agreement.
+           Plaese </p> 
+          
+          <a href="#goTOdepth" id="aaa" style="font-size: 18;">Read specific terms in depth</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+
+            <p>By signing below, the Owner and Tenant acknowledge that they have read,
+             understood, and agree to abide by the terms and conditions outlined in this agreement.
+            Plaese </p> 
+
+        </div>
+        <div class="col-md-1"></div>
+
+        <div class="col-md-4">
+               <br>
+               <br>
+               <br>
+               <br>
+            <table border="1" class="table2">
+               <tr><th>Legal reason</th>
+               <th>Fulfilled</th></tr>
+                <tr><td>Lease Agreement</td> <td class="tdcenter"><input type="checkbox" name="Lease Agreement" id="Lease_Agreement"></td></tr>
+                <tr><td>RLease Agreement</td> <td class="tdcenter"> <input type="checkbox" name="RLease Agreement" id="RLease_Agreement"></td></tr>
+                <tr><td>Repairs and Maintenancet</td> <td class="tdcenter"><input type="checkbox" name="Repairs and Maintenancet" id="Repairs and Maintenancet"> </td></tr>
+                <tr><td>Insurancet</td>  <td class="tdcenter"><input type="checkbox"  name="Insurancet" id="Insurancet"></td></tr>
+                <tr><td>Legal Responsibilities</td><td class="tdcenter"><input type="checkbox"  name="Legal Responsibilities" id="Legal Responsibilities"> </td></tr>
+                
+
+
+            </table>
+
+        </div>
+    </div>
+</div>
+<!--_________________________________________________________________________________ -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Lease Agreement:</h2>
+            <ol>
+                <li>Clearly outline the duration of the lease (start and end dates).</li>
+                <li>Specify whether it's a fixed-term lease or a month-to-month agreement.
+                    <ul class="disc">
+                        <li>If fixed-term, mention the exact duration (e.g., 12 months).</li>
+                        <li>If month-to-month, explain the terms for termination with notice.</li>
+                    </ul>
+                </li>
+            </ol>
+        
+            <h2>Rent Payment:</h2>
+            <ol>
+                <li>State the monthly rent amount and the due date.</li>
+                <li>Outline acceptable payment methods (e.g., bank transfer, check, etc.).
+                    <ul class="disc">
+                        <li>Provide details on where payments should be sent or made.</li>
+                    </ul>
+                </li>
+                <li>Include any late fees for overdue payments.
+                    <ul class="circle">
+                        <li>Specify the amount of late fees and the grace period, if any.</li>
+                    </ul>
+                </li>
+            </ol>
+        
+            <h2>Repairs and Maintenance:</h2>
+            <ol>
+                <li>Clearly define the landlord's responsibilities for major repairs.
+                    <ul class="disc">
+                        <li>Specify what constitutes major repairs (e.g., structural issues).</li>
+                        <li>Include a timeframe for the landlord to address major repairs.</li>
+                    </ul>
+                </li>
+                <li>Specify the tenant's responsibilities for minor maintenance tasks.
+                    <ul class="squaree">
+                        <li>Provide examples of minor tasks (e.g., changing light bulbs, yard maintenance).</li>
+                    </ul>
+                </li>
+                <li>Establish a process for reporting and addressing maintenance issues.
+                    <ul class="none">
+                        <li>Provide contact information for reporting issues.</li>
+                        <li>Define the timeline for addressing reported maintenance problems.</li>
+                    </ul>
+                </li>
+            </ol>
+        
+
+        </div>
+        <div class="col-md-6">
+            <h2>Insurance:</h2>
     <ol>
-        <li><strong>Rental Agreement:</strong>
+        <li>Specify whether the tenant is required to have renter's insurance.
             <ul>
-                <li>The agreement is entered into by the landlord (hereinafter referred to as "Owner") and the tenant (hereinafter referred to as "Tenant") for the purpose of renting the property located at [property address].</li>
+                <li>Clarify the minimum coverage requirements for renter's insurance.</li>
             </ul>
         </li>
-    
-        <li><strong>Rental Term:</strong>
-            <ol>
-                <li>The rental term shall commence on [start date] and continue until [end date]. Either party may terminate the agreement with [notice period] days' written notice.</li>
-            </ol>
-        </li>
-    
-        <li><strong>Rent and Security Deposit:</strong>
+        <li>Clarify the landlord's insurance coverage for the property.
             <ul>
-                <li>The monthly rent is [amount] and is due on the [day] of each month. A security deposit of [amount] is required prior to occupancy and will be refunded within [number] days of the termination of the lease, subject to deductions for any unpaid rent or damages.</li>
+                <li>Explain what the landlord's insurance covers and does not cover.</li>
             </ul>
-        </li>
-    
-        <!-- ... other items ... -->
-    
-        <li><strong>Governing Law:</strong>
-            <ul>
-                <li>This agreement shall be governed by the laws of [state/country]. Any disputes arising from this agreement shall be resolved through arbitration or in a court of law in the jurisdiction where the property is located.</li>
-            </ul>
-        </li>
-    
-        <li><strong>Miscellaneous:</strong>
-            <ol>
-                <li>This agreement constitutes the entire understanding between the parties and supersedes any prior agreements or understandings. No modifications or amendments to this agreement shall be valid unless made in writing and signed by both parties.</li>
-            </ol>
         </li>
     </ol>
-    
-    <p>By signing below, the Owner and Tenant acknowledge that they have read, understood, and agree to abide by the terms and conditions outlined in this agreement.</p>
 
+    <h2>Legal Responsibilities:</h2>
+    <ol>
+        <li>Clarify legal responsibilities of both parties.
+            <ul>
+                <li>Include information on property use in compliance with local laws.</li>
+            </ul>
+        </li>
+        <li>Include any applicable local laws and regulations.
+            <ul>
+                <li>Provide references to relevant local statutes or regulations.</li>
+            </ul>
+        </li>
+    </ol>
+
+            
+        </div>
+    </div>
 </div>
+
+
+<!--_________________________________________________________________________________ -->
+<div style="height: 150px;"></div>
 
 <hr>
 <br>
@@ -231,39 +364,45 @@
 
     <div class="footer-container">
       <div class="first-footer-box">
-         <p class="title-text">Properties</p>
-         <a class="page-links" href="City.html">CITY</a>
-         <a class="page-links" href="Beachfront.html">BEACHFRONT</a>
-         <a class="page-links" href="Lake.html">LAKE</a>
-         <a class="page-links" href="Farms.html">FARMS</a>
+        <p class="title-text">Properties</p>
+        <a class="page-links" href="City.html">CITY</a>
+        <a class="page-links" href="Beachfront.html">BEACHFRONT</a>
+        <a class="page-links" href="Lake.html">LAKE</a>
+        <a class="page-links" href="Farms.html">FARMS</a>
       </div>
       <div class="second-footer-box">
-         <p class="title-text">Call us</p>
-         <p class="number">+383 334 0501</p>
-         <p class="title-text">E-mail us</p>
-         <a id="mail_link" href="mailto:someone@example.com"><p class="number mail_link">explore@rentify.com</p></a>
+        <p class="title-text">Call us</p>
+        <p class="number">+383 334 0501</p>
+        <p class="title-text">E-mail us</p>
+        <a id="mail_link" href="mailto:someone@example.com">
+          <p class="number mail_link">explore@rentify.com</p>
+        </a>
       </div>
       <div class="third-footer-box">
-         <a class="footer_button_link" href="RentifyYourHouse.html"><button class="review">RENTIFY YOUR HOUSE</button></a>
-         <div class="social">
-             <a href="https://www.facebook.com/rentify/" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/facebook.png" height="30px" width="30px"></a>
-             <a href="https://www.youtube.com/@airbnb" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/youtube.png" height="30px" width="30px" alt=""></a>
-            <a href="https://www.instagram.com/rentifyltd/?hl=en" class="social-media-link" target=”_blank”><img class="icon-pic" src="Foto/instagram.png" height="30px" width="30px" alt=""></a>
-         </div>
-         <address class="adresa">2579 Elm St.
+        <a class="footer_button_link" href="RentifyYourHouse.html"><button class="review">RENTIFY YOUR
+            HOUSE</button></a>
+        <div class="social">
+          <a href="https://www.facebook.com/rentify/" class="social-media-link" target=”_blank”><img class="icon-pic"
+              src="Foto/facebook.png" height="30px" width="30px"></a>
+          <a href="https://www.youtube.com/@airbnb" class="social-media-link" target=”_blank”><img class="icon-pic"
+              src="Foto/youtube.png" height="30px" width="30px" alt=""></a>
+          <a href="https://www.instagram.com/rentifyltd/?hl=en" class="social-media-link" target=”_blank”><img
+              class="icon-pic" src="Foto/instagram.png" height="30px" width="30px" alt=""></a>
+        </div>
+        <address class="adresa">2579 Elm St.
           Orlando, USA</address>
       </div>
     </div>
-    
+
     <img class="copyright" src="Foto/copyright.png" height="22px" width="22px" alt="Copyright Icon">
     <p class="rights">RENTIFY | </p>
-    
-    </footer>
-    <!-- end of footer -->
+
+  </footer>
+  <!-- end of footer -->
 
     <script>
         
-        </script>
+    </script>
 
 </body>
 </html>

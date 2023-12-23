@@ -1,164 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rentify | Booking</title>
-   
-    <link rel="stylesheet" href="Bts-css/bootstrap.css">
-    <link rel="stylesheet" href="Book.css">
-   
-    <link rel="stylesheet" href="footer.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentify | Booking</title>
+
+  <link rel="stylesheet" href="Bts-css/bootstrap.css">
+  <link rel="stylesheet" href="Book.css">
+
+  <link rel="stylesheet" href="footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
 
 </head>
-<body>
-    <!-- Main Screen-->
 
-<div class="first-box" style="background-color:#002B5B ;height: 91px;">
+<body>
+  <!-- Main Screen-->
+  <!-- Audio File -->
+  <audio id="Subscribe">
+    <source src="Sounds/Subscribe.mp3" type="audio/mpeg">
+  </audio>
+  <!-- Main Screen-->
+  <main class="first-box">
     <!-- Navbar -->
     <nav id="navigation-bar">
-        <a href="Home.html" class="logo">
+      <a href="Home.html" class="logo">
         Rentify.
-        </a>
-             
-         <div class="dropdowni">
-             <p class="navbar-button">PROPERTIES</p>
-             <div class="dropdown-menuja">
-                 <a class="dropdown-optioni" href="City.html">City</a>
-                 <a class="dropdown-optioni" href="Beachfront.html">Beachfront</a>
-                 <a class="dropdown-optioni" href="Lake.html">Lake</a>
-                 <a class="dropdown-optioni" href="Farms.html">Farms</a>
-             </div>
+      </a>
+
+      <div class="dropdowni">
+        <p class="navbar-button">PROPERTIES</p>
+        <div class="dropdown-menuja">
+          <a class="dropdown-optioni" href="Lake.html">Lake</a>
+          <a class="dropdown-optioni" href="Beachfront.html">Beachfront</a>
+          <a class="dropdown-optioni" href="City.html">City</a>
+          <a class="dropdown-optioni" href="Farms.html">Farms</a>
         </div>
+      </div>
 
-        <a href="Favorites.html" class="navbar-button b2"> FAVORITES</a>
+      <a href="Topranked.html" class="navbar-button b2">TOP RANKED</a>
 
-        <a href="RentifyYourHouse.html" class="navbar-button b3">RENTIFY YOUR HOUSE</a>
-      
+      <a href="RentifyYourHouse.html" class="navbar-button b3">RENTIFY YOUR HOUSE</a>
 
-       <a href="Login.html" class="navbar-link">
+
+      <a href="Login.html" class="navbar-link">
         <div class="blue">
-         <p>LOGIN</p>
+          <p>LOGIN</p>
         </div>
-       </a>
+      </a>
 
-      </nav>
-      <!-- end of navbar -->
-      
-</div>
+    </nav>
+    <!-- end of navbar -->
 
-<br>
-<h1 ><b><em>Book your dream house</em><b></b></h1>
-<p>We always aim to cinfirm your order within 3 hours.</p>
+    </div>
 
+    <br>
+    <h1 class="book-title"><b>Book your dream house<b></b></h1>
+    <p class="book-caption">WE ALWAYS AIM TO CONFIRM YOUR ORDER WITHIN 3 HOURS</p>
 
-
-<div class="container-fluid">
-       <div class="row">
-         <div class="col-md-1"></div>
-          <div class="col-md-6">
-           <div class="row">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+          <div class="row">
             <div class="col-md-6">
-                <label for="Emri" class="form-label"></label> 
-                <input type="text" class="classinput" id="Emri" aria-describedby="emailHelp" placeholder="First Name" required>
-    
-                <label for="Mbiemri" class="form-label"></label> 
-                <input type="text" class="classinput" id="Mbiemri" placeholder="Surname" aria-describedby="emailHelp" required>
-    
-    
-                <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="email" class="classinput" id="exampleInputEmail1" placeholder="E-mail" aria-describedby="emailHelp" required>
-                
-    
+              <label for="Emri" class="form-label"></label>
+              <input type="text" class="classinput" id="Emri" aria-describedby="emailHelp" placeholder="First Name"
+                required>
+
+              <label for="Mbiemri" class="form-label"></label>
+              <input type="text" class="classinput" id="Mbiemri" placeholder="Surname" aria-describedby="emailHelp"
+                required>
+
+
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="email" class="classinput" id="exampleInputEmail1" placeholder="E-mail"
+                aria-describedby="emailHelp" required>
+
+
             </div>
             <div class="col-md-6">
-                
 
-                <label for="inputAddress" class="form-label"></label>
-                <input type="text" class="classinput" id="inputAddress" placeholder="Adress">
 
-                <label for="inputCity" class="form-label"></label>
-                <input type="text" class="classinput" id="inputCity" placeholder="City">
+              <label for="inputAddress" class="form-label"></label>
+              <input type="text" class="classinput" id="inputAddress" placeholder="Address" required>
 
-                <label for="inputState" class="form-label"></label>
-                <input type="text" class="classinput" id="inputState" placeholder="State">
+              <label for="inputCity" class="form-label"></label>
+              <input type="text" class="classinput" id="inputCity" placeholder="City" required>
 
-                
-              
-            </div>
-           </div>
-           <div class="row">
-            <div class="col-md-12">
-                <br>
-                <label for="floatingSelect">Select the number of nights you want to stay:</label>
-                <select class="classinput" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                </select>
+              <label for="inputState" class="form-label"></label>
+              <input type="text" class="classinput" id="inputState" placeholder="Country" required>
+
+
 
             </div>
-            
-           </div>
-           <div class="row">
+          </div>
+          <div class="row">
             <div class="col-md-12">
-                
-                    
+              <br>
+              <label for="floatingSelect">Select the number of nights you want to stay:</label>
+              <select class="classinput" id="floatingSelect" aria-label="Floating label select example" required>
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+
+
               <br>
               <label for="radio" style="font-weight: bold;">Payment: &nbsp &nbsp &nbsp &nbsp</label>
-              <input type="radio" id="cash" name="payment" checked> <label class="form-check-label" for="cash">
-                Cash  &nbsp &nbsp
+              <input type="radio" id="cash" name="payment" checked> <label class="form-check-label" for="cash" required>
+                Cash &nbsp &nbsp
               </label>
-              <input type="radio" class="radio" id="banke" name="payment" > <label class="form-check-label" for="bank">
+              <input type="radio" class="radio" id="banke" name="payment"> <label class="form-check-label" for="bank" required>
                 Bank
               </label>
-              <input style="width:50%;float: right;" type="text" id="bank" class="classinput" placeholder="Bank Number">
-              
-                    <br>
-                
-                <label for="exampleFormControlTextarea1" class="form-label"></label>
-               <textarea class="classinput" id="exampleFormControlTextarea1" placeholder="Any comment..." rows="2"></textarea>
-               <br>
-          
-            </div>
-           </div>
-         </div>
-        <div class="col-md-4">
-             <br>
-             
-             <div class="container-fluid">
-             <img id="telephone" src="Foto/Phone.png">
-            
-             
-             <a href="" onclick="alert('You re calling this number...')"><h2 style="text-align: center;"> 
-                Call us:<br> 
-                +383 44 342 685</h2></a>
-            </div>
-            
-        </div>
-       <div class="col-md-1"></div>
-       </div>
-    </div>
-  
- <div class="submit-buttoni">
-    <button class="submitButton" id="buttoni" onclick="alert('Thank you for Renting!'), window.location.reload();">Make it yours
-    </button>
-  </div>
+              <input style="width:50%;float: right;" type="text" id="bank" class="classinput" placeholder="Bank Number" required>
 
- 
+              <br>
+
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="classinput" id="exampleFormControlTextarea1" placeholder="Add comment..."
+                rows="2"></textarea>
+              <br>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <br>
+
+          <div class="container-fluid">
+            <img id="telephone" src="Foto/Phone.png">
+
+            <a href="" onclick="alert('You re calling this number...')">
+              <h2 class="call">
+                Call us:<br>
+                +383 44 342 685</h2>
+            </a>
+          </div>
+
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <div class="submit-buttoni">
+      <button class="submitButton" id="buttoni"
+        onclick="alert('Thank you for Renting!'), window.location.reload();"> <p>MAKE IT YOURS</p>
+      </button>
+    </div>
+
+
 
 
     <script>
-    
+
     </script>
-    
+
 </body>
+
 </html>

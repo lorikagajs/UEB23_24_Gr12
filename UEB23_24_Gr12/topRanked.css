@@ -1,9 +1,7 @@
 *{
     margin:0px;
 }
-body{
-    background-color: #F9F5EB;
-}
+
 @font-face {
     font-family: 'Playfair Display test';
     src: url(Fonts/static/PlayfairDisplay-Regular.ttf);
@@ -79,4 +77,23 @@ h3.winner{
 }
 .card-body p,.card-body h5{
     color: #002B5B !important;
-    }
+}
+
+.sec4{
+    padding: 0;
+        width: auto;
+        height: 300px;
+        margin: 50px 95px 50px 92px;
+        background-color: #F9F5EB;
+        border-radius: 15px;
+}
+.float{
+    float: left;
+    position: relative;
+    height: inherit;
+    border-radius: 15px 0px 0px 15px;
+
+}
+.text{
+    float: right;
+}
