@@ -88,13 +88,13 @@
 
 
               <label for="inputAddress" class="form-label"></label>
-              <input type="text" class="classinput" id="inputAddress" placeholder="Address">
+              <input type="text" class="classinput" id="inputAddress" placeholder="Address" required>
 
               <label for="inputCity" class="form-label"></label>
-              <input type="text" class="classinput" id="inputCity" placeholder="City">
+              <input type="text" class="classinput" id="inputCity" placeholder="City" required>
 
               <label for="inputState" class="form-label"></label>
-              <input type="text" class="classinput" id="inputState" placeholder="Country">
+              <input type="text" class="classinput" id="inputState" placeholder="Country" required>
 
 
 
@@ -104,7 +104,7 @@
             <div class="col-md-12">
               <br>
               <label for="floatingSelect">Select the number of nights you want to stay:</label>
-              <select class="classinput" id="floatingSelect" aria-label="Floating label select example">
+              <select class="classinput" id="floatingSelect" aria-label="Floating label select example" required>
                 <option selected value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -123,18 +123,18 @@
 
               <br>
               <label for="radio" style="font-weight: bold;">Payment: &nbsp &nbsp &nbsp &nbsp</label>
-              <input type="radio" id="cash" name="payment" checked> <label class="form-check-label" for="cash">
+              <input type="radio" id="cash" name="payment" checked> <label class="form-check-label" for="cash" required>
                 Cash &nbsp &nbsp
               </label>
-              <input type="radio" class="radio" id="banke" name="payment"> <label class="form-check-label" for="bank">
+              <input type="radio" class="radio" id="banke" name="payment"> <label class="form-check-label" for="bank" required>
                 Bank
               </label>
-              <input style="width:50%;float: right;" type="text" id="bank" class="classinput" placeholder="Bank Number">
+              <input style="width:50%;float: right;" type="text" id="bank" class="classinput" placeholder="Bank Number" required>
 
               <br>
 
               <label for="exampleFormControlTextarea1" class="form-label"></label>
-              <textarea class="classinput" id="exampleFormControlTextarea1" placeholder="Any comment..."
+              <textarea class="classinput" id="exampleFormControlTextarea1" placeholder="Add comment..."
                 rows="2"></textarea>
               <br>
 
