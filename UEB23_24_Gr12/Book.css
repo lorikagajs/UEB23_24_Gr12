@@ -122,7 +122,11 @@ h2:hover{
     color:#EA5455;
     font-size:27px;
 }
-
+input[type="range"] {
+    accent-color: #EA5455;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+  }
 
 
 /*navbar */
