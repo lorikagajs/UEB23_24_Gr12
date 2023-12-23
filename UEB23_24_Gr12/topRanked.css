@@ -96,6 +96,4 @@ h3.winner{
 }
 .text{
     float: right;
-    display: flex;
-    align-items: center;
 }
