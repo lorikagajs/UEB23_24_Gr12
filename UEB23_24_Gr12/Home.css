@@ -5,13 +5,13 @@ body{
 /* Quote screen */
 .picture-box{
    position: relative;
-   bottom: 120px;
+   bottom: 105px;
    margin: 0;
    background-image: url(Foto/Home-pic.jpg);
    background-attachment: fixed;
    background-size: cover;
    background-origin: content-box;
-   height: 950px;
+   height: 110vh;
 }
 .sub-title{
     font-family: 'Montserrat', sans-serif;

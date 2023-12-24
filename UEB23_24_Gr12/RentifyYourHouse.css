@@ -36,13 +36,14 @@ label{
     
 }
 .tabela{
-   
+    table-layout: fixed;
     border-radius: 10px;
   }
 
 .th1{
     color: #002B5B;    
     text-align: center; font-size: 45px;
+    margin-bottom: 30px;
 }
 .td1{
     border-spacing: 2px;
@@ -66,7 +67,7 @@ label{
 }
 mark{
     background-color: rgba(231, 161, 10, 0.216);
-    margin-left: 30px;
+   padding: px;
 
 }
 
@@ -82,7 +83,7 @@ mark{
 #backphoto{
   
     position: relative;
-    
+    height: 100vh;
     background-image: url(Foto/42554.jpg);
     
 }
@@ -95,16 +96,18 @@ mark{
 }
 
 .StartL{
-    background-color:  #EA5455;;
+    width: 200px;
+    background-color:  #EA5455;
     border-radius: 60px;
-    margin-left: 90%;
-    margin-right: 150px;
+    float: right;
+    margin-right: 90px;
     height: 67px;
     position: relative; 
     bottom: 12px; 
- padding-top: 8px;
+    padding-top: 1vh;
     transition: background-color .5s ease;
     margin-left: 700px;
+    
 }
 
 .StartL:hover{
@@ -185,6 +188,7 @@ mark{
     font-size: 23px;
     transition: font-size .5s ease;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
  }
  .choseTheVideo:hover{
     border-color:#002B5B;
@@ -197,11 +201,11 @@ mark{
 .square{
    
      border: none;
-    background-color:#E4DCCF;
+    background-color:#F9F5EB;
     color:  #002B5B;
     padding: 10px;
     border-radius: 15px;
-    margin-top: 100px;
+    margin-top: 18vh;
     font-family: 'Playfair Display', sans-serif;
     margin-left:200px;
     margin-right:200px;
@@ -211,14 +215,17 @@ mark{
 h2{
     font-family: "Playfair Display", sans-serif;
     margin-left: 30px;
-    text-align: left;
-    font-size: 30px;
+    text-align: center;
+    font-size: 50px;
     color:#002B5B;
 }
+dt{
+    margin-left: 30px;
+}
 dd{
-    margin-left: 20px;
+    margin-left: 100px;
     line-height: 10px;
-    font-size: 15px;
+    font-size: 1rem;
 }
 ol, ul, li{
    
@@ -247,6 +254,7 @@ ol, ul, li{
     width: 100%;
     border-collapse: separate;
     border-spacing: 2px;
+  
    
  }
 
@@ -263,12 +271,90 @@ table.table2 td {
     padding-left: 5px;
     padding-right: 5px;
 
-    background-color: #ead5b5;
+    background-color: #F9F5EB;
 
  }
  table.table2 th{
-    background-color: #ecdcc1;
+    background-color: #002B5B;
+    color: white;
+    padding-left: 5px;
  }
  .tdcenter{
    text-align: center;
  }
+ canvas{
+    margin-left: 22%;
+    margin-right: 25%;
+    width: 50%;
+    height: 4rem;
+ }
+
+ .classinput{
+    
+   
+    width: 100%;
+    background-color: white;
+    border-width: 3px;
+    border-color:#f9f5eb;
+    position: relative; 
+    border-style:solid;
+    color: #002B5B;
+   
+    padding-top: 8px;
+
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+
+  
+    background-clip: padding-box;
+
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+input[placeholder]{
+  
+    font-size: 18px;
+    text-align: left;
+
+}
+.classinput:hover{
+    background-color: rgb(244, 245, 239);
+    
+
+}
+.Rentify{
+    width: 200px;
+    background-color:  #002B5B;
+    border-radius: 60px;
+    float: right;
+    margin-left: 2vh;
+    margin-right: 13vh;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    height: 60px;
+    position: relative; 
+    bottom: 12px; 
+    padding-top: 1vh;
+    transition: background-color .5s ease;
+    color:white;
+    margin-top: 8vh;
+}
+
+.Rentify:hover{
+    background-color: #EA5455;
+}
+.Rentify:active{
+    background-color: #002B5B;
+}
+
+.Rentify[disabled]{
+    background-color: #425162;
+    color: rgb(181, 180, 180);
+
+}

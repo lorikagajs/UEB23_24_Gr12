@@ -18,7 +18,8 @@
     <!-- Main Screen-->
 <div id="backphoto" style="padding-bottom: 200px;">
 
-
+   
+    
 <div class="first-box">
     <nav id="navigation-bar">
         <a href="Home.html" class="logo">
@@ -66,7 +67,7 @@
 
 
   <a href="#gotoRentify" style="text-decoration: none;"><div class="StartL">
-    <p style="text-align: center; font-size: 32px;color:white;";>Start Listing</p>
+    <p style="text-align: center; font-size: 29px;color:white;";>Start Listing</p>
    </div></a>
 
 </div>
@@ -108,58 +109,62 @@
  
 <br>
 
-<h2>Please read the terms and conditions first</h2>
-<mark>You must be <a style="color:rgb(82, 78, 78)" href="Login.html">logged</a>  in order to list your house. </mark>
+<h2 id="ridirektim">List your house</h2>
+<h2 style="font-size: 25px;">Please read terms and conditions first</h2>
+<canvas id="katrori"></canvas>
 <br>
-<br>
+
 
 <div class="container-fluid">
     <form><fieldset>
     <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-7">
-        <label for="inputName">Title</label>
-        <input type="text" class="form-control" id="inputName" required>
-        <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        <label for="inputName"></label>
+        <input type="text" class="classinput" id="inputName" required placeholder="Title">
+        <label for="inputAddress"></label>
+        <input type="text" class="classinput" id="inputAddress" placeholder="1234 Main St" required>
 
 
      <div class="row">
         <div class="col-md-5">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity" required>
+            <label for="inputCity"></label>
+            <input type="text" class="classinput" id="inputCity" required placeholder="City">
         </div>
         <div class="col-md-4">
-            <label for="inputState">State</label>
-       <input type="text" class="form-control" id="inputState" required>
+            <label for="inputState"></label>
+       <input type="text" class="classinput" id="inputState" required  placeholder="State">
         </div> 
         <div class="col-md-3">
-            <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip" required>
+            <label for="inputZip"></label>
+      <input type="text" class="classinput" id="inputZip" required  placeholder="Zip">
         </div> 
 
      </div>
-     <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Describe in detail..." rows="6"></textarea>
+     <label for="exampleFormControlTextarea1" class="form-label"></label>
+               <textarea class="classinput" id="exampleFormControlTextarea1" placeholder="Describe in detail..." rows="6"></textarea>
                
-                <label >Enter price per night: </label>
+                <label ></label>
                  <div class="input-group" style="width: 100%;">
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <div class="input-group-append">
-                      <span class="input-group-text">$</span>
+                    <input class="input-group-text classinput" style="width: 110vh; " type="text" style="  background-clip: unset;" class="classinput" aria-label="Amount (to the nearest dollar)" placeholder="Enter price per night ">
+                    <span class="input-group-text">$</span>
+                        
+                       
                      
-                    </div>
                   </div>
+                  <br>
 
 
                   <label class="form-check-label" for="gridCheck">
-               Plase read terms and conditions:&nbsp&nbsp
-               <input class="form-check-input" type="checkbox" id="gridCheck" disabled> 
-               <label class="form-check-label" for="gridCheck" >
+               Plase read terms and conditions before listing:&nbsp&nbsp
+
+               <input class="form-check-input" type="checkbox" disabled id="Iagreetoall" > 
+               <label class="form-check-label" for="gridCheck" id="Iagreetoall">
                  I Agree To All &nbsp &nbsp
                  </label>
                  <a href="#gotoTerms" id="aaa">Read terms and conditions</a>
-
+                 <br><br>
+                 <mark>You must be <a style="color:rgb(82, 78, 78)" href="Login.html">logged</a>  in order to list your house. </mark>
                 
 
 
@@ -167,15 +172,20 @@
     <div class="col-md-3" >
         <br>
        <div >
-        <button class="choseThePhoto"  onclick="document.getElementById('getFile').click()">Chose Photos</button>
-        <input type='file' id="getFile" style="display:none" multiple>
+        <button class="choseThePhoto"  onclick="document.getElementById('getFile').click() " style="color: #757575;"> Choose Photos</button>
+        <input type='file' id="getFile" style="display:none" multiple >
 
         
 
        </div>
        <div>
-        <button class="choseTheVideo" onclick="document.getElementById('getFile').click()">Chose Videos</button>
+        <button class="choseTheVideo" onclick="document.getElementById('getFile').click()" style="color: #757575;">Choose Videos</button>
         <input type='file' id="getFile" style="display:none" multiple>
+
+
+        <button disabled class="Rentify" id="buttonRentify" onclick="alert('You have succesfully listed your house!'), window.location.reload();">
+            <p style="text-align: center;margin-bottom: 10px; font-size: 25px;">Rentify now!</p>
+        </button>
 
 
        </div>
@@ -186,9 +196,8 @@
     </div></fieldset></form>
 </div>
 
-<br>
-<br>
-<br>
+
+
 
 <hr id="gotoTerms">
 
@@ -198,8 +207,8 @@
         <div class="col-md-7">
          
           <h2><u>Rental Agreement Terms and Conditions</u></h2>
-          <p>Please check the requests in the table in your right</p> 
-          
+          <p style="margin-left: 30px;">Please check the requests in the table in your right</p> 
+         
           <dl>
             <dt>Lease Agreement:</dt>
             <dd>Clearly outline the duration of the lease (start and end dates).</dd>
@@ -225,21 +234,17 @@
             <dd>Include any applicable local laws and regulations.</dd>
          
           </dl>
-          <p>By signing below, the Owner and Tenant acknowledge that they have read,
+          <p style="margin-left: 30px;">By signing below, the Owner and Tenant acknowledge that they have read,
             understood, and agree to abide by the terms and conditions outlined in this agreement.
            Plaese </p> 
           
-          <a href="#goTOdepth" id="aaa" style="font-size: 18;">Read specific terms in depth</a>
+          <a href="#goTOdepth" id="aaa" style="font-size: 18;margin-left: 100px;">Read specific terms in depth</a>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
+       
     
 
-            <p>By signing below, the Owner and Tenant acknowledge that they have read,
-             understood, and agree to abide by the terms and conditions outlined in this agreement.
-            Plaese </p> 
+            
 
         </div>
         <div class="col-md-1"></div>
@@ -249,14 +254,14 @@
                <br>
                <br>
                <br>
-            <table border="1" class="table2">
+            <table border="1" class="table2"  style=" margin-right: 100px;">
                <tr><th>Legal reason</th>
                <th>Fulfilled</th></tr>
-                <tr><td>Lease Agreement</td> <td class="tdcenter"><input type="checkbox" name="Lease Agreement" id="Lease_Agreement"></td></tr>
-                <tr><td>RLease Agreement</td> <td class="tdcenter"> <input type="checkbox" name="RLease Agreement" id="RLease_Agreement"></td></tr>
-                <tr><td>Repairs and Maintenancet</td> <td class="tdcenter"><input type="checkbox" name="Repairs and Maintenancet" id="Repairs and Maintenancet"> </td></tr>
-                <tr><td>Insurancet</td>  <td class="tdcenter"><input type="checkbox"  name="Insurancet" id="Insurancet"></td></tr>
-                <tr><td>Legal Responsibilities</td><td class="tdcenter"><input type="checkbox"  name="Legal Responsibilities" id="Legal Responsibilities"> </td></tr>
+                <tr><td>Lease Agreement</td> <td class="tdcenter"><input class="form-check-input" type="checkbox" name="Lease Agreement" id="Lease_Agreement" onclick=checked></td></tr>
+                <tr><td>Release Agreement</td> <td class="tdcenter"> <input class="form-check-input" type="checkbox"  name="RLease Agreement" id="RLease_Agreement"></td></tr>
+                <tr><td>Repairs and maintenance</td> <td class="tdcenter"><input class="form-check-input"  type="checkbox" name="Repairs and Maintenancet" id="Repairs_and_maintenance" unchecked> </td></tr>
+                <tr><td>Insurance</td>  <td class="tdcenter"><input type="checkbox" class="form-check-input"   name="Insurancet" id="Insurancet" unchecked></td></tr>
+                <tr><td>Legal Responsibilities</td><td class="tdcenter"><input class="form-check-input"  type="checkbox"  name="Legal Responsibilities" id="Legale" unchecked> </td></tr>
                 
 
 
@@ -266,11 +271,11 @@
     </div>
 </div>
 <!--_________________________________________________________________________________ -->
-
+<hr>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
-            <h2>Lease Agreement:</h2>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;" id="goTOdepth">Lease Agreement:</h2>
             <ol>
                 <li>Clearly outline the duration of the lease (start and end dates).</li>
                 <li>Specify whether it's a fixed-term lease or a month-to-month agreement.
@@ -281,7 +286,7 @@
                 </li>
             </ol>
         
-            <h2>Rent Payment:</h2>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Rent Payment:</h2>
             <ol>
                 <li>State the monthly rent amount and the due date.</li>
                 <li>Outline acceptable payment methods (e.g., bank transfer, check, etc.).
@@ -296,7 +301,7 @@
                 </li>
             </ol>
         
-            <h2>Repairs and Maintenance:</h2>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Repairs and Maintenance:</h2>
             <ol>
                 <li>Clearly define the landlord's responsibilities for major repairs.
                     <ul class="disc">
@@ -320,7 +325,7 @@
 
         </div>
         <div class="col-md-6">
-            <h2>Insurance:</h2>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Insurance:</h2>
     <ol>
         <li>Specify whether the tenant is required to have renter's insurance.
             <ul>
@@ -334,7 +339,7 @@
         </li>
     </ol>
 
-    <h2>Legal Responsibilities:</h2>
+    <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Legal Responsibilities:</h2>
     <ol>
         <li>Clarify legal responsibilities of both parties.
             <ul>
@@ -400,9 +405,7 @@
   </footer>
   <!-- end of footer -->
 
-    <script>
-        
-    </script>
+    <script src="RentifyYourHouse.js"></script>
 
 </body>
 </html>
