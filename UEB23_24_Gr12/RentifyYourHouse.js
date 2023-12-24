@@ -37,6 +37,7 @@ var canva = document.getElementById("katrori");
       Iagreetoall.disabled = false; 
       buttonRentify.disabled = false;
       Iagreetoall.checked=true;
+      window.location.href = "#ridirektim";
     } else {
       console.log("Not all checkboxes are checked");
       Iagreetoall.disabled = true;
