@@ -2,7 +2,10 @@ body{
     background-color: #F9F5EB;
 }
 .container{
-     margin: 6vh 40vh; 
+     position: relative;
+     top: 10vh;
+     left: 14vh;
+     margin-bottom: 13vh;
 }
 .property-title{
     color: #002B5B;
