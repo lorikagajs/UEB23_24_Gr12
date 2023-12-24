@@ -36,6 +36,7 @@ var canva = document.getElementById("katrori");
       console.log("All checkboxes are checked");
       Iagreetoall.disabled = false; 
       buttonRentify.disabled = false;
+      Iagreetoall.checked=true;
     } else {
       console.log("Not all checkboxes are checked");
       Iagreetoall.disabled = true;
