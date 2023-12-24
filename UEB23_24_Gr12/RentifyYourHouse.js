@@ -42,6 +42,7 @@ var canva = document.getElementById("katrori");
       console.log("Not all checkboxes are checked");
       Iagreetoall.disabled = true;
       buttonRentify.disabled = true;
+      Iagreetoall.checked=false;
     }
   }
 
@@ -51,3 +52,12 @@ var canva = document.getElementById("katrori");
   Insurancet.addEventListener('change', handleCheckboxChange);
   Legal_Responsibilities.addEventListener('change', handleCheckboxChange);
 
+  function handleCheck() {
+    if (Iagreetoall.checked){
+      buttonRentify.disabled = false;
+    }else {
+      buttonRentify.disabled = true;
+    }
+  }
+
+  Iagreetoall.addEventListener('change', handleCheck);

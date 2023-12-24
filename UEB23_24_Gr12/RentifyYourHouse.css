@@ -219,8 +219,11 @@ h2{
     font-size: 50px;
     color:#002B5B;
 }
+dt{
+    margin-left: 30px;
+}
 dd{
-    margin-left: 20px;
+    margin-left: 100px;
     line-height: 10px;
     font-size: 1rem;
 }
@@ -251,6 +254,7 @@ ol, ul, li{
     width: 100%;
     border-collapse: separate;
     border-spacing: 2px;
+  
    
  }
 
