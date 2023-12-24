@@ -1,5 +1,5 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
 }
 
 @font-face {
@@ -12,21 +12,23 @@
     height: 90vh;
 }
 
-.titulli{
-    color:#F9F5EB;
+.titulli {
+    color: #F9F5EB;
     font-size: 70px;
     position: absolute;
     top: 35vh;
-    left:45vh;
-   font-family: 'Playfair Display test', sans-serif;
-   text-shadow: 2px 2px 4px rgb(0, 43, 91);
+    left: 45vh;
+    font-family: 'Playfair Display test', sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 43, 91);
 }
-nav#navigation-bar{
+
+nav#navigation-bar {
     padding: 45px 0px 45px 0px;
     background-color: rgb(249, 245, 235);
     top: 0px;
-  
+
 }
+
 .sec1::before {
     content: '';
     position: absolute;
@@ -34,66 +36,157 @@ nav#navigation-bar{
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(249, 245, 235, 0.2); 
-    z-index: 1; 
+    background-color: rgba(249, 245, 235, 0.2);
+    z-index: 1;
 }
+
 .sec2 {
-    background-image: 
-       linear-gradient(rgba(249, 245, 235, 0.2), rgba(249, 245, 235, 0.2)),
-       url('Foto/City/City 4/BedroomCity3.jpg'),
-       url('Foto/City/City 3/CityHouse3.jpg');
+    background-image:
+        linear-gradient(rgba(249, 245, 235, 0.2), rgba(249, 245, 235, 0.2)),
+        url('Foto/City/City 4/BedroomCity3.jpg'),
+        url('Foto/City/City 3/CityHouse3.jpg');
     background-size: cover, auto, auto;
     background-position: center, left top, right top;
     background-repeat: no-repeat, no-repeat, no-repeat;
     color: #002B5B;
     padding: 20px;
     margin: 20px;
-    height: 400px;
+    height: 300px;
+    width:auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     border-radius: 15px;
     border: 1px solid #002B5B;
- 
+
 }
 
-h3.winner{
+h3.winner {
     color: #002B5B;
     font-family: 'Montserrat', sans-serif;
-  position: relative;
- bottom: 20%;
-}
- .sec2 img{
     position: relative;
-    top: 10%;
-    align-self: center;
- }
- .kartolina{
+    bottom: 10%;
+}
 
-    width:15rem;
+.sec2 img {
+    position: relative;
+    top: 5%;
+    align-self: center;
+}
+
+.kartolina {
+
+    width: 15rem;
     margin-top: 5rem;
     text-decoration: none;
 }
-.card-body p,.card-body h5{
+
+.card-body p,
+.card-body h5 {
     color: #002B5B !important;
 }
 
-.sec4{
+.sec4 {
     padding: 0;
-        width: auto;
-        height: 300px;
-        margin: 50px 95px 50px 92px;
-        background-color: #F9F5EB;
-        border-radius: 15px;
+    width: auto;
+    height: 300px;
+    margin: 50px 95px 50px 92px;
+    background-color: #F9F5EB;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    justify-content: space-between;
 }
-.float{
+
+.float {
     float: left;
     position: relative;
     height: inherit;
     border-radius: 15px 0px 0px 15px;
 
 }
-.text{
+
+.revieww {
+    color: #002B5B;
+    margin-top: 75px;
+    margin-left: 40px;
+}
+
+.text {
+    color: #002B5B;
+    margin-top: 50px;
+
+}
+.clients{
     float: right;
+    height: 200px;
+    width: 350px;
+    color: #002B5B;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.box{
+    box-sizing: border-box;
+    cursor: move;
+}
+.comment{
+    margin: -10px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.comment p{
+    margin-top: 20px;
+}
+.sec5{
+    margin-top: 50px;
+    width: auto;
+    margin: 50px 95px 50px 92px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   font-family: 'Montserrat', sans-serif;
+
+
+}
+.rev{
+    width: 400px;
+    height: 250px;
+    background-color: #F9F5EB;
+    color: #002B5B;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.user{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 2px #002B5B;
+    margin-right: 15px;
+}
+.clients img{
+    width: 30px;
+}
+
+footer#footer{
+
+    position: relative;
+    margin-top: 20vh;
 }
