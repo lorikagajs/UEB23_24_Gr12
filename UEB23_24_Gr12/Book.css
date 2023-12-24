@@ -99,7 +99,7 @@ label{
     border:#F9F5EB solid 1px;
     position: relative;
     padding:70px;
-    margin-left: 150px;
+    margin-left: 16vh;
    
 }
 
@@ -113,6 +113,7 @@ label{
     position: relative;
     top: 20px;
     left: 70px;
+    margin-right:11vh;
 }
 
 div a{

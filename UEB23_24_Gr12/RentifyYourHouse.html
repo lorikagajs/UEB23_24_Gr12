@@ -156,10 +156,10 @@
 
 
                   <label class="form-check-label" for="gridCheck">
-               Plase read terms and conditions :&nbsp&nbsp
+               Plase read terms and conditions before listing:&nbsp&nbsp
 
-               <input class="form-check-input" type="checkbox" id="gridCheck" > 
-               <label class="form-check-label" for="gridCheck" >
+               <input class="form-check-input" type="checkbox" disabled id="Iagreetoall" > 
+               <label class="form-check-label" for="gridCheck" id="Iagreetoall">
                  I Agree To All &nbsp &nbsp
                  </label>
                  <a href="#gotoTerms" id="aaa">Read terms and conditions</a>
@@ -172,20 +172,20 @@
     <div class="col-md-3" >
         <br>
        <div >
-        <button class="choseThePhoto"  onclick="document.getElementById('getFile').click()">Chose Photos</button>
-        <input type='file' id="getFile" style="display:none" multiple>
+        <button class="choseThePhoto"  onclick="document.getElementById('getFile').click() " style="color: #757575;"> Choose Photos</button>
+        <input type='file' id="getFile" style="display:none" multiple >
 
         
 
        </div>
        <div>
-        <button class="choseTheVideo" onclick="document.getElementById('getFile').click()">Chose Videos</button>
+        <button class="choseTheVideo" onclick="document.getElementById('getFile').click()" style="color: #757575;">Choose Videos</button>
         <input type='file' id="getFile" style="display:none" multiple>
 
 
-        <a href="#gotoRentify" style="text-decoration: none;"><div class="Rentify">
-            <p style="text-align: center; font-size: 29px;color:white;";>Rentify</p>
-           </div></a>
+        <button disabled class="Rentify" id="buttonRentify" onclick="alert('You have succesfully listed your house!'), window.location.reload();">
+            <p style="text-align: center;margin-bottom: 10px; font-size: 25px;">Rentify now!</p>
+        </button>
 
 
        </div>
@@ -196,9 +196,8 @@
     </div></fieldset></form>
 </div>
 
-<br>
-<br>
-<br>
+
+
 
 <hr id="gotoTerms">
 
@@ -209,7 +208,7 @@
          
           <h2><u>Rental Agreement Terms and Conditions</u></h2>
           <p>Please check the requests in the table in your right</p> 
-          
+          <br>
           <dl>
             <dt>Lease Agreement:</dt>
             <dd>Clearly outline the duration of the lease (start and end dates).</dd>
@@ -243,13 +242,9 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
     
 
-            <p>By signing below, the Owner and Tenant acknowledge that they have read,
-             understood, and agree to abide by the terms and conditions outlined in this agreement.
-            Plaese </p> 
+            
 
         </div>
         <div class="col-md-1"></div>
@@ -262,11 +257,11 @@
             <table border="1" class="table2">
                <tr><th>Legal reason</th>
                <th>Fulfilled</th></tr>
-                <tr><td>Lease Agreement</td> <td class="tdcenter"><input type="checkbox" class="" name="Lease Agreement" id="Lease_Agreement"></td></tr>
-                <tr><td>RLease Agreement</td> <td class="tdcenter"> <input type="checkbox" name="RLease Agreement" id="RLease_Agreement"></td></tr>
-                <tr><td>Repairs and Maintenancet</td> <td class="tdcenter"><input type="checkbox" name="Repairs and Maintenancet" id="Repairs and Maintenancet"> </td></tr>
-                <tr><td>Insurancet</td>  <td class="tdcenter"><input type="checkbox"  name="Insurancet" id="Insurancet"></td></tr>
-                <tr><td>Legal Responsibilities</td><td class="tdcenter"><input type="checkbox"  name="Legal Responsibilities" id="Legal Responsibilities"> </td></tr>
+                <tr><td>Lease Agreement</td> <td class="tdcenter"><input class="form-check-input" type="checkbox" name="Lease Agreement" id="Lease_Agreement" onclick=checked></td></tr>
+                <tr><td>Release Agreement</td> <td class="tdcenter"> <input class="form-check-input" type="checkbox"  name="RLease Agreement" id="RLease_Agreement"></td></tr>
+                <tr><td>Repairs and maintenance</td> <td class="tdcenter"><input class="form-check-input"  type="checkbox" name="Repairs and Maintenancet" id="Repairs_and_maintenance" unchecked> </td></tr>
+                <tr><td>Insurance</td>  <td class="tdcenter"><input type="checkbox" class="form-check-input"   name="Insurancet" id="Insurancet" unchecked></td></tr>
+                <tr><td>Legal Responsibilities</td><td class="tdcenter"><input class="form-check-input"  type="checkbox"  name="Legal Responsibilities" id="Legale" unchecked> </td></tr>
                 
 
 
@@ -276,11 +271,11 @@
     </div>
 </div>
 <!--_________________________________________________________________________________ -->
-
+<hr>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
-            <h2>Lease Agreement:</h2>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Lease Agreement:</h2>
             <ol>
                 <li>Clearly outline the duration of the lease (start and end dates).</li>
                 <li>Specify whether it's a fixed-term lease or a month-to-month agreement.
@@ -291,7 +286,7 @@
                 </li>
             </ol>
         
-            <h2>Rent Payment:</h2>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Rent Payment:</h2>
             <ol>
                 <li>State the monthly rent amount and the due date.</li>
                 <li>Outline acceptable payment methods (e.g., bank transfer, check, etc.).
@@ -306,7 +301,7 @@
                 </li>
             </ol>
         
-            <h2>Repairs and Maintenance:</h2>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Repairs and Maintenance:</h2>
             <ol>
                 <li>Clearly define the landlord's responsibilities for major repairs.
                     <ul class="disc">
@@ -330,7 +325,7 @@
 
         </div>
         <div class="col-md-6">
-            <h2>Insurance:</h2>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Insurance:</h2>
     <ol>
         <li>Specify whether the tenant is required to have renter's insurance.
             <ul>
@@ -344,7 +339,7 @@
         </li>
     </ol>
 
-    <h2>Legal Responsibilities:</h2>
+    <h2 style="font-size: 40px; text-align: left;margin-left: 50px;">Legal Responsibilities:</h2>
     <ol>
         <li>Clarify legal responsibilities of both parties.
             <ul>

@@ -188,6 +188,7 @@ mark{
     font-size: 23px;
     transition: font-size .5s ease;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
  }
  .choseTheVideo:hover{
     border-color:#002B5B;
@@ -278,8 +279,9 @@ table.table2 td {
    text-align: center;
  }
  canvas{
-    margin-left: 21%;
-    width: 100vh;
+    margin-left: 22%;
+    margin-right: 25%;
+    width: 50%;
     height: 4rem;
  }
 
@@ -323,18 +325,21 @@ input[placeholder]{
 
 }
 .Rentify{
-    width: 180px;
+    width: 200px;
     background-color:  #002B5B;
     border-radius: 60px;
     float: right;
-    margin-right: 90px;
+    margin-left: 2vh;
+    margin-right: 13vh;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
     height: 60px;
     position: relative; 
     bottom: 12px; 
     padding-top: 1vh;
     transition: background-color .5s ease;
-    margin-left: 700px;
-    margin-top: 10vh;
+    color:white;
+    margin-top: 8vh;
 }
 
 .Rentify:hover{
@@ -342,4 +347,10 @@ input[placeholder]{
 }
 .Rentify:active{
     background-color: #002B5B;
+}
+
+.Rentify[disabled]{
+    background-color: #425162;
+    color: rgb(181, 180, 180);
+
 }
