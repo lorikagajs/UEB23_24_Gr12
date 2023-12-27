@@ -59,5 +59,6 @@ var canva = document.getElementById("katrori");
       buttonRentify.disabled = true;
     }
   }
+  
 
   Iagreetoall.addEventListener('change', handleCheck);
