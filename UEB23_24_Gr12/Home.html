@@ -221,18 +221,25 @@
       var email = document.getElementById('email').value;
 
       if (email.trim() === '') {
-        alert('Please enter your email to subscribe.');
+        
         return false;
       }
 
       return true;
     }
     document.getElementById('subscribeButton').addEventListener('click', function (event) {
+    try {
       if (!validateSubscribeForm()) {
+        throw 'empty'
         event.preventDefault(); // se lejon me submit
       }
       else{x.play();}
       
+    }
+    catch (error) {
+      alert('The email input is '+ error);
+      console.warn("The email given is invalid: " + error)
+      }  
     }
     );
   </script>
