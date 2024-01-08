@@ -62,3 +62,45 @@ var canva = document.getElementById("katrori");
   
 
   Iagreetoall.addEventListener('change', handleCheck);
+
+
+  class Apartmenti{
+
+    constructor(titulli,adresa,city, zip, state, price){
+      this.titulli =titulli;
+      this.adresa=adresa;
+      this.city=city;
+      this.zip=zip;
+      this.state = state;
+      this.price = price;
+    }
+    toString() {
+      
+      return `Title: ${this.titulli}\nAddress: ${this.adresa}\nCity: ${this.city}\nZip: ${this.zip}\nState: ${this.state}\nPrice: ${this.price}`;
+    }
+  }
+  let objekti;
+
+  function pasKlikimit(){
+
+  var titulli = document.getElementById('inputTitle').value;
+  var adresa = document.getElementById('inputAddress').value;
+  var city = document.getElementById('inputCity').value;
+  var zip = document.getElementById('inputZip').value;
+  var state = document.getElementById('inputState').value;
+  var price =document.getElementById('price_').value;
+
+  objekti = new Apartmenti(titulli,adresa,city,zip,state,price);
+
+  }
+
+
+  var buttonRentify = document.getElementById('buttonRentify');
+ 
+  buttonRentify.onclick = function() {
+    pasKlikimit();
+    var stringu = objekti.toString();
+    alert('You have successfully listed your house!\n ' + stringu);
+    //window.location.reload();
+    console.log("button clicked");
+  };
