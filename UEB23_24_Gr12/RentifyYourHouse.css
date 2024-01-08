@@ -359,3 +359,14 @@ input[placeholder]{
     color: rgb(181, 180, 180);
 
 }
+
+.click{
+    font-size: 18;
+    margin-left: 100px;
+    font-family: "Playfair Display", sans-serif;
+    text-decoration: none;
+    color: #5b005b;
+
+  
+    font-size: 20px;
+}
