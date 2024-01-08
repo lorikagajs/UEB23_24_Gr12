@@ -133,7 +133,7 @@
     <div class="col-md-1"></div>
     <div class="col-md-7">
         <label for="inputName"></label>
-        <input type="text" class="classinput" id="inputName" required placeholder="Title">
+        <input type="text" class="classinput" id="inputTitle" required placeholder="Title">
         <label for="inputAddress"></label>
         <input type="text" class="classinput" id="inputAddress" placeholder="1234 Main St" required>
 
@@ -158,7 +158,7 @@
                
                 <label ></label>
                  <div class="input-group" style="width: 100%;">
-                    <input class="input-group-text classinput" style="width: 110vh; " type="text" style="  background-clip: unset;" class="classinput" aria-label="Amount (to the nearest dollar)" placeholder="Enter price per night ">
+                    <input class="input-group-text classinput" id="price_" style="width: 110vh; " type="text" style="  background-clip: unset;" class="classinput" aria-label="Amount (to the nearest dollar)" placeholder="Enter price per night ">
                     <span class="input-group-text">$</span>
                         
                        
@@ -195,7 +195,7 @@
         <input type='file' id="getFile" style="display:none" multiple>
 
 
-        <button disabled class="Rentify" id="buttonRentify" onclick="alert('You have succesfully listed your house!'), window.location.reload();">
+        <button disabled class="Rentify" id="buttonRentify">
             <p style="text-align: center;margin-bottom: 10px; font-size: 25px;">Rentify now!</p>
         </button>
 
