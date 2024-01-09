@@ -18,7 +18,7 @@ body{
 #Titulli{
     margin-top: 3rem;
     font-family: "Playfair Display", sans-serif;
-
+    display: none;
     text-align: center;
     font-size: 68px;
     color: #002B5B;
