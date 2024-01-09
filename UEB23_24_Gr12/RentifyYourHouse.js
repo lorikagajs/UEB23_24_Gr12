@@ -89,7 +89,14 @@ class Apartmenti {
 
   toString() {
 
-    return `Title: ${this.titulli}\nAddress: ${this.adresa}\nCity: ${this.city}\nZip: ${this.zip}\nState: ${this.state}\nPrice: ${this.price}\nTax:${this.tax(taxRate)}`;
+    var priceString;
+   if (isNaN(this.price)) {
+  priceString = this.price.toString();
+     } else {
+  priceString = this.price;
+     }
+
+    return `Title: ${this.titulli}\nAddress: ${this.adresa}\nCity: ${this.city}\nZip: ${this.zip}\nState: ${this.state}\nPrice: ${this.priceString}\nTax:${this.tax(taxRate)}`;
   }
 }
 
