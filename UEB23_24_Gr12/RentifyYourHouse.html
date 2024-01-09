@@ -427,7 +427,9 @@
     $(".hide").hide();
   });
   $(".show").click(function(){
-    $(".hide").show();
+    $(".hide").show("flast", function(){
+        alert("You returned to the previous state again!!")
+    });
   });
 });
 
