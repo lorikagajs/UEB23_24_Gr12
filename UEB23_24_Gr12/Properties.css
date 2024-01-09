@@ -300,4 +300,17 @@ body{
         transform: translate(45%, -35%);
       }
 
+      #Zbritja{
+        width:15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid #002B5B;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      #Zbritja:checked {
+        background-color: #002B5B;
+      }
       
