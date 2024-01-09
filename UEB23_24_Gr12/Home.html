@@ -170,6 +170,7 @@
 
       <input id="email" class="input" type="text" placeholder="E-mail" required>
       <button id="subscribeButton" class="subscribe" onclick="playAudio">SUBSCRIBE</button>
+      <p class="subscribed" >Thank you for the subscrie!</p>
 
     </form>
   </section>
@@ -214,7 +215,7 @@
 
   </footer>
   <!-- end of footer -->
-
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script>
     var x = document.getElementById("Subscribe");
     function validateSubscribeForm() {
@@ -233,7 +234,15 @@
         throw 'empty'
         event.preventDefault(); // se lejon me submit
       }
-      else{x.play();}
+      else{
+        $(document).ready(function(){
+      $(".subscribe").on("click" ,function(){
+      $(".subscribed").slideDown("slow")
+    })});
+        x.play();                    //leshon audion dhe e vendos posht kur klikohet tekstin
+        
+    event.preventDefault(); //e shtova qe mos me lon me qu ne top te faqes
+  }
       
     }
     catch (error) {
@@ -242,6 +251,8 @@
       }  
     }
     );
+
+   
   </script>
   
 
