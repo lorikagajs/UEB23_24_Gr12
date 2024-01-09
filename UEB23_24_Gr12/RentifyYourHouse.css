@@ -200,8 +200,8 @@ mark{
  }
 
 .square{
-   
-     border: none;
+    opacity: 0.75;
+    border: none;
     background-color:#F9F5EB;
     color:  #002B5B;
     padding: 10px;

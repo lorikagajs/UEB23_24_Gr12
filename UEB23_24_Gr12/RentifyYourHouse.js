@@ -3,17 +3,17 @@ var canva = document.getElementById("katrori");
 
 
   ctx.lineWidth = 2;
-  ctx.strokeStyle =  "#002B5B"; // Blue color
+  ctx.strokeStyle =  "#002B5B";
   
 
 
-  // Draw the first horizontal line
+  // Vija e pare
   ctx.beginPath();
   ctx.moveTo(50, 50);
   ctx.lineTo(350, 50);
   ctx.stroke();
 
-  // Draw the second horizontal line parallel to the first one
+  //vija e dyte paralel me te paren
   ctx.beginPath();
   ctx.moveTo(50, 100);
   ctx.lineTo(350, 100);
@@ -64,45 +64,79 @@ var canva = document.getElementById("katrori");
   Iagreetoall.addEventListener('change', handleCheck);
 
 
-  //Objekti
+//tax eshte vendosur 20%
+const taxRate = 0.20;
 
-  class Apartmenti{
-
-    constructor(titulli,adresa,city, zip, state, price){
-      this.titulli =titulli;
-      this.adresa=adresa;
-      this.city=city;
-      this.zip=zip;
-      this.state = state;
-      this.price = price;
-    }
-    toString() {
-      
-      return `Title: ${this.titulli}\nAddress: ${this.adresa}\nCity: ${this.city}\nZip: ${this.zip}\nState: ${this.state}\nPrice: ${this.price}`;
-    }
+class Apartmenti {
+  constructor(titulli, adresa, city, zip, state, price) {
+    this.titulli = titulli;
+    this.adresa = adresa;
+    this.city = city;
+    this.zip = zip;
+    this.state = state;
+    this.price = price;
   }
-  let objekti;
 
-  function pasKlikimit(){
+  tax(tax1) {
+    console.log(this.state);
+    let teksti = "You will not pay tax";
 
+    if (this.state.match('Kosova') === null) {
+      teksti = teksti.replace("You will not pay tax", `You will pay 20% tax! Total after tax: ${this.price * tax1}`);
+    }
+    return teksti;
+  }
+
+  toString() {
+    return `Title: ${this.titulli}\nAddress: ${this.adresa}\nCity: ${this.city}\nZip: ${this.zip}\nState: ${this.state}\nPrice: ${this.price}\nTax:${this.tax(taxRate)}`;
+  }
+}
+
+let objekti;
+
+function pasKlikimit() {
   var titulli = document.getElementById('inputTitle').value;
   var adresa = document.getElementById('inputAddress').value;
   var city = document.getElementById('inputCity').value;
   var zip = document.getElementById('inputZip').value;
   var state = document.getElementById('inputState').value;
-  var price =document.getElementById('price_').value;
+  var price = document.getElementById('price_').value;
 
-  objekti = new Apartmenti(titulli,adresa,city,zip,state,price);
+  objekti = new Apartmenti(titulli, adresa, city, zip, state, price);
+}
 
-  }
-
-
+document.addEventListener('DOMContentLoaded', function () {
   var buttonRentify = document.getElementById('buttonRentify');
- 
-  buttonRentify.onclick = function() {
+  buttonRentify.onclick = function () {
     pasKlikimit();
     var stringu = objekti.toString();
     alert('You have successfully listed your house!\n ' + stringu);
     //window.location.reload();
     console.log("button clicked");
   };
+});
+
+
+//terms and consitions
+$(document).ready(function(){
+  $(".click").click(function(){
+    $(".hide").hide();
+  });
+  $(".show").click(function(){
+    $(".hide").show();
+  });
+});
+
+
+
+//square at the start
+$(document).ready(
+  function(){
+    $(".square").animate({
+      opacity:1.0
+    },800)
+    $("#titulli").fadeIn("slow")
+
+
+  }
+)
