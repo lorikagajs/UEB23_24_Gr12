@@ -141,4 +141,9 @@ $(document).ready(function(){
   $("#titulli").fadeIn("slow");
 
 });
+$(document).ready(function () {
+  $("#titulli").fadeIn(1650);
+  $("#Titulli").click(function () {
+    $(".row").slideDown("slow")
+  })});
 
