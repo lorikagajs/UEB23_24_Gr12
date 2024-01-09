@@ -130,13 +130,12 @@ $(document).ready(function(){
 
 
 //square at the start
-$(document).ready(
-  function(){
-    $(".square").animate({
-      opacity:1.0
-    },800)
-    $("#titulli").fadeIn("slow")
+$(document).ready(function(){
+  $(".square").animate({
+    opacity: 1.0
+  }, 800);
 
+  $("#titulli").fadeIn("slow");
 
-  }
-)
+});
+
