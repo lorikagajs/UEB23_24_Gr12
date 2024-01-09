@@ -12,7 +12,12 @@ class Bookingu {
   
  
       toString() {
-        return `Name: ${this.name}\nMbiemri: ${this.mbiemri}\nEmail: ${this.email}\nAddress: ${this.adresa}\nCity: ${this.city}\nState: ${this.state}\nBank: ${this.bank}\nNumber of Nights: ${this.numberOfNights}`;
+
+        var data = new Date();
+
+     console.log(data.toString());
+
+        return `Name: ${this.name}\nMbiemri: ${this.mbiemri}\nEmail: ${this.email}\nAddress: ${this.adresa}\nCity: ${this.city}\nState: ${this.state}\nBank: ${this.bank}\nNumber of Nights: ${this.numberOfNights}\nTime of Rent: ${data.toString()}`;
       }
 
 }
@@ -53,7 +58,7 @@ class Bookingu {
       pasKlikimit();
       var stringu = objekti.toString();
       alert('You have successfully rented! Here are your details:\n ' + stringu);
-      
+
       setTimeout(function () {
         window.location.reload();
       }, 100); 

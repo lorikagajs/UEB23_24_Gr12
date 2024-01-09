@@ -88,6 +88,7 @@ class Apartmenti {
   }
 
   toString() {
+
     return `Title: ${this.titulli}\nAddress: ${this.adresa}\nCity: ${this.city}\nZip: ${this.zip}\nState: ${this.state}\nPrice: ${this.price}\nTax:${this.tax(taxRate)}`;
   }
 }
@@ -119,6 +120,8 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("button clicked");
   };
 });
+
+
 
 
 
