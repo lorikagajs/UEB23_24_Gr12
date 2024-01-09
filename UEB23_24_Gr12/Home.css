@@ -202,3 +202,8 @@ form{
 .second-box-item{
     outline: #002B5B 1px solid;
 }
+
+.subscribed{margin-top: 50px; 
+    color: white;
+     font-family: 'Montserrat';
+      display:none;}

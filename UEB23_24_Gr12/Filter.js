@@ -31,7 +31,7 @@ rental.addProperty(new Property('Graz, Austria', 124));
 rental.addProperty(new Property('Toronto Canada', 78));
 rental.addProperty(new Property('Split, Croatia', 76));
 rental.addProperty(new Property('Graz, Austria', 250));
-rental.addProperty(new Property('CBerlin, Germany', 241));
+rental.addProperty(new Property('Berlin, Germany', 241));
 
 let properties = rental.findProperties({ location: 'Graz, Austria'});
 console.log(properties);
