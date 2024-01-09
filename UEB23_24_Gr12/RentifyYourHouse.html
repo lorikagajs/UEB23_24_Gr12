@@ -12,6 +12,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+     $(document).ready(function(){
+  $(".click").click(function(){
+    $(".hide").hide();
+  });
+  $(".show").click(function(){
+    $(".hide").show();
+  });
+});
+    </script>
 
 </head>
 <body>
@@ -238,7 +250,7 @@
             understood, and agree to abide by the terms and conditions outlined in this agreement.
            Plaese </p> 
           
-          <a href="#goTOdepth" id="aaa" style="font-size: 18;margin-left: 100px;">Read specific terms in depth</a>
+          <a href="#goTOdepth" id="aaa" class="show" style="font-size: 18;margin-left: 100px;">Read specific terms in depth</a>
         <br>
         <br>
        
@@ -273,10 +285,10 @@
 <!--_________________________________________________________________________________ -->
 <hr>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row hide">
         <div class="col-md-6">
-            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;" id="goTOdepth">Lease Agreement:</h2>
-            <ol>
+            <h2 style="font-size: 40px; text-align: left;margin-left: 50px;" id="goTOdepth" >Lease Agreement:</h2>
+            <ol >
                 <li>Clearly outline the duration of the lease (start and end dates).</li>
                 <li>Specify whether it's a fixed-term lease or a month-to-month agreement.
                     <ul class="disc">
@@ -352,11 +364,14 @@
             </ul>
         </li>
     </ol>
-
+        
             
         </div>
+       
     </div>
+   <p  class="click">Click here to hide this section</p>
 </div>
+
 
 
 <!--_________________________________________________________________________________ -->
