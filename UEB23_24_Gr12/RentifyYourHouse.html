@@ -14,7 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-   
+   <script>//square at the start
+    $(document).ready(function(){
+      $(".square").animate({
+        opacity: 1.0
+      }, 800);
+    
+      $("#titulli").fadeIn("slow");
+    
+    });
+    </script>
 
 </head>
 <body>
@@ -412,6 +421,17 @@
   <!-- end of footer -->
 
     <script src="RentifyYourHouse.js"></script>
+    <script>
+        $(document).ready(function(){
+  $(".click").click(function(){
+    $(".hide").hide();
+  });
+  $(".show").click(function(){
+    $(".hide").show();
+  });
+});
+
+    </script>
 
 </body>
 </html>

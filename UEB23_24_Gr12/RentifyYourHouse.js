@@ -111,20 +111,13 @@ document.addEventListener('DOMContentLoaded', function () {
     pasKlikimit();
     var stringu = objekti.toString();
     alert('You have successfully listed your house!\n ' + stringu);
-    //window.location.reload();
+
+    setTimeout(function () {
+      window.location.reload();
+    }, 100); 
+   
     console.log("button clicked");
   };
-});
-
-
-//terms and consitions
-$(document).ready(function(){
-  $(".click").click(function(){
-    $(".hide").hide();
-  });
-  $(".show").click(function(){
-    $(".hide").show();
-  });
 });
 
 
