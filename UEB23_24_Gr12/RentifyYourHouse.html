@@ -14,15 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-    <script>
-     $(document).ready(function(){
-  $(".click").click(function(){
-    $(".hide").hide();
-  });
-  $(".show").click(function(){
-    $(".hide").show();
-  });
-});
+   <script>//square at the start
+    $(document).ready(function(){
+      $(".square").animate({
+        opacity: 1.0
+      }, 800);
+    
+      $("#titulli").fadeIn("slow");
+    
+    });
     </script>
 
 </head>
@@ -69,7 +69,7 @@
 <div id="Hyrje">
     <br>
     <br>
-   <h1><b><em></em></b> <em>Rentify your house</em></h1>
+   <h1 id="titulli"><b><em></em></b> <em>Rentify your house</em></h1>
 
   <p class="paragraph">Set up your own apartment for other people to enjoy.
   </p><p class="paragraph">Fast, Secure and Profitable</p>
@@ -421,6 +421,17 @@
   <!-- end of footer -->
 
     <script src="RentifyYourHouse.js"></script>
+    <script>
+        $(document).ready(function(){
+  $(".click").click(function(){
+    $(".hide").hide();
+  });
+  $(".show").click(function(){
+    $(".hide").show();
+  });
+});
+
+    </script>
 
 </body>
 </html>
