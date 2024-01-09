@@ -92,8 +92,9 @@
     </nav>
       <!-- end of navbar -->
           <!-- Titulli i kategoris -->
+    <div>
     <h1 id="Titulli"><b><em>City</em></b> <em>rentals for our busy night life lovers</em></h1>
-
+    </div>
     <!-- Cards -->
     <div class="container-fluid" style="width: 90%">
         <div class="row" style="margin-top: 4rem;">
@@ -2540,6 +2541,7 @@
   </footer>
   <!-- end of footer -->
     <script src="Bts-js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         
         var x =document.getElementById("Like");
@@ -2547,6 +2549,9 @@
         function playAudio(){
             x.play();
         }
+        $(document).ready(function () {
+        $("#Titulli").fadeIn(1650);
+       });
 
     </script>
 </body>

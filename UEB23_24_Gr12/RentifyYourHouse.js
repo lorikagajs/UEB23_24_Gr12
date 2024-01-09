@@ -64,6 +64,8 @@ var canva = document.getElementById("katrori");
   Iagreetoall.addEventListener('change', handleCheck);
 
 
+  //Objekti
+
   class Apartmenti{
 
     constructor(titulli,adresa,city, zip, state, price){
