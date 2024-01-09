@@ -300,17 +300,25 @@ body{
         transform: translate(45%, -35%);
       }
 
-      #Zbritja{
-        width:15px;
-        height: 15px;
-        border-radius: 50%;
+      .exchange{
+        font-size: 16px; 
+        font-family: 'Montserrat'; 
+        color: #002B5B;
+        border-radius: 10px;
+        width:170px;
+        height: 35px;
         border: 2px solid #002B5B;
-        appearance: none;
-        outline: none;
-        cursor: pointer;
+        position: relative;
+        left: 100px;
+        top: 30px;
+        transition: 0.2s background-color ease-in-out;
+        transition: 0.2s color ease-in-out;
       }
+      .exchange:hover{
+        background-color: #185296;
+        color: white;
+        border: 2px solid #002B5B;
+      }
+    
 
-      #Zbritja:checked {
-        background-color: #002B5B;
-      }
       
