@@ -9,7 +9,11 @@ class Bookingu {
         this.bank = bank;
         this.numberOfNights = numberOfNights;
       }
-  
+      
+      uniqueId() {
+        var uniqueid = Math.floor(Math.random() * 1000);
+        return uniqueid;
+    }
  
       toString() {
 
@@ -18,7 +22,7 @@ class Bookingu {
      console.log(data.toString());
 
 
-        return `Name: ${this.name}\nMbiemri: ${this.mbiemri}\nEmail: ${this.email}\nAddress: ${this.adresa}\nCity: ${this.city}\nState: ${this.state}\nBank: ${this.bank}\nNumber of Nights: ${this.numberOfNights.toString()}\nTime of Rent: ${data.toString()}`;
+        return `Name: ${this.name}\nMbiemri: ${this.mbiemri}\nEmail: ${this.email}\nAddress: ${this.adresa}\nCity: ${this.city}\nState: ${this.state}\nBank: ${this.bank}\nNumber of Nights: ${this.numberOfNights.toString()}\nYour booking Id: ${this.uniqueId()}\nTime of Rent: ${data.toString()}`;
       }
 
 }
