@@ -33,7 +33,7 @@ body::before {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    padding: 50px;
+    padding: 25px;
 
 }
 .cont1{
@@ -81,7 +81,7 @@ p{
     color: #E4DCCF;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
 
 }

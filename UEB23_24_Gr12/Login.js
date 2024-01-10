@@ -26,9 +26,14 @@ function validateSignupForm() {
     var lastName = document.getElementById('lastname').value;
     var newUsername = document.getElementById('newUsername').value;
     var newPassword = document.getElementById('newPassword').value;
+    var age = parseFloat(document.getElementById('age').value);
 
     if (firstName.trim() === '' || lastName.trim() === '' || newUsername.trim() === '' || newPassword.trim() === '') {
         alert('Please fill in all required fields.');
+        return false;
+    }
+    if (isNaN(age) || age <= 16) {
+        alert('Please enter a valid age. To create an account you have to be at least 16 years old.');
         return false;
     }
 
