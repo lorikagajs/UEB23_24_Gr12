@@ -1,6 +1,6 @@
 class Bookingu {
-    constructor(name, mbiemri, email, adresa, city, state, bank, numberOfNights) {
-        this.name = name;
+    constructor(emri, mbiemri, email, adresa, city, state, bank, numberOfNights) {
+        this.emri = emri;
         this.mbiemri = mbiemri;
         this.email = email;
         this.adresa = adresa;
@@ -9,11 +9,7 @@ class Bookingu {
         this.bank = bank;
         this.numberOfNights = numberOfNights;
       }
-      
-      uniqueId() {
-        var uniqueid = Math.floor(Math.random() * 1000);
-        return uniqueid;
-    }
+  
  
       toString() {
 
@@ -22,13 +18,13 @@ class Bookingu {
      console.log(data.toString());
 
 
-        return `Name: ${this.name}\nMbiemri: ${this.mbiemri}\nEmail: ${this.email}\nAddress: ${this.adresa}\nCity: ${this.city}\nState: ${this.state}\nBank: ${this.bank}\nNumber of Nights: ${this.numberOfNights.toString()}\nYour booking Id: ${this.uniqueId()}\nTime of Rent: ${data.toString()}`;
+        return `Name: ${this.emri}\nMbiemri: ${this.mbiemri}\nEmail: ${this.email}\nAddress: ${this.adresa}\nCity: ${this.city}\nState: ${this.state}\nBank: ${this.bank}\nNumber of Nights: ${this.numberOfNights.toString()}\nTime of Rent: ${data.toString()}`;
       }
 
 }
-  let objekti;
-  
-  function pasKlikimit() {
+let objekti;
+
+function pasKlikimit() {
     var emri = document.getElementById('Emri').value;
     var mbiemri = document.getElementById('Mbiemri').value;
     var email = document.getElementById('exampleInputEmail1').value;
@@ -39,30 +35,27 @@ class Bookingu {
     var numberOfnights = document.getElementById('a').value;
 
     // Debugging: Log input values
-  console.log('Emri:', emri);
-  console.log('Mbiemri:', mbiemri);
-  console.log('Email:', email);
-  console.log('Address:', adresa);
-  console.log('City:', city);
-  console.log('Bank:', bank);
-  console.log('State:', state);
-  console.log('Number of Nights:', numberOfnights);
-  
+    console.log('Emri:', emri);
+    console.log('Mbiemri:', mbiemri);
+    console.log('Email:', email);
+    console.log('Address:', adresa);
+    console.log('City:', city);
+    console.log('Bank:', bank);
+    console.log('State:', state);
+    console.log('Number of Nights:', numberOfnights);
+
     objekti = new Bookingu(emri, mbiemri, email, adresa, city, state, bank, numberOfnights);
-  }
-  
-  document.addEventListener('DOMContentLoaded', function () {
+
+    return objekti;  // Optionally, you may return objekti from this function if needed elsewhere.
+}
+
+document.addEventListener('DOMContentLoaded', function () {
     var buttonBooking = document.getElementById('buttoni');
 
     buttonBooking.onclick = function () {
-        var emri = document.getElementById('Emri').value;
-        var mbiemri = document.getElementById('Mbiemri').value;
-        var inputAddress = document.getElementById('inputAddress').value;
-        var inputCity = document.getElementById('inputCity').value;
-        var inputState = document.getElementById('inputState').value;
-        var exampleInputEmail1 = document.getElementById('exampleInputEmail1').value;
+        var objekti = pasKlikimit();  // Call pasKlikimit to get the objekti
 
-        if (exampleInputEmail1.trim() === '' || inputState.trim() === '' || inputCity.trim() === '' || inputAddress.trim() === '' || mbiemri.trim() === '' || emri.trim() === '') {
+        if (objekti.state.trim() === '' || objekti.email.trim() === '' || objekti.city.trim() === '' || objekti.adresa.trim() === '' || objekti.mbiemri.trim() === '' || objekti.emri.trim() === '') {
             alert('Please fill in all required fields.');
             return;
         }
@@ -78,3 +71,6 @@ class Bookingu {
         console.log("button clicked");
     };
 });
+
+  
+  
