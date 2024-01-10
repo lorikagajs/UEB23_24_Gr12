@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     pasKlikimit();
     var stringu = objekti.toString();
-    alert('You have successfully listed your house!\n ' + stringu);
+    alert('You have successfully listed your house!\n' + stringu);
 
     setTimeout(function () {
       window.location.reload();
