@@ -1,3 +1,6 @@
+
+
+//elementi Canvas
 var canva = document.getElementById("katrori");
   var ctx = canva.getContext("2d");
 
@@ -20,6 +23,7 @@ var canva = document.getElementById("katrori");
   ctx.stroke();
 
 
+//Kontrollimi i te gjithe butonave a jane check te terms and conditions
   var Lease_Agreement = document.getElementById('Lease_Agreement');
   var RLease_Agreement = document.getElementById('RLease_Agreement');
   var Repairs_and_maintenance = document.getElementById('Repairs_and_maintenance');
@@ -67,6 +71,8 @@ var canva = document.getElementById("katrori");
 //tax eshte vendosur 20%
 const taxRate = 0.20;
 
+
+//Objekti qe pastaj mund ta ruajme ne nje databaz
 class Apartmenti {
   constructor(titulli, adresa, city, zip, state, price) {
     this.titulli = titulli;

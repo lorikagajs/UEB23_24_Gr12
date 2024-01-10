@@ -31,7 +31,7 @@
 <div id="backphoto" style="padding-bottom: 200px;">
 
    
-    
+    <!--NavBar-->
 <div class="first-box">
     <nav id="navigation-bar">
         <a href="Home.html" class="logo">
@@ -120,7 +120,7 @@
 <br>
  
 <br>
-
+ <!--Format e listingut me Bootsrap Grid-->
 <h2 id="ridirektim">List your house</h2>
 <h2 style="font-size: 25px;">Please read terms and conditions first</h2>
 <canvas id="katrori"></canvas>
@@ -160,13 +160,8 @@
                  <div class="input-group" style="width: 100%;">
                     <input class="input-group-text classinput" id="price_" style="width: 110vh; " type="text" style="  background-clip: unset;" class="classinput" aria-label="Amount (to the nearest dollar)" placeholder="Enter price per night ">
                     <span class="input-group-text">$</span>
-                        
-                       
-                     
                   </div>
                   <br>
-
-
                   <label class="form-check-label" for="gridCheck">
                Plase read terms and conditions before listing:&nbsp&nbsp
 
@@ -177,9 +172,6 @@
                  <a href="#gotoTerms" id="aaa">Read terms and conditions</a>
                  <br><br>
                  <mark>You must be <a style="color:rgb(82, 78, 78)" href="Login.html">logged</a>  in order to list your house. </mark>
-                
-
-
     </div>
     <div class="col-md-3" >
         <br>
@@ -187,7 +179,9 @@
         <button class="choseThePhoto"  onclick="document.getElementById('getFile').click() " style="color: #757575;"> Choose Photos</button>
         <input type='file' id="getFile" style="display:none" multiple >
 
-        
+
+
+
 
        </div>
        <div>
@@ -213,7 +207,7 @@
 
 <hr id="gotoTerms">
 
-
+ <!--Listat-->
 <div  class="container-fluid">
     <div class="row">
         <div class="col-md-7">
@@ -422,6 +416,9 @@
 
     <script src="RentifyYourHouse.js"></script>
     <script>
+
+
+     // fhshe dhe tregon pjesen e zgjeruar te terms and consitions
         $(document).ready(function(){
   $(".click").click(function(){
     $(".hide").hide();

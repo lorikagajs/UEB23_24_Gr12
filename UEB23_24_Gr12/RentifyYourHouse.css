@@ -84,8 +84,11 @@ mark{
   
     position: relative;
     height: 100vh;
-    background-image: url(Foto/beachBalcony.jpg);
+    background-image: url('./Foto/house.jpg');
+    background-size:cover;
     /* last photo Foto/42554  */
+    /*Foto/beachBalcony.jpg */
+    background-position:absolute;
     
 }
 
