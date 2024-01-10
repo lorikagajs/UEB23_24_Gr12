@@ -39,3 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const numbers = [10, 9, 10, 10, 10];
+
+    const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    const average = sum / numbers.length;
+
+    const resultContainer = document.getElementById('resultContainer');
+
+    resultContainer.textContent = `${average.toFixed(1)}/10`; 
+});
