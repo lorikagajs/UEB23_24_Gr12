@@ -94,6 +94,7 @@
           <!-- Titulli i kategoris -->
     <div>
     <h1 id="Titulli"><b><em>City</em></b> <em>rentals for our busy night life lovers</em></h1>
+    <button id="toEuroButton" class="exchange">Show price in Euro</button>
     </div>
     <!-- Cards -->
     <div class="container-fluid" style="width: 90%">
@@ -292,7 +293,7 @@
                                 Mar 4- Apr 4
                             </p>
                             <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$124</b> per night
+                                <b class="currency">$</b><b class="pagesa">124</b> per night
                             </p>
                         </div>
                     </div>
@@ -493,7 +494,7 @@
                                 Feb 20-25
                             </p>
                             <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$78</b> per night
+                                <b class="currency">$</b><b class="pagesa">78</b> per night
                             </p>
                         </div>
                     </div>
@@ -694,7 +695,7 @@
                             Mar 14- Apr 8
                             </p>
                             <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$184</b> per night
+                                <b class="currency">$</b><b class="pagesa">184</b> per night
                             </p>
                         </div>
                     </div>
@@ -893,7 +894,7 @@
                                 May 4- 8
                             </p>
                             <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$76</b> per night
+                                <b class="currency">$</b><b class="pagesa">76</b> per night
                             </p>
                         </div>
                     </div>
@@ -1094,7 +1095,7 @@
                                 Jan 14-Feb 8
                             </p>
                             <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$241</b> per night
+                                <b class="currency">$</b><b class="pagesa">241</b> per night
                             </p>
                         </div>
                     </div>
@@ -1294,7 +1295,7 @@
                                 Jun 3-  Jul 8
                             </p>
                             <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$165</b> per night
+                                <b class="currency">$</b><b class="pagesa">165</b> per night
                             </p>
                         </div>
                     </div>
@@ -1495,7 +1496,7 @@
                                 Mar 10- 14
                             </p>
                             <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                                <b>$97</b> per night
+                                <b class="currency">$</b><b class="pagesa">97</b> per night
                             </p>
                         </div>
                     </div>
@@ -1696,7 +1697,7 @@
                             Jan 4 - Mar 6
                         </p>
                         <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$175</b> per night
+                            <b class="currency">$</b><b class="pagesa">175</b> per night
                         </p>
                     </div>
             </div></a>
@@ -1897,7 +1898,7 @@
                             Mar 23- Apr 10
                         </p>
                         <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$354</b> per night
+                            <b class="currency">$</b><b class="pagesa">354</b> per night
                         </p>
                     </div>
                 </div>
@@ -2097,7 +2098,7 @@
                             Sept 4- Oct 8
                         </p>
                         <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$174</b> per night
+                            <b class="currency">$</b><b class="pagesa">174</b> per night
                         </p>
                     </div>
                 </div>
@@ -2298,7 +2299,7 @@
                             Feb 3- Mar 8
                         </p>
                         <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$75</b> per night
+                            <b class="currency">$</b><b class="pagesa">75</b> per night
                         </p>
                     </div>
                 </div>
@@ -2498,7 +2499,7 @@
                             Apr 14- 25
                         </p>
                         <p class="card-text" style="font-family: 'Montserrat', sans-serif; margin: 2px">
-                            <b>$147</b> per night
+                            <b class="currency">$</b><b class="pagesa">147</b> per night
                         </p>
                     </div>
                 </div>
@@ -2542,6 +2543,7 @@
   <!-- end of footer -->
     <script src="Bts-js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="dollarsToEuros.js"></script>
     <script>
         
         var x =document.getElementById("Like");
