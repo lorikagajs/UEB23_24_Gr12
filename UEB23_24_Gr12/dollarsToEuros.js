@@ -41,9 +41,9 @@ $(document).ready(function () {
   // Button click event handler
   $('#toEuroButton').on('click', function () {
       // Toggle button text
-      var buttonText = $('#toEuroButton').text();
+      var buttonText = $('#toEuroButton').text(); //Get - merr permes ID tekstin aktual te butonit
       if (buttonText.includes('Euro')) {
-          $('#toEuroButton').text('Show price in Dollar');
+          $('#toEuroButton').text('Show price in Dollar'); //Set - vendos tekstin e caktuar ne buton permes ID, metoda .text()
       } else {
           $('#toEuroButton').text('Show price in Euro');
       }
@@ -75,5 +75,8 @@ $(document).ready(function () {
   $('#toEuroButton').on('click', function() {
     toggleCurrency();
   });
+
+  
+  $('#toEuroButton').addClass('exchange'); //addClass - shton klase ne elementin me ID te caktuar, manipulim me CSS
 });
 
