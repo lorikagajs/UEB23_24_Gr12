@@ -10,11 +10,9 @@ console.log("Elements:", elements);
 
 
 const euro = elements.map(toEuro);
-const under100= elements.filter(function(element,index,elements){
-  return element<100;
-});
+
 console.log("Elements:", euro);
-console.log("Elements:", under100);
+
 
 function toEuro(cmimi){
       cmimi = cmimi*.91
@@ -22,8 +20,8 @@ function toEuro(cmimi){
 }
 
 var toEurosButton = document.getElementById('toEuroButton'); 
-var FilterButton = document.getElementById('Filter'); 
-var FilterB=false;
+
+
 var isToEuros = false;
 
 toEurosButton.addEventListener('click',function(){
@@ -43,26 +41,7 @@ toEurosButton.addEventListener('click',function(){
       isToEuros = !isToEuros;
 })
 
-FilterButton.addEventListener('click',function(){
-  const shpit= document.querySelector('.card');
-  var pagesatElements = document.querySelectorAll('.pagesa');
 
-      pagesatElements.forEach(function(element, index) {
-          if (!FilterB) {
-              // Update the content when clicked
-              element.innerHTML = under100[index];
-                if(under100[index]==undefined){
-                   
-                }
-            } else {
-              // Revert the content of the element when unchecked
-              element.innerHTML =  elements[index];
-            }
-      })
-
-    // Toggle the state
-    FilterB = !FilterB;
-})
 
 
 $(document).ready(function () {
@@ -108,6 +87,5 @@ $(document).ready(function () {
   
   $('#toEuroButton').addClass('exchange'); //addClass - shton klase ne elementin me ID te caktuar, manipulim me CSS
   $('#Filter').addClass('exchange'); //addClass - shton klase ne elementin me ID te caktuar, manipulim me CSS
-  $('#Reduce').addClass('exchange'); //addClass - shton klase ne elementin me ID te caktuar, manipulim me CSS
-});
+ });
 
