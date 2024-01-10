@@ -47,23 +47,30 @@ class Bookingu {
     objekti = new Bookingu(emri, mbiemri, email, adresa, city, state, bank, numberOfnights);
   }
   
-
   document.addEventListener('DOMContentLoaded', function () {
-
-
-    // Debugging: Log DOMContentLoaded event
-  console.log('DOMContentLoaded event fired');
-
     var buttonBooking = document.getElementById('buttoni');
-    buttonBooking.onclick = function () {
-      pasKlikimit();
-      var stringu = objekti.toString();
-      alert('You have successfully rented! Here are your details:\n ' + stringu);
 
-      setTimeout(function () {
-        window.location.reload();
-      }, 100); 
-      console.log("button clicked");
+    buttonBooking.onclick = function () {
+        var emri = document.getElementById('Emri').value;
+        var mbiemri = document.getElementById('Mbiemri').value;
+        var inputAddress = document.getElementById('inputAddress').value;
+        var inputCity = document.getElementById('inputCity').value;
+        var inputState = document.getElementById('inputState').value;
+        var exampleInputEmail1 = document.getElementById('exampleInputEmail1').value;
+
+        if (exampleInputEmail1.trim() === '' || inputState.trim() === '' || inputCity.trim() === '' || inputAddress.trim() === '' || mbiemri.trim() === '' || emri.trim() === '') {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
+        // Your existing code for the successful booking
+        pasKlikimit();
+        var stringu = objekti.toString();
+        alert('You have successfully rented! Here are your details:\n ' + stringu);
+
+        setTimeout(function () {
+            window.location.reload();
+        }, 100);
+        console.log("button clicked");
     };
-  });
-  
+});
