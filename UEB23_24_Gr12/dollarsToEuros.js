@@ -35,3 +35,45 @@ toEurosButton.addEventListener('click',function(){
       // Toggle the state
       isToEuros = !isToEuros;
 })
+
+
+$(document).ready(function () {
+  // Button click event handler
+  $('#toEuroButton').on('click', function () {
+      // Toggle button text
+      var buttonText = $('#toEuroButton').text();
+      if (buttonText.includes('Euro')) {
+          $('#toEuroButton').text('Show price in Dollar');
+      } else {
+          $('#toEuroButton').text('Show price in Euro');
+      }
+  });
+
+  // Initial state, assuming dollar signs are present
+  var toEuro = false;
+
+  // Function to toggle between dollar and euro signs
+  function toggleCurrency() {
+    // Select all elements with class "currency" and update their content
+    $('.currency').each(function() {
+      var content = $(this).text();
+      if (toEuro) {
+        // Replace Euro signs back to Dollar signs
+        content = content.replace('€', '$');
+      } else {
+        // Replace Dollar signs with Euro signs
+        content = content.replace('$', '€');
+      }
+      $(this).text(content);
+    });
+
+    // Toggle the state for the next click
+    toEuro = !toEuro;
+  }
+
+  // Attach the click event to the button with id "toEuroButton"
+  $('#toEuroButton').on('click', function() {
+    toggleCurrency();
+  });
+});
+
