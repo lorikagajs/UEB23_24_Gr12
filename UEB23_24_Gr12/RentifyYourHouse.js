@@ -1,3 +1,5 @@
+
+
 var canva = document.getElementById("katrori");
   var ctx = canva.getContext("2d");
 
@@ -88,17 +90,18 @@ class Apartmenti {
   }
 
   toString() {
-
     var priceString;
-   if (isNaN(this.price)) {
-  priceString = this.price.toString();
-     } else {
-  priceString = this.price;
-     }
 
-    return `Title: ${this.titulli}\nAddress: ${this.adresa}\nCity: ${this.city}\nZip: ${this.zip}\nState: ${this.state}\nPrice: ${this.priceString}\nTax:${this.tax(taxRate)}`;
+    if (isNaN(this.price)) {
+      priceString = this.price.toString();
+    } else {
+      priceString = this.price;
+    }
+
+    return `Title: ${this.titulli}\nAddress: ${this.adresa}\nCity: ${this.city}\nZip: ${this.zip}\nState: ${this.state}\nPrice: ${priceString}\nTax:${this.tax(taxRate)}`;
   }
 }
+
 
 let objekti;
 
@@ -110,25 +113,42 @@ function pasKlikimit() {
   var state = document.getElementById('inputState').value;
   var price = document.getElementById('price_').value;
 
-  objekti = new Apartmenti(titulli, adresa, city, zip, state, price);
+  return new Apartmenti(titulli, adresa, city, zip, state, price);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
   var buttonRentify = document.getElementById('buttonRentify');
+
   buttonRentify.onclick = function () {
+   
+    objekti = pasKlikimit();
+
+
+    var title = objekti.titulli;
+    var address = objekti.adresa;
+    var city = objekti.city;
+    var state = objekti.state;
+    var zip = objekti.zip;
+    var price = objekti.price;
+
+
+    // validimi
+    if (title.trim() === '' || address.trim() === '' || city.trim() === '' || state.trim() === '' || zip.trim() === '' || price.trim() === '') {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
     pasKlikimit();
     var stringu = objekti.toString();
     alert('You have successfully listed your house!\n ' + stringu);
 
     setTimeout(function () {
       window.location.reload();
-    }, 100); 
-   
+    }, 100);
+
     console.log("button clicked");
   };
 });
-
-
 
 
 

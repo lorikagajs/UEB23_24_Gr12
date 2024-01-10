@@ -34,7 +34,7 @@ function pasKlikimit() {
     var state = document.getElementById('inputState').value;
     var numberOfnights = document.getElementById('a').value;
 
-    // Debugging: Log input values
+  
     console.log('Emri:', emri);
     console.log('Mbiemri:', mbiemri);
     console.log('Email:', email);
@@ -46,21 +46,21 @@ function pasKlikimit() {
 
     objekti = new Bookingu(emri, mbiemri, email, adresa, city, state, bank, numberOfnights);
 
-    return objekti;  // Optionally, you may return objekti from this function if needed elsewhere.
+    return objekti;  
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     var buttonBooking = document.getElementById('buttoni');
 
     buttonBooking.onclick = function () {
-        var objekti = pasKlikimit();  // Call pasKlikimit to get the objekti
-
+        var objekti = pasKlikimit();  
+//validimi
         if (objekti.state.trim() === '' || objekti.email.trim() === '' || objekti.city.trim() === '' || objekti.adresa.trim() === '' || objekti.mbiemri.trim() === '' || objekti.emri.trim() === '') {
             alert('Please fill in all required fields.');
             return;
         }
 
-        // Your existing code for the successful booking
+   
         pasKlikimit();
         var stringu = objekti.toString();
         alert('You have successfully rented! Here are your details:\n ' + stringu);
