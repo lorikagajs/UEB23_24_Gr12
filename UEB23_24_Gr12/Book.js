@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
         pasKlikimit();
         var stringu = objekti.toString();
-        alert('You have successfully rented! Here are your details:\n ' + stringu);
+        alert('You have successfully rented! Here are your details:\n' + stringu);
 
         setTimeout(function () {
             window.location.reload();
