@@ -152,7 +152,7 @@
                   Call us:<br>
                   +383 44 342 685</h2>
               </a>
-=======
+
           <div class="row">
             <div class="col-md-12">
               <br>
@@ -215,21 +215,6 @@
     <script src="Book.js">
 
     </script>
-<script>
-  document.querySelector('form').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    var requiredFields = ['Emri', 'Mbiemri', 'exampleInputEmail1', 'inputAddress', 'inputCity', 'inputState'];
-
-    for (const field of requiredFields) {
-      const input = document.getElementById(field);
-      if (input.value.trim() === '') {
-        alert('Please fill in all required fields.');
-        return;
-      }
-    }
-  });
-</script>
 
 </body>
 
