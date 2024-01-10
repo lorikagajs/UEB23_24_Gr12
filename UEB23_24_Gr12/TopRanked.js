@@ -39,3 +39,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+//rating average - perdorimi i function reduce
+document.addEventListener('DOMContentLoaded', function () {
+    const numbers = [10, 9, 10, 10, 10];
+
+    const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    const average = sum / numbers.length;
+
+    // Get the resultContainer element
+    const resultContainer = document.getElementById('resultContainer');
+
+    // Update the content of the resultContainer with the calculated average
+    resultContainer.textContent = `${average.toFixed(1)}/10`; // toFixed(2) limits decimal places to two
+});
